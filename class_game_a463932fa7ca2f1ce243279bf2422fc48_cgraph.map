@@ -1,0 +1,4 @@
+<map id="Game::menu" name="Game::menu">
+<area shape="rect" id="node2" href="$class_menu.html#aa2297a6abfaa404403fe1b7ae2521f88" title="Menu::render" alt="" coords="185,5,284,32"/>
+<area shape="rect" id="node3" href="$class_input_handler.html#a69b726d4a409a6f4ae443689cb69b404" title="InputHandler::handleInput" alt="" coords="151,56,319,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Game::startSinglePlayer" name="Game::startSinglePlayer">
+<area shape="rect" id="node2" href="$class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="236,5,379,32"/>
+<area shape="rect" id="node5" href="$class_start_single_game_command.html#a27e779a9ce1664557266c0e7679faab0" title="StartSingleGameCommand\l::execute" alt="" coords="217,57,397,98"/>
+<area shape="rect" id="node3" href="$class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa" title="Game::run" alt="" coords="445,5,528,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Runs RenderWindow. Runs game. " alt="" coords="576,5,627,32"/>
+</map>

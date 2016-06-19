@@ -1,0 +1,4 @@
+<map id="Enemy::isObjectOnScreen" name="Enemy::isObjectOnScreen">
+<area shape="rect" id="node2" href="$class_enemy.html#a986074549d08157336879f6b48ce632f" title="Enemy::getPosition" alt="" coords="248,5,384,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#abb50439b9517d5a2b4c6b6c6a4e91672" title="Enemy::getGlobalBounds" alt="" coords="231,56,401,83"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="InputHandler::handleInput" name="InputHandler::handleInput">
+<area shape="rect" id="node2" href="$class_engine.html#ad2ff110d5a86c1cd60b541d65915ac48" title="Engine::update" alt="" coords="221,5,331,32"/>
+<area shape="rect" id="node3" href="$class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="379,52,543,79"/>
+<area shape="rect" id="node8" href="$class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="412,107,509,133"/>
+<area shape="rect" id="node4" href="$class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="609,107,752,133"/>
+<area shape="rect" id="node7" href="$class_start_single_game_command.html#a27e779a9ce1664557266c0e7679faab0" title="StartSingleGameCommand\l::execute" alt="" coords="591,41,771,82"/>
+<area shape="rect" id="node5" href="$class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa" title="Game::run" alt="" coords="819,107,901,133"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Runs RenderWindow. Runs game. " alt="" coords="949,107,1000,133"/>
+</map>
