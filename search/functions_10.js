@@ -1,26 +1,4 @@
 var searchData=
 [
-  ['_7eactor',['~Actor',['../class_actor.html#ad807fe8f85e72ab263a0c05e3231cb39',1,'Actor']]],
-  ['_7eaicontroler',['~AiControler',['../class_ai_controler.html#aa58de5f8ccbff5d293c57cdf2a80e8c5',1,'AiControler']]],
-  ['_7ebullet',['~Bullet',['../class_bullet.html#aaeb5cb41d7db89f49007b08b41f1bfcf',1,'Bullet']]],
-  ['_7ecollisionhandler',['~CollisionHandler',['../class_collision_handler.html#a99f5524cf1706f9ea95500cf273a9d97',1,'CollisionHandler']]],
-  ['_7ecommand',['~Command',['../class_command.html#ab552bb3a07fdd1acbfd8ea76e69b2278',1,'Command']]],
-  ['_7eenemy',['~Enemy',['../class_enemy.html#ac0eec4755e28c02688065f9657150ac3',1,'Enemy']]],
-  ['_7eenemyspawner',['~EnemySpawner',['../class_enemy_spawner.html#a661639d8aa3e52a1249883c34d11f0ad',1,'EnemySpawner']]],
-  ['_7eengine',['~Engine',['../class_engine.html#a8ef7030a089ecb30bbfcb9e43094717a',1,'Engine']]],
-  ['_7eengineinputhandler',['~EngineInputHandler',['../class_engine_input_handler.html#a92a875197705110bd6b2debfe7dbee6a',1,'EngineInputHandler']]],
-  ['_7eenterchoicecommand',['~EnterChoiceCommand',['../class_enter_choice_command.html#aa7a330dcd6ffcf6f806c26b577bba21c',1,'EnterChoiceCommand']]],
-  ['_7egame',['~Game',['../class_game.html#ae3d112ca6e0e55150d2fdbc704474530',1,'Game']]],
-  ['_7egameobject',['~GameObject',['../class_game_object.html#ab82dfdb656f9051c0587e6593b2dda97',1,'GameObject']]],
-  ['_7einputhandler',['~InputHandler',['../class_input_handler.html#ac1f7efb54b34d433d6ffba62627452b6',1,'InputHandler']]],
-  ['_7emainmenu',['~MainMenu',['../class_main_menu.html#a0a19ddba3ac52bf39c09b579171c98f2',1,'MainMenu']]],
-  ['_7emenu',['~Menu',['../class_menu.html#a831387f51358cfb88cd018e1777bc980',1,'Menu']]],
-  ['_7emenucommand',['~MenuCommand',['../class_menu_command.html#a7b61310cfc662b7d37366dca0df75ca8',1,'MenuCommand']]],
-  ['_7emenuinputhandler',['~MenuInputHandler',['../class_menu_input_handler.html#a283ab0103c42ef398b7d632dd99d1bee',1,'MenuInputHandler']]],
-  ['_7emoveactorcommand',['~MoveActorCommand',['../class_move_actor_command.html#a6b826449c1ca94181966deaabeb02ede',1,'MoveActorCommand']]],
-  ['_7emoveselectioncommand',['~MoveSelectionCommand',['../class_move_selection_command.html#ae014898c6e01dd18668f79fd96d9b670',1,'MoveSelectionCommand']]],
-  ['_7eplayer',['~Player',['../class_player.html#a749d2c00e1fe0f5c2746f7505a58c062',1,'Player']]],
-  ['_7equitgamecommand',['~QuitGameCommand',['../class_quit_game_command.html#af19303e2bf11dcd6f65359b4f9608540',1,'QuitGameCommand']]],
-  ['_7espawnbulletcommand',['~SpawnBulletCommand',['../class_spawn_bullet_command.html#ac22b1ce86d8ae1d7fb1df78745cb4db6',1,'SpawnBulletCommand']]],
-  ['_7estartsinglegamecommand',['~StartSingleGameCommand',['../class_start_single_game_command.html#a486705f41881cf1ab8cfd253c9f4c2b0',1,'StartSingleGameCommand']]]
+  ['update',['update',['../class_enemy.html#aa70d742da02995011f1618acc9e303db',1,'Enemy::update()'],['../class_enemy_spawner.html#a1b00731679380c088027072b11583d6c',1,'EnemySpawner::update()'],['../class_engine.html#ad2ff110d5a86c1cd60b541d65915ac48',1,'Engine::update()'],['../class_game_object.html#ad4a07f19f6c5e2e71c89c07486f26244',1,'GameObject::update()'],['../class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4',1,'Player::update()']]]
 ];

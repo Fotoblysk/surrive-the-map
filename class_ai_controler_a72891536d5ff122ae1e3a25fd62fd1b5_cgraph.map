@@ -1,8 +1,8 @@
 <map id="AiControler::handleInput" name="AiControler::handleInput">
-<area shape="rect" id="node2" href="$class_game_object.html#a3c1da4d2eaaf8384f3ca10735673991e" title="GameObject::getPosition" alt="" coords="229,5,397,32"/>
+<area shape="rect" id="node2" href="$class_game_object.html#aba7c07744a79defec4484fb09d917543" title="GameObject::getPosition" alt="" coords="229,5,397,32"/>
 <area shape="rect" id="node3" href="$class_ai_controler.html#aa388145d3791cd80b1d53a5847428f68" title="AiControler::normToMaxSpeed" alt="" coords="213,56,412,83"/>
-<area shape="rect" id="node4" href="$class_bullet.html#a23cadfbb18a562482f0bae03f0edd029" title="Bullet::isObjectAlive" alt="" coords="243,107,382,133"/>
-<area shape="rect" id="node5" href="$class_bullet.html#a82f82d6367d1c403898a29d1ce91630d" title="Bullet::getPosition" alt="" coords="460,132,588,159"/>
+<area shape="rect" id="node4" href="$class_bullet.html#adb7fd96160370770ac03e05cb8aeee42" title="Bullet::isOnRenderArea" alt="" coords="233,107,392,133"/>
+<area shape="rect" id="node5" href="$class_bullet.html#a405c853cbdaffd53d506eb3ee474a3ef" title="Bullet::getPosition" alt="" coords="460,132,588,159"/>
 <area shape="rect" id="node6" href="$class_actor.html#ab56cff32076fef8392f4562fe281ea86" title="Actor::getGlobalBounds" alt="" coords="233,208,393,235"/>
 <area shape="rect" id="node7" href="$class_enemy.html#abb50439b9517d5a2b4c6b6c6a4e91672" title="Enemy::getGlobalBounds" alt="" coords="227,259,398,285"/>
 </map>

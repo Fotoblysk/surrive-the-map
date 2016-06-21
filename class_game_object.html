@@ -100,7 +100,7 @@ Inheritance diagram for GameObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_object__inherit__graph.png" border="0" usemap="#_game_object_inherit__map" alt="Inheritance graph"/></div>
 <map name="_game_object_inherit__map" id="_game_object_inherit__map">
-<area shape="rect" id="node2" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="131,219,357,369"/><area shape="rect" id="node5" href="class_bullet.html" title="{Bullet\n||+ Bullet()\l+ ~Bullet()\l+ render()\l+ getPosition()\l+ move()\l+ isObjectAlive()\l}" alt="" coords="381,219,499,369"/><area shape="rect" id="node3" href="class_enemy.html" title="{Enemy\n|+ notshotable\l|+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ Enemy()\l+ defaultAccelerationChangeMove()\l+ accelerationLeft()\l+ accelerationDown()\l+ accelerationUp()\l+ update()\l+ getSpeed()\l+ ~Enemy()\l+ isObjectOnScreen()\l}" alt="" coords="5,417,232,671"/><area shape="rect" id="node4" href="class_player.html" title="{Player\n|+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="256,432,483,656"/></map>
+<area shape="rect" id="node2" href="class_actor.html" title="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}" alt="" coords="131,219,357,413"/><area shape="rect" id="node5" href="class_bullet.html" title="{Bullet\n||+ Bullet()\l+ ~Bullet()\l+ render()\l+ getPosition()\l+ move()\l+ isOnRenderArea()\l}" alt="" coords="382,241,519,391"/><area shape="rect" id="node3" href="class_enemy.html" title="{Enemy\n|# notshotable\l|+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ Enemy()\l+ defaultAccelerationChangeMove()\l+ accelerationLeft()\l+ accelerationDown()\l+ accelerationUp()\l+ update()\l+ getSpeed()\l+ ~Enemy()\l+ isObjectOnScreen()\l}" alt="" coords="5,461,232,715"/><area shape="rect" id="node4" href="class_player.html" title="{Player\n|# shoot_delay\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l+ tryToShoot()\l&#45; shotDelayUpdate()\l}" alt="" coords="256,461,483,715"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for GameObject:</div>
@@ -116,8 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab82dfdb656f9051c0587e6593b2dda97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370e89c4bb00a8fb851d9279480f7f76"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a370e89c4bb00a8fb851d9279480f7f76">move</a> (const sf::Vector2f &amp;offset)=0</td></tr>
 <tr class="separator:a370e89c4bb00a8fb851d9279480f7f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c1da4d2eaaf8384f3ca10735673991e"><td class="memItemLeft" align="right" valign="top">virtual const sf::Vector2f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a3c1da4d2eaaf8384f3ca10735673991e">getPosition</a> ()=0</td></tr>
-<tr class="separator:a3c1da4d2eaaf8384f3ca10735673991e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7c07744a79defec4484fb09d917543"><td class="memItemLeft" align="right" valign="top">virtual const sf::Vector2f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aba7c07744a79defec4484fb09d917543">getPosition</a> () const =0</td></tr>
+<tr class="separator:aba7c07744a79defec4484fb09d917543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4a07f19f6c5e2e71c89c07486f26244"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#ad4a07f19f6c5e2e71c89c07486f26244">update</a> ()</td></tr>
 <tr class="separator:ad4a07f19f6c5e2e71c89c07486f26244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a0da194460f2642732f45d7ad369e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a07a0da194460f2642732f45d7ad369e8">render</a> (sf::RenderWindow &amp;window)=0</td></tr>
@@ -170,7 +170,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3c1da4d2eaaf8384f3ca10735673991e"></a>
+<a class="anchor" id="aba7c07744a79defec4484fb09d917543"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -181,7 +181,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">virtual const sf::Vector2f&amp; GameObject::getPosition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -191,13 +191,13 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_enemy.html#a986074549d08157336879f6b48ce632f">Enemy</a>, <a class="el" href="class_player.html#a7e3f22ccc3098fa91166deaed16c9b44">Player</a>, and <a class="el" href="class_bullet.html#a82f82d6367d1c403898a29d1ce91630d">Bullet</a>.</p>
+<p>Implemented in <a class="el" href="class_enemy.html#ade0ec5d0a52a35a387a4cdcccf4c9ddc">Enemy</a>, <a class="el" href="class_player.html#abbd4bab9c1c4f881b268b37c3f810bd0">Player</a>, and <a class="el" href="class_bullet.html#a405c853cbdaffd53d506eb3ee474a3ef">Bullet</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph.png" border="0" usemap="#class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph" alt=""/></div>
-<map name="class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph" id="class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph">
+<div class="center"><img src="class_game_object_aba7c07744a79defec4484fb09d917543_icgraph.png" border="0" usemap="#class_game_object_aba7c07744a79defec4484fb09d917543_icgraph" alt=""/></div>
+<map name="class_game_object_aba7c07744a79defec4484fb09d917543_icgraph" id="class_game_object_aba7c07744a79defec4484fb09d917543_icgraph">
 <area shape="rect" id="node2" href="class_ai_controler.html#a72891536d5ff122ae1e3a25fd62fd1b5" title="AiControler::handleInput" alt="" coords="221,5,381,32"/></map>
 </div>
 </p>
@@ -340,7 +340,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 21 2016 22:03:05 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 23:23:22 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

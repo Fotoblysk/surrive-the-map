@@ -2,6 +2,9 @@ var searchData=
 [
   ['surrive_2dthe_2dmap',['surrive-the-map',['../md__c_1__users__foto__documents__git_hub_surrive-the-map__r_e_a_d_m_e.html',1,'']]],
   ['selected_5ftext',['selected_text',['../class_main_menu.html#a0a0ebee9f052974eb46c411f1dbaa2fc',1,'MainMenu']]],
+  ['shoot_5fdelay',['shoot_delay',['../class_player.html#ab6e35dfaece8703f3906fc3a09d61078',1,'Player']]],
+  ['shot_5fstatus',['shot_status',['../class_actor.html#a675662b7b4e2c52a766ed4f460e18230',1,'Actor']]],
+  ['shotdelayupdate',['shotDelayUpdate',['../class_player.html#a6fe54860e65e5439dcc0c07e5d4e75a9',1,'Player']]],
   ['size',['SIZE',['../_input_handler_8h.html#a70ed59adcb4159ac551058053e649640',1,'InputHandler.h']]],
   ['spawn_5fdelay',['spawn_delay',['../class_enemy_spawner.html#a925cbf3cbaadaf7b376ef6aadc955d7f',1,'EnemySpawner']]],
   ['spawnbulletcommand',['SpawnBulletCommand',['../class_spawn_bullet_command.html',1,'SpawnBulletCommand'],['../class_spawn_bullet_command.html#a279b39ecc9491fe12812ac633ecbb992',1,'SpawnBulletCommand::SpawnBulletCommand()']]],

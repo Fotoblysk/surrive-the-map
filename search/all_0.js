@@ -5,7 +5,7 @@ var searchData=
   ['accelerationleft',['accelerationLeft',['../class_enemy.html#a842ae08ff3a191b3bfd5a0f865b968be',1,'Enemy']]],
   ['accelerationstop',['accelerationStop',['../class_player.html#a0dce6ea2c5edb142604fc128b2bd9840',1,'Player']]],
   ['accelerationup',['accelerationUp',['../class_enemy.html#acb3226b1c27efc097b3817a8efde1e93',1,'Enemy']]],
-  ['actor',['Actor',['../class_actor.html',1,'Actor'],['../class_spawn_bullet_command.html#a36d5fec5d82d09a70954be0fb1fe519f',1,'SpawnBulletCommand::actor()'],['../class_actor.html#a2a0ff4335a1ee9096df90f288c026c8b',1,'Actor::Actor()']]],
+  ['actor',['Actor',['../class_actor.html',1,'Actor'],['../class_actor.html#a2a0ff4335a1ee9096df90f288c026c8b',1,'Actor::Actor()'],['../class_spawn_bullet_command.html#a36d5fec5d82d09a70954be0fb1fe519f',1,'SpawnBulletCommand::actor()']]],
   ['actor_2ecpp',['Actor.cpp',['../_actor_8cpp.html',1,'']]],
   ['actor_2eh',['Actor.h',['../_actor_8h.html',1,'']]],
   ['actor_5fptr',['actor_ptr',['../class_move_actor_command.html#a1385801ea83705b51333acef7315c7bc',1,'MoveActorCommand']]],

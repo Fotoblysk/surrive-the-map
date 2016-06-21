@@ -304,10 +304,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_menu.html#aeed33b0a47d0c49de45e0c1bb1503585">Menu</a>
 </li>
 <li>getPosition()
-: <a class="el" href="class_bullet.html#a82f82d6367d1c403898a29d1ce91630d">Bullet</a>
-, <a class="el" href="class_enemy.html#a986074549d08157336879f6b48ce632f">Enemy</a>
-, <a class="el" href="class_game_object.html#a3c1da4d2eaaf8384f3ca10735673991e">GameObject</a>
-, <a class="el" href="class_player.html#a7e3f22ccc3098fa91166deaed16c9b44">Player</a>
+: <a class="el" href="class_bullet.html#a405c853cbdaffd53d506eb3ee474a3ef">Bullet</a>
+, <a class="el" href="class_enemy.html#ade0ec5d0a52a35a387a4cdcccf4c9ddc">Enemy</a>
+, <a class="el" href="class_game_object.html#aba7c07744a79defec4484fb09d917543">GameObject</a>
+, <a class="el" href="class_player.html#abbd4bab9c1c4f881b268b37c3f810bd0">Player</a>
 </li>
 <li>getRenderWindow()
 : <a class="el" href="class_game.html#ada9faa2a1f4e1453420adead02fd9865">Game</a>
@@ -315,6 +315,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getSelectedTextPtr()
 : <a class="el" href="class_main_menu.html#abdf7a2a5bca4e2916bf9dc218c0de96f">MainMenu</a>
 , <a class="el" href="class_menu.html#ac9a761729ba9bac25bae4ee1a25b6e11">Menu</a>
+</li>
+<li>getShotStatus()
+: <a class="el" href="class_actor.html#ad9cefebed5d4035bcf94c5a84dea21f9">Actor</a>
 </li>
 <li>getSpeed()
 : <a class="el" href="class_enemy.html#a8c53ca8541fdfc43b8464feeabefc150">Enemy</a>
@@ -343,16 +346,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>is_dead
-: <a class="el" href="class_actor.html#a55731b8ed0e46d9b9ab953c93c19449a">Actor</a>
-, <a class="el" href="class_ai_controler.html#aaf7042b1051e301b6b356bc6d702dccd">AiControler</a>
-</li>
-<li>isObjectAlive()
-: <a class="el" href="class_bullet.html#a23cadfbb18a562482f0bae03f0edd029">Bullet</a>
+: <a class="el" href="class_ai_controler.html#aaf7042b1051e301b6b356bc6d702dccd">AiControler</a>
 </li>
 <li>isObjectOnScreen()
 : <a class="el" href="class_actor.html#a0bd104ef42ef1e3c3eea5c58e94c2429">Actor</a>
 , <a class="el" href="class_enemy.html#a9a6b7416616b3d0464978d38cf7095e9">Enemy</a>
 , <a class="el" href="class_player.html#ac2c0f9ac6f1d4908465a23f9ddb4cb1c">Player</a>
+</li>
+<li>isOnRenderArea()
+: <a class="el" href="class_bullet.html#adb7fd96160370770ac03e05cb8aeee42">Bullet</a>
 </li>
 </ul>
 
@@ -454,7 +456,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>notshotable
 : <a class="el" href="class_enemy.html#a330c49a49d5c017292a6ab66678f853a">Enemy</a>
-, <a class="el" href="class_player.html#a42a590877342d26116fc84895259763c">Player</a>
 </li>
 <li>NUMBER_OF_MENU_CHOICES
 : <a class="el" href="class_main_menu.html#a22354cddce5d5cc36bfa1dbc5eb951fa">MainMenu</a>
@@ -502,6 +503,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>selected_text
 : <a class="el" href="class_main_menu.html#a0a0ebee9f052974eb46c411f1dbaa2fc">MainMenu</a>
 </li>
+<li>shoot_delay
+: <a class="el" href="class_player.html#ab6e35dfaece8703f3906fc3a09d61078">Player</a>
+</li>
+<li>shot_status
+: <a class="el" href="class_actor.html#a675662b7b4e2c52a766ed4f460e18230">Actor</a>
+</li>
+<li>shotDelayUpdate()
+: <a class="el" href="class_player.html#a6fe54860e65e5439dcc0c07e5d4e75a9">Player</a>
+</li>
 <li>spawn_delay
 : <a class="el" href="class_enemy_spawner.html#a925cbf3cbaadaf7b376ef6aadc955d7f">EnemySpawner</a>
 </li>
@@ -533,6 +543,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>target
 : <a class="el" href="class_ai_controler.html#aa0130bc7fd057f94accf3aa3d542173b">AiControler</a>
+</li>
+<li>tryToShoot()
+: <a class="el" href="class_actor.html#a85db8a17b338703247162f82f94cb957">Actor</a>
+, <a class="el" href="class_player.html#a52486292c25bc6ac6589423ef0c81b0e">Player</a>
 </li>
 </ul>
 
@@ -631,7 +645,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 21 2016 22:03:07 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 23:23:24 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -1,7 +1,7 @@
 <map id="SpawnBulletCommand" name="SpawnBulletCommand">
-<area shape="rect" id="node2" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,493,115,585"/>
-<area shape="rect" id="node3" href="$class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,420,285,659"/>
-<area shape="rect" id="node4" href="$class_player.html" title="{Player\n|+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="309,427,536,651"/>
-<area shape="rect" id="node5" href="$class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="180,220,407,371"/>
+<area shape="rect" id="node2" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,545,115,637"/>
+<area shape="rect" id="node3" href="$class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,471,285,710"/>
+<area shape="rect" id="node4" href="$class_player.html" title="{Player\n|# shoot_delay\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l+ tryToShoot()\l&#45; shotDelayUpdate()\l}" alt="" coords="309,464,536,717"/>
+<area shape="rect" id="node5" href="$class_actor.html" title="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}" alt="" coords="180,220,407,415"/>
 <area shape="rect" id="node6" href="$class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="232,5,355,171"/>
 </map>

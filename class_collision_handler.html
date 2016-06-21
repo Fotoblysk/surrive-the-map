@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_collision_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CollisionHandler Class Reference</div>  </div>
@@ -107,7 +107,7 @@ Collaboration diagram for CollisionHandler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_collision_handler__coll__graph.png" border="0" usemap="#_collision_handler_coll__map" alt="Collaboration graph"/></div>
 <map name="_collision_handler_coll__map" id="_collision_handler_coll__map">
-<area shape="rect" id="node2" href="class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="141,751,264,843"/><area shape="rect" id="node3" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,486,115,578"/><area shape="rect" id="node4" href="class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l# collisionHandler\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="310,707,434,887"/><area shape="rect" id="node5" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="300,220,527,371"/><area shape="rect" id="node8" href="class_player.html" title="{Player\n|+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="139,420,365,644"/><area shape="rect" id="node6" href="class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="352,5,475,171"/><area shape="rect" id="node7" href="class_enemy_spawner.html" title="{EnemySpawner\n|+ spawn_delay\l+ counter\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="532,464,673,600"/></map>
+<area shape="rect" id="node2" href="class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="141,824,264,916"/><area shape="rect" id="node3" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,545,115,637"/><area shape="rect" id="node4" href="class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l# collisionHandler\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="310,780,434,960"/><area shape="rect" id="node5" href="class_actor.html" title="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}" alt="" coords="300,220,527,415"/><area shape="rect" id="node8" href="class_player.html" title="{Player\n|# shoot_delay\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l+ tryToShoot()\l&#45; shotDelayUpdate()\l}" alt="" coords="139,464,365,717"/><area shape="rect" id="node6" href="class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="352,5,475,171"/><area shape="rect" id="node7" href="class_enemy_spawner.html" title="{EnemySpawner\n|# counter\l# spawn_delay\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="532,523,673,659"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -122,13 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1f7efb54b34d433d6ffba62627452b6 inherit pub_methods_class_input_handler"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_handler.html#ac1f7efb54b34d433d6ffba62627452b6">~InputHandler</a> ()</td></tr>
 <tr class="separator:ac1f7efb54b34d433d6ffba62627452b6 inherit pub_methods_class_input_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:ab2f8d7769a6ec8c57814d1eb3a465c6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_engine.html">Engine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_handler.html#ab2f8d7769a6ec8c57814d1eb3a465c6f">engine</a></td></tr>
 <tr class="separator:ab2f8d7769a6ec8c57814d1eb3a465c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_input_handler"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_input_handler')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_input_handler.html">InputHandler</a></td></tr>
 <tr class="memitem:a6a6336cc687a47e1010b4a690dc05b40 inherit pro_attribs_class_input_handler"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_command.html">Command</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_handler.html#a6a6336cc687a47e1010b4a690dc05b40">current_command_array</a></td></tr>
 <tr class="separator:a6a6336cc687a47e1010b4a690dc05b40 inherit pro_attribs_class_input_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,11 +200,19 @@ Additional Inherited Members</h2></td></tr>
 <a class="anchor" id="ab2f8d7769a6ec8c57814d1eb3a465c6f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_engine.html">Engine</a>&amp; CollisionHandler::engine</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -219,7 +224,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 21 2016 22:03:05 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 23:23:21 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
