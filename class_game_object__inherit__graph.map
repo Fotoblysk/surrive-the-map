@@ -1,6 +1,0 @@
-<map id="GameObject" name="GameObject">
-<area shape="rect" id="node2" href="$class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="91,219,239,428"/>
-<area shape="rect" id="node5" href="$class_bullet.html" title="{Bullet\n||+ Bullet()\l+ ~Bullet()\l+ render()\l+ getPosition()\l+ move()\l+ isObjectAlive()\l}" alt="" coords="263,248,381,399"/>
-<area shape="rect" id="node3" href="$class_enemy.html" title="{Enemy\n|+ notshotable\l|+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ Enemy()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationDown()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ ~Enemy()\l+ isObjectOnScreen()\l}" alt="" coords="5,491,153,759"/>
-<area shape="rect" id="node4" href="$class_player.html" title="{Player\n|+ acceleration\l+ speed\l+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ accelerationRight()\l+ accelerationDown()\l+ accelerationLeft()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="177,476,325,773"/>
-</map>

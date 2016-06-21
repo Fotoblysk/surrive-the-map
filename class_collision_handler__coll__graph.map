@@ -1,9 +1,0 @@
-<map id="CollisionHandler" name="CollisionHandler">
-<area shape="rect" id="node2" href="$class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="537,595,659,687"/>
-<area shape="rect" id="node4" href="$class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="319,852,410,1017"/>
-<area shape="rect" id="node3" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="543,279,653,371"/>
-<area shape="rect" id="node5" href="$class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="128,220,276,429"/>
-<area shape="rect" id="node8" href="$class_player.html" title="{Player\n|+ acceleration\l+ speed\l+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ accelerationRight()\l+ accelerationDown()\l+ accelerationLeft()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="5,492,153,789"/>
-<area shape="rect" id="node6" href="$class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="141,5,263,171"/>
-<area shape="rect" id="node7" href="$class_enemy_spawner.html" title="{EnemySpawner\n|+ spawn_delay\l+ counter\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="321,573,462,709"/>
-</map>

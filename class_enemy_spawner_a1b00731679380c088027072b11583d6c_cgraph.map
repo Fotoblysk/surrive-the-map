@@ -1,4 +1,0 @@
-<map id="EnemySpawner::update" name="EnemySpawner::update">
-<area shape="rect" id="node2" href="$class_enemy_spawner.html#adc9ba92ad7028dc28e1599fea871e132" title="EnemySpawner::spawnEnemy" alt="" coords="213,5,412,32"/>
-<area shape="rect" id="node3" href="$class_enemy.html#a901af192d36d757b0cfbd2c92c742ccc" title="Enemy::accelerationDown" alt="" coords="460,5,633,32"/>
-</map>

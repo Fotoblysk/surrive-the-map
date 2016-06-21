@@ -1,4 +1,0 @@
-<map id="Player::getPosition" name="Player::getPosition">
-<area shape="rect" id="node2" href="$class_player.html#ac2c0f9ac6f1d4908465a23f9ddb4cb1c" title="Player::isObjectOnScreen" alt="" coords="185,5,359,32"/>
-<area shape="rect" id="node3" href="$class_spawn_bullet_command.html#a558af584b91637cd6bcf989d799eca4d" title="SpawnBulletCommand\l::execute" alt="" coords="195,57,349,98"/>
-</map>

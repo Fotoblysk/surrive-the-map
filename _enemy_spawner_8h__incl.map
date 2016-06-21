@@ -1,5 +1,0 @@
-<map id="EnemySpawner.h" name="EnemySpawner.h">
-<area shape="rect" id="node2" href="$_enemy_8h.html" title="Enemy.h" alt="" coords="40,80,114,107"/>
-<area shape="rect" id="node4" href="$_actor_8h.html" title="Actor.h" alt="" coords="45,155,109,181"/>
-<area shape="rect" id="node5" href="$_game_object_8h.html" title="GameObject.h" alt="" coords="24,229,130,256"/>
-</map>
