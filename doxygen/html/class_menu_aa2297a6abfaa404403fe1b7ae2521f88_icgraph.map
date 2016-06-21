@@ -1,0 +1,6 @@
+<map id="Menu::render" name="Menu::render">
+<area shape="rect" id="node2" href="$class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="152,5,249,32"/>
+<area shape="rect" id="node3" href="$class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="297,5,440,32"/>
+<area shape="rect" id="node4" href="$class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa" title="Game::run" alt="" coords="488,5,571,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Runs RenderWindow. Runs game. " alt="" coords="619,5,669,32"/>
+</map>

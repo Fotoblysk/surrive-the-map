@@ -1,0 +1,4 @@
+<map id="Enemy::getGlobalBounds" name="Enemy::getGlobalBounds">
+<area shape="rect" id="node2" href="$class_ai_controler.html#a72b3ad15dcd00ef8285c299bee09e89d" title="AiControler::handleInput" alt="" coords="233,5,393,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#a9a6b7416616b3d0464978d38cf7095e9" title="Enemy::isObjectOnScreen" alt="" coords="224,56,401,83"/>
+</map>

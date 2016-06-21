@@ -1,0 +1,203 @@
+\hypertarget{class_engine_input_handler}{}\section{Engine\+Input\+Handler Class Reference}
+\label{class_engine_input_handler}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+
+
+{\ttfamily \#include $<$Engine\+Input\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for Engine\+Input\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_engine_input_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Engine\+Input\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_engine_input_handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_command}{Command} $\ast$$\ast$ \hyperlink{class_engine_input_handler_ade92afaf7657007c2be3b5bd745c96e3}{handle\+Input} () override
+\item 
+\hyperlink{class_engine_input_handler_ac33be38a17d38deb390b879ceb2e1e2f}{Engine\+Input\+Handler} (\hyperlink{class_game}{Game} \&game\+\_\+in)
+\item 
+virtual \hyperlink{class_engine_input_handler_a92a875197705110bd6b2debfe7dbee6a}{$\sim$\+Engine\+Input\+Handler} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a6b350fc8a379b04d36b2a60d4d673dcd}{handle\+Key\+Input} (sf\+::\+Event \&event, int \&i)
+\item 
+\hyperlink{class_command}{Command} $\ast$$\ast$ \hyperlink{class_engine_input_handler_a7e4a2c1a4cacf7ba3129c1e3a998de53}{handle\+Real\+Time\+Key\+Input} (sf\+::\+Event \&event, int \&i)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game}{Game} \& \hyperlink{class_engine_input_handler_a449d615b9968227381db153f57b7299d}{game}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_ab64489773b1416e375218c236a22189a}{key\+\_\+escape}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_ae7a6851ee3c22f14b78adc75de5cee56}{closed}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a0a8c3435c45eaa96f64c90476fe7f245}{key\+\_\+d}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a14eaaf6e8b2bcfe25cf1341e583bd830}{key\+\_\+right}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a59ae4ad6379aa180dcd7d858049dac62}{key\+\_\+s}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a863861091ad125fc57b72e319bd9b1e1}{key\+\_\+down}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a8be64818183cb4f9b906ff8694450d3e}{key\+\_\+w}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a46e2d81b780fe8bb344bb176ff2ee3a9}{key\+\_\+up}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a94fabe03a12102cec196570f7fb99dd0}{key\+\_\+a}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_af778d434ad01423978eaecc5d392ba3b}{key\+\_\+left}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_a0229e1c2b48f4049c77124aef8340909}{key\+\_\+q}
+\item 
+\hyperlink{class_command}{Command} $\ast$ \hyperlink{class_engine_input_handler_adf6145027b272f46e7c1381d4c905892}{l\+\_\+mouse\+\_\+button}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_engine_input_handler_ac33be38a17d38deb390b879ceb2e1e2f}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{Engine\+Input\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+Input\+Handler\+::\+Engine\+Input\+Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} \&}]{game\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_engine_input_handler_ac33be38a17d38deb390b879ceb2e1e2f}
+\hypertarget{class_engine_input_handler_a92a875197705110bd6b2debfe7dbee6a}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!````~Engine\+Input\+Handler@{$\sim$\+Engine\+Input\+Handler}}
+\index{````~Engine\+Input\+Handler@{$\sim$\+Engine\+Input\+Handler}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{$\sim$\+Engine\+Input\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+Input\+Handler\+::$\sim$\+Engine\+Input\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_engine_input_handler_a92a875197705110bd6b2debfe7dbee6a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_engine_input_handler_ade92afaf7657007c2be3b5bd745c96e3}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!handle\+Input@{handle\+Input}}
+\index{handle\+Input@{handle\+Input}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{handle\+Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command} $\ast$$\ast$ Engine\+Input\+Handler\+::handle\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_engine_input_handler_ade92afaf7657007c2be3b5bd745c96e3}
+
+
+Implements \hyperlink{class_input_handler_a69b726d4a409a6f4ae443689cb69b404}{Input\+Handler}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_engine_input_handler_ade92afaf7657007c2be3b5bd745c96e3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_engine_input_handler_a6b350fc8a379b04d36b2a60d4d673dcd}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!handle\+Key\+Input@{handle\+Key\+Input}}
+\index{handle\+Key\+Input@{handle\+Key\+Input}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{handle\+Key\+Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command} $\ast$ Engine\+Input\+Handler\+::handle\+Key\+Input (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event \&}]{event, }
+\item[{int \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a6b350fc8a379b04d36b2a60d4d673dcd}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_engine_input_handler_a6b350fc8a379b04d36b2a60d4d673dcd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_engine_input_handler_a7e4a2c1a4cacf7ba3129c1e3a998de53}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!handle\+Real\+Time\+Key\+Input@{handle\+Real\+Time\+Key\+Input}}
+\index{handle\+Real\+Time\+Key\+Input@{handle\+Real\+Time\+Key\+Input}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{handle\+Real\+Time\+Key\+Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command} $\ast$$\ast$ Engine\+Input\+Handler\+::handle\+Real\+Time\+Key\+Input (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Event \&}]{event, }
+\item[{int \&}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a7e4a2c1a4cacf7ba3129c1e3a998de53}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_engine_input_handler_a7e4a2c1a4cacf7ba3129c1e3a998de53_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_engine_input_handler_ae7a6851ee3c22f14b78adc75de5cee56}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!closed@{closed}}
+\index{closed@{closed}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{closed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::closed\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_ae7a6851ee3c22f14b78adc75de5cee56}
+\hypertarget{class_engine_input_handler_a449d615b9968227381db153f57b7299d}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!game@{game}}
+\index{game@{game}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}\& Engine\+Input\+Handler\+::game\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a449d615b9968227381db153f57b7299d}
+\hypertarget{class_engine_input_handler_a94fabe03a12102cec196570f7fb99dd0}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+a@{key\+\_\+a}}
+\index{key\+\_\+a@{key\+\_\+a}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+a}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a94fabe03a12102cec196570f7fb99dd0}
+\hypertarget{class_engine_input_handler_a0a8c3435c45eaa96f64c90476fe7f245}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+d@{key\+\_\+d}}
+\index{key\+\_\+d@{key\+\_\+d}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+d}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+d\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a0a8c3435c45eaa96f64c90476fe7f245}
+\hypertarget{class_engine_input_handler_a863861091ad125fc57b72e319bd9b1e1}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+down@{key\+\_\+down}}
+\index{key\+\_\+down@{key\+\_\+down}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+down}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+down\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a863861091ad125fc57b72e319bd9b1e1}
+\hypertarget{class_engine_input_handler_ab64489773b1416e375218c236a22189a}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+escape@{key\+\_\+escape}}
+\index{key\+\_\+escape@{key\+\_\+escape}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+escape}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+escape\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_ab64489773b1416e375218c236a22189a}
+\hypertarget{class_engine_input_handler_af778d434ad01423978eaecc5d392ba3b}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+left@{key\+\_\+left}}
+\index{key\+\_\+left@{key\+\_\+left}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+left\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_af778d434ad01423978eaecc5d392ba3b}
+\hypertarget{class_engine_input_handler_a0229e1c2b48f4049c77124aef8340909}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+q@{key\+\_\+q}}
+\index{key\+\_\+q@{key\+\_\+q}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+q}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+q\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a0229e1c2b48f4049c77124aef8340909}
+\hypertarget{class_engine_input_handler_a14eaaf6e8b2bcfe25cf1341e583bd830}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+right@{key\+\_\+right}}
+\index{key\+\_\+right@{key\+\_\+right}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+right\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a14eaaf6e8b2bcfe25cf1341e583bd830}
+\hypertarget{class_engine_input_handler_a59ae4ad6379aa180dcd7d858049dac62}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+s@{key\+\_\+s}}
+\index{key\+\_\+s@{key\+\_\+s}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+s}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+s\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a59ae4ad6379aa180dcd7d858049dac62}
+\hypertarget{class_engine_input_handler_a46e2d81b780fe8bb344bb176ff2ee3a9}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+up@{key\+\_\+up}}
+\index{key\+\_\+up@{key\+\_\+up}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+up\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a46e2d81b780fe8bb344bb176ff2ee3a9}
+\hypertarget{class_engine_input_handler_a8be64818183cb4f9b906ff8694450d3e}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+w@{key\+\_\+w}}
+\index{key\+\_\+w@{key\+\_\+w}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{key\+\_\+w}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::key\+\_\+w\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a8be64818183cb4f9b906ff8694450d3e}
+\hypertarget{class_engine_input_handler_adf6145027b272f46e7c1381d4c905892}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!l\+\_\+mouse\+\_\+button@{l\+\_\+mouse\+\_\+button}}
+\index{l\+\_\+mouse\+\_\+button@{l\+\_\+mouse\+\_\+button}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{l\+\_\+mouse\+\_\+button}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command}$\ast$ Engine\+Input\+Handler\+::l\+\_\+mouse\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_adf6145027b272f46e7c1381d4c905892}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_engine_input_handler_8h}{Engine\+Input\+Handler.\+h}\item 
+\hyperlink{_engine_input_handler_8cpp}{Engine\+Input\+Handler.\+cpp}\end{DoxyCompactItemize}

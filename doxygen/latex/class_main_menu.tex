@@ -1,0 +1,137 @@
+\hypertarget{class_main_menu}{}\section{Main\+Menu Class Reference}
+\label{class_main_menu}\index{Main\+Menu@{Main\+Menu}}
+
+
+{\ttfamily \#include $<$Main\+Menu.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_main_menu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_main_menu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_main_menu_aec279c06705f829ab154b9023ec838b3}{get\+Number\+Of\+Menu\+Choices} () override
+\item 
+void \hyperlink{class_main_menu_a1487a843dd8cf56374afa60a5b62e9bf}{render} (sf\+::\+Render\+Window \&window) override
+\item 
+\hyperlink{class_main_menu_a53eecf9d5ffd094f54ac4193e7e57eaf}{Main\+Menu} ()
+\item 
+virtual \hyperlink{class_main_menu_a0a19ddba3ac52bf39c09b579171c98f2}{$\sim$\+Main\+Menu} ()
+\item 
+sf\+::\+Text $\ast$\& \hyperlink{class_main_menu_abdf7a2a5bca4e2916bf9dc218c0de96f}{get\+Selected\+Text\+Ptr} () override
+\item 
+sf\+::\+Text \& \hyperlink{class_main_menu_ac5be2a5b81d51c79dfeab061263e00ba}{get\+Menu\+Text} (int i) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{class_main_menu_a22354cddce5d5cc36bfa1dbc5eb951fa}{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+E\+N\+U\+\_\+\+C\+H\+O\+I\+C\+E\+S}
+\item 
+sf\+::\+Text $\ast$ \hyperlink{class_main_menu_a5a60751f529d34db0e90d32aee0aba73}{menu\+\_\+text}
+\item 
+sf\+::\+Font \hyperlink{class_main_menu_a77e075ce7fa6f3331cf82187ec54da88}{font}
+\item 
+sf\+::\+Text $\ast$ \hyperlink{class_main_menu_a0a0ebee9f052974eb46c411f1dbaa2fc}{selected\+\_\+text}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_menu_a53eecf9d5ffd094f54ac4193e7e57eaf}{}\index{Main\+Menu@{Main\+Menu}!Main\+Menu@{Main\+Menu}}
+\index{Main\+Menu@{Main\+Menu}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{Main\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Menu\+::\+Main\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_main_menu_a53eecf9d5ffd094f54ac4193e7e57eaf}
+\hypertarget{class_main_menu_a0a19ddba3ac52bf39c09b579171c98f2}{}\index{Main\+Menu@{Main\+Menu}!````~Main\+Menu@{$\sim$\+Main\+Menu}}
+\index{````~Main\+Menu@{$\sim$\+Main\+Menu}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{$\sim$\+Main\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Menu\+::$\sim$\+Main\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_main_menu_a0a19ddba3ac52bf39c09b579171c98f2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_menu_ac5be2a5b81d51c79dfeab061263e00ba}{}\index{Main\+Menu@{Main\+Menu}!get\+Menu\+Text@{get\+Menu\+Text}}
+\index{get\+Menu\+Text@{get\+Menu\+Text}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{get\+Menu\+Text}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text \& Main\+Menu\+::get\+Menu\+Text (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_main_menu_ac5be2a5b81d51c79dfeab061263e00ba}
+
+
+Implements \hyperlink{class_menu_a42fb94aee459f7ae5d06a7be1b540f17}{Menu}.
+
+\hypertarget{class_main_menu_aec279c06705f829ab154b9023ec838b3}{}\index{Main\+Menu@{Main\+Menu}!get\+Number\+Of\+Menu\+Choices@{get\+Number\+Of\+Menu\+Choices}}
+\index{get\+Number\+Of\+Menu\+Choices@{get\+Number\+Of\+Menu\+Choices}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{get\+Number\+Of\+Menu\+Choices}]{\setlength{\rightskip}{0pt plus 5cm}int Main\+Menu\+::get\+Number\+Of\+Menu\+Choices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_main_menu_aec279c06705f829ab154b9023ec838b3}
+
+
+Implements \hyperlink{class_menu_aeed33b0a47d0c49de45e0c1bb1503585}{Menu}.
+
+\hypertarget{class_main_menu_abdf7a2a5bca4e2916bf9dc218c0de96f}{}\index{Main\+Menu@{Main\+Menu}!get\+Selected\+Text\+Ptr@{get\+Selected\+Text\+Ptr}}
+\index{get\+Selected\+Text\+Ptr@{get\+Selected\+Text\+Ptr}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{get\+Selected\+Text\+Ptr}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text $\ast$\& Main\+Menu\+::get\+Selected\+Text\+Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_main_menu_abdf7a2a5bca4e2916bf9dc218c0de96f}
+
+
+Implements \hyperlink{class_menu_ac9a761729ba9bac25bae4ee1a25b6e11}{Menu}.
+
+\hypertarget{class_main_menu_a1487a843dd8cf56374afa60a5b62e9bf}{}\index{Main\+Menu@{Main\+Menu}!render@{render}}
+\index{render@{render}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Menu\+::render (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_main_menu_a1487a843dd8cf56374afa60a5b62e9bf}
+
+
+Implements \hyperlink{class_menu_aa2297a6abfaa404403fe1b7ae2521f88}{Menu}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_main_menu_a77e075ce7fa6f3331cf82187ec54da88}{}\index{Main\+Menu@{Main\+Menu}!font@{font}}
+\index{font@{font}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{font}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Font Main\+Menu\+::font\hspace{0.3cm}{\ttfamily [protected]}}\label{class_main_menu_a77e075ce7fa6f3331cf82187ec54da88}
+\hypertarget{class_main_menu_a5a60751f529d34db0e90d32aee0aba73}{}\index{Main\+Menu@{Main\+Menu}!menu\+\_\+text@{menu\+\_\+text}}
+\index{menu\+\_\+text@{menu\+\_\+text}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{menu\+\_\+text}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text$\ast$ Main\+Menu\+::menu\+\_\+text\hspace{0.3cm}{\ttfamily [protected]}}\label{class_main_menu_a5a60751f529d34db0e90d32aee0aba73}
+\hypertarget{class_main_menu_a22354cddce5d5cc36bfa1dbc5eb951fa}{}\index{Main\+Menu@{Main\+Menu}!N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+E\+N\+U\+\_\+\+C\+H\+O\+I\+C\+E\+S@{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+E\+N\+U\+\_\+\+C\+H\+O\+I\+C\+E\+S}}
+\index{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+E\+N\+U\+\_\+\+C\+H\+O\+I\+C\+E\+S@{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+E\+N\+U\+\_\+\+C\+H\+O\+I\+C\+E\+S}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+E\+N\+U\+\_\+\+C\+H\+O\+I\+C\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}const int Main\+Menu\+::\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+M\+E\+N\+U\+\_\+\+C\+H\+O\+I\+C\+E\+S\hspace{0.3cm}{\ttfamily [protected]}}\label{class_main_menu_a22354cddce5d5cc36bfa1dbc5eb951fa}
+\hypertarget{class_main_menu_a0a0ebee9f052974eb46c411f1dbaa2fc}{}\index{Main\+Menu@{Main\+Menu}!selected\+\_\+text@{selected\+\_\+text}}
+\index{selected\+\_\+text@{selected\+\_\+text}!Main\+Menu@{Main\+Menu}}
+\subsubsection[{selected\+\_\+text}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Text$\ast$ Main\+Menu\+::selected\+\_\+text\hspace{0.3cm}{\ttfamily [protected]}}\label{class_main_menu_a0a0ebee9f052974eb46c411f1dbaa2fc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_main_menu_8h}{Main\+Menu.\+h}\item 
+\hyperlink{_main_menu_8cpp}{Main\+Menu.\+cpp}\end{DoxyCompactItemize}

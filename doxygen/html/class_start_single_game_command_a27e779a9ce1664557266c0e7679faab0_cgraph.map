@@ -1,0 +1,12 @@
+<map id="StartSingleGameCommand::execute" name="StartSingleGameCommand::execute">
+<area shape="rect" id="node2" href="$class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="233,95,397,121"/>
+<area shape="rect" id="node3" href="$class_input_handler.html#a69b726d4a409a6f4ae443689cb69b404" title="InputHandler::handleInput" alt="" coords="603,5,771,32"/>
+<area shape="rect" id="node4" href="$class_engine.html#ad2ff110d5a86c1cd60b541d65915ac48" title="Engine::update" alt="" coords="445,95,555,121"/>
+<area shape="rect" id="node11" href="$class_engine.html#a7960743aefd62e846e7f3cd92c18bc73" title="Engine::render" alt="" coords="447,145,553,172"/>
+<area shape="rect" id="node5" href="$class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="633,56,740,83"/>
+<area shape="rect" id="node6" href="$class_enemy_spawner.html#a1b00731679380c088027072b11583d6c" title="EnemySpawner::update" alt="" coords="607,107,767,133"/>
+<area shape="rect" id="node9" href="$class_player.html#a8d04e73e10b26db769818e8d9167b3f3" title="Player::getAcceleration" alt="" coords="608,157,765,184"/>
+<area shape="rect" id="node10" href="$class_player.html#a0dce6ea2c5edb142604fc128b2bd9840" title="Player::accelerationStop" alt="" coords="605,208,769,235"/>
+<area shape="rect" id="node7" href="$class_enemy_spawner.html#adc9ba92ad7028dc28e1599fea871e132" title="EnemySpawner::spawnEnemy" alt="" coords="819,107,1017,133"/>
+<area shape="rect" id="node8" href="$class_enemy.html#a901af192d36d757b0cfbd2c92c742ccc" title="Enemy::accelerationDown" alt="" coords="1065,107,1239,133"/>
+</map>
