@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -107,7 +108,7 @@ Collaboration diagram for SpawnBulletCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_spawn_bullet_command__coll__graph.png" border="0" usemap="#_spawn_bullet_command_coll__map" alt="Collaboration graph"/></div>
 <map name="_spawn_bullet_command_coll__map" id="_spawn_bullet_command_coll__map">
-<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,279,115,371"/><area shape="rect" id="node7" href="class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="72,595,195,687"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="189,1080,336,1275"/><area shape="rect" id="node4" href="class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="217,852,308,1017"/><area shape="rect" id="node5" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="278,220,426,429"/><area shape="rect" id="node9" href="class_player.html" title="{Player\n|+ acceleration\l+ speed\l+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ accelerationRight()\l+ accelerationDown()\l+ accelerationLeft()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="547,492,695,789"/><area shape="rect" id="node6" href="class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="291,5,413,171"/><area shape="rect" id="node8" href="class_enemy_spawner.html" title="{EnemySpawner\n|+ spawn_delay\l+ counter\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="381,573,523,709"/><area shape="rect" id="node11" href="class_menu.html" title="{Menu\n||+ render()\l+ getNumberOfMenuChoices()\l+ ~Menu()\l+ getSelectedTextPtr()\l+ getMenuText()\l}" alt="" coords="332,867,529,1003"/></map>
+<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,493,115,585"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,420,285,659"/><area shape="rect" id="node4" href="class_player.html" title="{Player\n|+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="309,427,536,651"/><area shape="rect" id="node5" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="180,220,407,371"/><area shape="rect" id="node6" href="class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="232,5,355,171"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -133,18 +134,8 @@ Protected Attributes</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a9e98531440220e01f46fb91b3fa78cef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a9e98531440220e01f46fb91b3fa78cef">game</a></td></tr>
 <tr class="separator:a9e98531440220e01f46fb91b3fa78cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1f56a3f5b6c12aa394221576770704b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#ac1f56a3f5b6c12aa394221576770704b">direction</a></td></tr>
-<tr class="separator:ac1f56a3f5b6c12aa394221576770704b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_command"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_command')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_command.html">Command</a></td></tr>
-<tr class="memitem:a53ddb82f75ac3516b27d8f92f93c5e09 inherit pub_types_class_command"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> { <a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a0f13498a12abf82d3b7324eacb93405a">Left</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09ac22330c293a1fbc82603aa19d27ce109">Right</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a4101280bbe84fa51f2393dac71f830cf">Up</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a7d1a60c1738de3a81c3118facd710d42">Down</a>
- }</td></tr>
-<tr class="separator:a53ddb82f75ac3516b27d8f92f93c5e09 inherit pub_types_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2d824d68a8df88aec7b86500c27a13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a7d2d824d68a8df88aec7b86500c27a13">direction</a></td></tr>
+<tr class="separator:a7d2d824d68a8df88aec7b86500c27a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a279b39ecc9491fe12812ac633ecbb992"></a>
@@ -225,7 +216,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d_cgraph.png" border="0" usemap="#class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d_cgraph" alt=""/></div>
 <map name="class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d_cgraph" id="class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d_cgraph">
-<area shape="rect" id="node2" href="class_player.html#a202e63e22c98a31b6070d6939ca6f793" title="Player::getPosition" alt="" coords="226,5,358,32"/><area shape="rect" id="node3" href="class_player.html#a04324f777f14ec311bc72399a368d24e" title="Player::getGlobalBounds" alt="" coords="209,56,375,83"/><area shape="rect" id="node4" href="class_game.html#ada9faa2a1f4e1453420adead02fd9865" title="Game::getRenderWindow" alt="" coords="207,107,377,133"/></map>
+<area shape="rect" id="node2" href="class_player.html#a7e3f22ccc3098fa91166deaed16c9b44" title="Player::getPosition" alt="" coords="226,5,358,32"/><area shape="rect" id="node3" href="class_player.html#ac2b21f8a74b6b1c0e9068a82e7e71e86" title="Player::getGlobalBounds" alt="" coords="209,56,375,83"/><area shape="rect" id="node4" href="class_game.html#ada9faa2a1f4e1453420adead02fd9865" title="Game::getRenderWindow" alt="" coords="207,107,377,133"/></map>
 </div>
 </p>
 
@@ -252,7 +243,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ac1f56a3f5b6c12aa394221576770704b"></a>
+<a class="anchor" id="a7d2d824d68a8df88aec7b86500c27a13"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -260,7 +251,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> SpawnBulletCommand::direction</td>
+          <td class="memname"><a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a> SpawnBulletCommand::direction</td>
         </tr>
       </table>
   </td>
@@ -319,7 +310,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:54 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 22:03:06 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -1,0 +1,5 @@
+<map id="Player::update" name="Player::update">
+<area shape="rect" id="node2" href="$class_game_object.html#ad4a07f19f6c5e2e71c89c07486f26244" title="GameObject::update" alt="" coords="160,5,303,32"/>
+<area shape="rect" id="node4" href="$class_player.html#a0512220b727eb0cdc6e7d7141b13c7fd" title="Player::move" alt="" coords="183,56,280,83"/>
+<area shape="rect" id="node3" href="$class_game_object.html#a370e89c4bb00a8fb851d9279480f7f76" title="GameObject::move" alt="" coords="351,5,484,32"/>
+</map>

@@ -1,6 +1,6 @@
 <map id="AiControler" name="AiControler">
-<area shape="rect" id="node2" href="$class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="5,292,128,384"/>
-<area shape="rect" id="node3" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="7,42,116,134"/>
-<area shape="rect" id="node4" href="$class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="155,233,303,443"/>
-<area shape="rect" id="node5" href="$class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="172,5,295,171"/>
+<area shape="rect" id="node2" href="$class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="5,263,128,355"/>
+<area shape="rect" id="node3" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="12,42,121,134"/>
+<area shape="rect" id="node4" href="$class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="152,233,379,384"/>
+<area shape="rect" id="node5" href="$class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="204,5,327,171"/>
 </map>

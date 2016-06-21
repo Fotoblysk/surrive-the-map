@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -106,13 +107,13 @@ Collaboration diagram for MoveActorCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_move_actor_command__coll__graph.png" border="0" usemap="#_move_actor_command_coll__map" alt="Collaboration graph"/></div>
 <map name="_move_actor_command_coll__map" id="_move_actor_command_coll__map">
-<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,279,115,371"/><area shape="rect" id="node3" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="139,220,287,429"/><area shape="rect" id="node4" href="class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="152,5,275,171"/></map>
+<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,249,115,341"/><area shape="rect" id="node3" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="139,220,365,371"/><area shape="rect" id="node4" href="class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="191,5,313,171"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ccb3e4f5df4cb5347a7ef309eef3e41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_move_actor_command.html#a5ccb3e4f5df4cb5347a7ef309eef3e41">MoveActorCommand</a> (<a class="el" href="class_actor.html">Actor</a> *&amp;actor_ptr_in, <a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> direction_in)</td></tr>
-<tr class="separator:a5ccb3e4f5df4cb5347a7ef309eef3e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af042d9025beccabd97665aabd434297e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_move_actor_command.html#af042d9025beccabd97665aabd434297e">MoveActorCommand</a> (<a class="el" href="class_actor.html">Actor</a> *&amp;actor_ptr_in, <a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a> direction_in)</td></tr>
+<tr class="separator:af042d9025beccabd97665aabd434297e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ff2dc8808da57913d1e5aa43c10cfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_move_actor_command.html#a62ff2dc8808da57913d1e5aa43c10cfb">execute</a> () override</td></tr>
 <tr class="separator:a62ff2dc8808da57913d1e5aa43c10cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b826449c1ca94181966deaabeb02ede"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_move_actor_command.html#a6b826449c1ca94181966deaabeb02ede">~MoveActorCommand</a> ()</td></tr>
@@ -127,21 +128,11 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1385801ea83705b51333acef7315c7bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_actor.html">Actor</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_move_actor_command.html#a1385801ea83705b51333acef7315c7bc">actor_ptr</a></td></tr>
 <tr class="separator:a1385801ea83705b51333acef7315c7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa28d07b900906c1e740d30bd877d2afe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_move_actor_command.html#aa28d07b900906c1e740d30bd877d2afe">direction</a></td></tr>
-<tr class="separator:aa28d07b900906c1e740d30bd877d2afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_command"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_command')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_command.html">Command</a></td></tr>
-<tr class="memitem:a53ddb82f75ac3516b27d8f92f93c5e09 inherit pub_types_class_command"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> { <a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a0f13498a12abf82d3b7324eacb93405a">Left</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09ac22330c293a1fbc82603aa19d27ce109">Right</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a4101280bbe84fa51f2393dac71f830cf">Up</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a7d1a60c1738de3a81c3118facd710d42">Down</a>
- }</td></tr>
-<tr class="separator:a53ddb82f75ac3516b27d8f92f93c5e09 inherit pub_types_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861dbc2f40f80e60242b997bb015917d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_move_actor_command.html#a861dbc2f40f80e60242b997bb015917d">direction</a></td></tr>
+<tr class="separator:a861dbc2f40f80e60242b997bb015917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5ccb3e4f5df4cb5347a7ef309eef3e41"></a>
+<a class="anchor" id="af042d9025beccabd97665aabd434297e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -154,7 +145,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a>&#160;</td>
           <td class="paramname"><em>direction_in</em>&#160;</td>
         </tr>
         <tr>
@@ -219,7 +210,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_move_actor_command_a62ff2dc8808da57913d1e5aa43c10cfb_cgraph.png" border="0" usemap="#class_move_actor_command_a62ff2dc8808da57913d1e5aa43c10cfb_cgraph" alt=""/></div>
 <map name="class_move_actor_command_a62ff2dc8808da57913d1e5aa43c10cfb_cgraph" id="class_move_actor_command_a62ff2dc8808da57913d1e5aa43c10cfb_cgraph">
-<area shape="rect" id="node2" href="class_actor.html#ab48f5d34a91c27dffba96d497b70f37b" title="Actor::accelerationRight" alt="" coords="250,5,411,32"/><area shape="rect" id="node3" href="class_actor.html#ad447288ba0b7202ffd778815f4a5ee5d" title="Actor::accelerationLeft" alt="" coords="255,56,407,83"/><area shape="rect" id="node4" href="class_actor.html#aa9819c45f4e0f8903a81e174a68ec983" title="Actor::accelerationUp" alt="" coords="257,107,404,133"/><area shape="rect" id="node5" href="class_actor.html#a347730f4e82dbbbb2bf45027634faa1a" title="Actor::accelerationDown" alt="" coords="249,157,412,184"/></map>
+<area shape="rect" id="node2" href="class_actor.html#a9992ceb5499bff601e461c3bb93a8d48" title="Actor::defaultAcceleration\lChangeMove" alt="" coords="249,5,420,47"/></map>
 </div>
 </p>
 
@@ -261,7 +252,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa28d07b900906c1e740d30bd877d2afe"></a>
+<a class="anchor" id="a861dbc2f40f80e60242b997bb015917d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -269,7 +260,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> MoveActorCommand::direction</td>
+          <td class="memname"><a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a> MoveActorCommand::direction</td>
         </tr>
       </table>
   </td>
@@ -288,7 +279,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:54 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 22:03:06 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

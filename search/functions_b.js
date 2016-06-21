@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quitgamecommand',['QuitGameCommand',['../class_quit_game_command.html#ae05171411d2210b38bd6ee08e2d90f15',1,'QuitGameCommand']]]
+  ['player',['Player',['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player']]]
 ];

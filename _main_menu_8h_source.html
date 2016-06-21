@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="_main_menu_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINMENU_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MAINMENU_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_menu_8h.html">Menu.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
@@ -110,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="comment">//TODO: MEDIUM This can and should be in a base class.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="comment">//&#39;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_main_menu.html#a22354cddce5d5cc36bfa1dbc5eb951fa">   20</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_main_menu.html#a22354cddce5d5cc36bfa1dbc5eb951fa">NUMBER_OF_MENU_CHOICES</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_main_menu.html#a5a60751f529d34db0e90d32aee0aba73">   21</a></span>&#160;        sf::Text* <a class="code" href="class_main_menu.html#a5a60751f529d34db0e90d32aee0aba73">menu_text</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_main_menu.html#a95c0a8c6a4fab313fa4706f4d407413d">   21</a></span>&#160;        std::unique_ptr&lt;sf::Text[]&gt; <a class="code" href="class_main_menu.html#a95c0a8c6a4fab313fa4706f4d407413d">menu_text</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_main_menu.html#a77e075ce7fa6f3331cf82187ec54da88">   22</a></span>&#160;        sf::Font <a class="code" href="class_main_menu.html#a77e075ce7fa6f3331cf82187ec54da88">font</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_main_menu.html#a0a0ebee9f052974eb46c411f1dbaa2fc">   23</a></span>&#160;        sf::Text* <a class="code" href="class_main_menu.html#a0a0ebee9f052974eb46c411f1dbaa2fc">selected_text</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">//&#39;</span></div>
@@ -121,6 +122,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // MAINMENU_H</span></div>
 <div class="ttc" id="class_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> Menu.h:5</div></div>
 <div class="ttc" id="_menu_8h_html"><div class="ttname"><a href="_menu_8h.html">Menu.h</a></div></div>
+<div class="ttc" id="class_main_menu_html_a95c0a8c6a4fab313fa4706f4d407413d"><div class="ttname"><a href="class_main_menu.html#a95c0a8c6a4fab313fa4706f4d407413d">MainMenu::menu_text</a></div><div class="ttdeci">std::unique_ptr&lt; sf::Text[]&gt; menu_text</div><div class="ttdef"><b>Definition:</b> MainMenu.h:21</div></div>
 <div class="ttc" id="class_main_menu_html_aec279c06705f829ab154b9023ec838b3"><div class="ttname"><a href="class_main_menu.html#aec279c06705f829ab154b9023ec838b3">MainMenu::getNumberOfMenuChoices</a></div><div class="ttdeci">int getNumberOfMenuChoices() override</div><div class="ttdef"><b>Definition:</b> MainMenu.cpp:2</div></div>
 <div class="ttc" id="class_main_menu_html_a1487a843dd8cf56374afa60a5b62e9bf"><div class="ttname"><a href="class_main_menu.html#a1487a843dd8cf56374afa60a5b62e9bf">MainMenu::render</a></div><div class="ttdeci">void render(sf::RenderWindow &amp;window) override</div><div class="ttdef"><b>Definition:</b> MainMenu.cpp:5</div></div>
 <div class="ttc" id="class_main_menu_html_a53eecf9d5ffd094f54ac4193e7e57eaf"><div class="ttname"><a href="class_main_menu.html#a53eecf9d5ffd094f54ac4193e7e57eaf">MainMenu::MainMenu</a></div><div class="ttdeci">MainMenu()</div><div class="ttdef"><b>Definition:</b> MainMenu.cpp:10</div></div>
@@ -131,11 +133,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_main_menu_html_a22354cddce5d5cc36bfa1dbc5eb951fa"><div class="ttname"><a href="class_main_menu.html#a22354cddce5d5cc36bfa1dbc5eb951fa">MainMenu::NUMBER_OF_MENU_CHOICES</a></div><div class="ttdeci">const int NUMBER_OF_MENU_CHOICES</div><div class="ttdef"><b>Definition:</b> MainMenu.h:20</div></div>
 <div class="ttc" id="class_main_menu_html"><div class="ttname"><a href="class_main_menu.html">MainMenu</a></div><div class="ttdef"><b>Definition:</b> MainMenu.h:7</div></div>
 <div class="ttc" id="class_main_menu_html_a0a19ddba3ac52bf39c09b579171c98f2"><div class="ttname"><a href="class_main_menu.html#a0a19ddba3ac52bf39c09b579171c98f2">MainMenu::~MainMenu</a></div><div class="ttdeci">virtual ~MainMenu()</div><div class="ttdef"><b>Definition:</b> MainMenu.cpp:29</div></div>
-<div class="ttc" id="class_main_menu_html_a5a60751f529d34db0e90d32aee0aba73"><div class="ttname"><a href="class_main_menu.html#a5a60751f529d34db0e90d32aee0aba73">MainMenu::menu_text</a></div><div class="ttdeci">sf::Text * menu_text</div><div class="ttdef"><b>Definition:</b> MainMenu.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:51 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 22:03:02 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

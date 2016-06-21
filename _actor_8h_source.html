@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -97,40 +98,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_actor.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_actor.html">Actor</a> : <span class="keyword">public</span> <a class="code" href="class_game_object.html">GameObject</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_actor.html#a2a0ff4335a1ee9096df90f288c026c8b">    8</a></span>&#160;        <a class="code" href="class_actor.html#a2a0ff4335a1ee9096df90f288c026c8b">Actor</a>():<a class="code" href="class_actor.html#aed0233eb62aed1d22d8371980fa0c55b">decision</a>(0){}</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_actor.html#a2a0ff4335a1ee9096df90f288c026c8b">    8</a></span>&#160;        <a class="code" href="class_actor.html#a2a0ff4335a1ee9096df90f288c026c8b">Actor</a> () {}</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_actor.html#ad807fe8f85e72ab263a0c05e3231cb39">~Actor</a>();</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_actor.html#a0adfb49f207e4a3e4f6b451da2a5b450">   10</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_actor.html#a0adfb49f207e4a3e4f6b451da2a5b450">max_speed</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_actor.html#ab48f5d34a91c27dffba96d497b70f37b">accelerationRight</a>()=0;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_actor.html#ad447288ba0b7202ffd778815f4a5ee5d">accelerationLeft</a>()=0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_actor.html#aa9819c45f4e0f8903a81e174a68ec983">accelerationUp</a>()=0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_actor.html#a347730f4e82dbbbb2bf45027634faa1a">accelerationDown</a>()=0;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">virtual</span> sf::FloatRect <a class="code" href="class_actor.html#ab56cff32076fef8392f4562fe281ea86">getGlobalBounds</a>()=0;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_actor.html#a55731b8ed0e46d9b9ab953c93c19449a">   16</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_actor.html#a55731b8ed0e46d9b9ab953c93c19449a">is_dead</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_actor.html#a0bd104ef42ef1e3c3eea5c58e94c2429">isObjectOnScreen</a>(sf::RenderWindow&amp; window)=0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_actor.html#aed0233eb62aed1d22d8371980fa0c55b">   18</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_actor.html#aed0233eb62aed1d22d8371980fa0c55b">decision</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // ACTOR_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_actor.html#a9992ceb5499bff601e461c3bb93a8d48">defaultAccelerationChangeMove</a>(<a class="code" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a> direction)=0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">virtual</span> sf::FloatRect <a class="code" href="class_actor.html#ab56cff32076fef8392f4562fe281ea86">getGlobalBounds</a>()=0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_actor.html#a55731b8ed0e46d9b9ab953c93c19449a">   13</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_actor.html#a55731b8ed0e46d9b9ab953c93c19449a">is_dead</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_actor.html#a0bd104ef42ef1e3c3eea5c58e94c2429">isObjectOnScreen</a>(sf::RenderWindow&amp; window)=0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif // ACTOR_H</span></div>
 <div class="ttc" id="_game_object_8h_html"><div class="ttname"><a href="_game_object_8h.html">GameObject.h</a></div></div>
 <div class="ttc" id="class_actor_html_a0adfb49f207e4a3e4f6b451da2a5b450"><div class="ttname"><a href="class_actor.html#a0adfb49f207e4a3e4f6b451da2a5b450">Actor::max_speed</a></div><div class="ttdeci">float max_speed</div><div class="ttdef"><b>Definition:</b> Actor.h:10</div></div>
-<div class="ttc" id="class_actor_html_aed0233eb62aed1d22d8371980fa0c55b"><div class="ttname"><a href="class_actor.html#aed0233eb62aed1d22d8371980fa0c55b">Actor::decision</a></div><div class="ttdeci">int decision</div><div class="ttdef"><b>Definition:</b> Actor.h:18</div></div>
 <div class="ttc" id="class_actor_html_ad807fe8f85e72ab263a0c05e3231cb39"><div class="ttname"><a href="class_actor.html#ad807fe8f85e72ab263a0c05e3231cb39">Actor::~Actor</a></div><div class="ttdeci">virtual ~Actor()</div><div class="ttdef"><b>Definition:</b> Actor.cpp:5</div></div>
+<div class="ttc" id="class_actor_html_a9992ceb5499bff601e461c3bb93a8d48"><div class="ttname"><a href="class_actor.html#a9992ceb5499bff601e461c3bb93a8d48">Actor::defaultAccelerationChangeMove</a></div><div class="ttdeci">virtual void defaultAccelerationChangeMove(GeneralTools::Direction direction)=0</div></div>
 <div class="ttc" id="class_actor_html_ab56cff32076fef8392f4562fe281ea86"><div class="ttname"><a href="class_actor.html#ab56cff32076fef8392f4562fe281ea86">Actor::getGlobalBounds</a></div><div class="ttdeci">virtual sf::FloatRect getGlobalBounds()=0</div></div>
-<div class="ttc" id="class_actor_html_a55731b8ed0e46d9b9ab953c93c19449a"><div class="ttname"><a href="class_actor.html#a55731b8ed0e46d9b9ab953c93c19449a">Actor::is_dead</a></div><div class="ttdeci">bool is_dead</div><div class="ttdef"><b>Definition:</b> Actor.h:16</div></div>
+<div class="ttc" id="class_actor_html_a55731b8ed0e46d9b9ab953c93c19449a"><div class="ttname"><a href="class_actor.html#a55731b8ed0e46d9b9ab953c93c19449a">Actor::is_dead</a></div><div class="ttdeci">bool is_dead</div><div class="ttdef"><b>Definition:</b> Actor.h:13</div></div>
 <div class="ttc" id="class_game_object_html"><div class="ttname"><a href="class_game_object.html">GameObject</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:5</div></div>
 <div class="ttc" id="class_actor_html"><div class="ttname"><a href="class_actor.html">Actor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:5</div></div>
-<div class="ttc" id="class_actor_html_aa9819c45f4e0f8903a81e174a68ec983"><div class="ttname"><a href="class_actor.html#aa9819c45f4e0f8903a81e174a68ec983">Actor::accelerationUp</a></div><div class="ttdeci">virtual void accelerationUp()=0</div></div>
-<div class="ttc" id="class_actor_html_a347730f4e82dbbbb2bf45027634faa1a"><div class="ttname"><a href="class_actor.html#a347730f4e82dbbbb2bf45027634faa1a">Actor::accelerationDown</a></div><div class="ttdeci">virtual void accelerationDown()=0</div></div>
-<div class="ttc" id="class_actor_html_ad447288ba0b7202ffd778815f4a5ee5d"><div class="ttname"><a href="class_actor.html#ad447288ba0b7202ffd778815f4a5ee5d">Actor::accelerationLeft</a></div><div class="ttdeci">virtual void accelerationLeft()=0</div></div>
 <div class="ttc" id="class_actor_html_a2a0ff4335a1ee9096df90f288c026c8b"><div class="ttname"><a href="class_actor.html#a2a0ff4335a1ee9096df90f288c026c8b">Actor::Actor</a></div><div class="ttdeci">Actor()</div><div class="ttdef"><b>Definition:</b> Actor.h:8</div></div>
 <div class="ttc" id="class_actor_html_a0bd104ef42ef1e3c3eea5c58e94c2429"><div class="ttname"><a href="class_actor.html#a0bd104ef42ef1e3c3eea5c58e94c2429">Actor::isObjectOnScreen</a></div><div class="ttdeci">virtual bool isObjectOnScreen(sf::RenderWindow &amp;window)=0</div></div>
-<div class="ttc" id="class_actor_html_ab48f5d34a91c27dffba96d497b70f37b"><div class="ttname"><a href="class_actor.html#ab48f5d34a91c27dffba96d497b70f37b">Actor::accelerationRight</a></div><div class="ttdeci">virtual void accelerationRight()=0</div></div>
+<div class="ttc" id="namespace_general_tools_html_afedc3bd242369903830dec92c3ad569b"><div class="ttname"><a href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> GeneralTools.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:51 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 22:03:02 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

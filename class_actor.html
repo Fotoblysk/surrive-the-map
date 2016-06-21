@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -99,14 +100,14 @@ Inheritance diagram for Actor:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_actor__inherit__graph.png" border="0" usemap="#_actor_inherit__map" alt="Inheritance graph"/></div>
 <map name="_actor_inherit__map" id="_actor_inherit__map">
-<area shape="rect" id="node3" href="class_enemy.html" title="{Enemy\n|+ notshotable\l|+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ Enemy()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationDown()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ ~Enemy()\l+ isObjectOnScreen()\l}" alt="" coords="5,491,153,759"/><area shape="rect" id="node4" href="class_player.html" title="{Player\n|+ acceleration\l+ speed\l+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ accelerationRight()\l+ accelerationDown()\l+ accelerationLeft()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="177,476,325,773"/><area shape="rect" id="node2" href="class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="103,5,226,171"/></map>
+<area shape="rect" id="node3" href="class_enemy.html" title="{Enemy\n|+ notshotable\l|+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ Enemy()\l+ defaultAccelerationChangeMove()\l+ accelerationLeft()\l+ accelerationDown()\l+ accelerationUp()\l+ update()\l+ getSpeed()\l+ ~Enemy()\l+ isObjectOnScreen()\l}" alt="" coords="5,417,232,671"/><area shape="rect" id="node4" href="class_player.html" title="{Player\n|+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="256,432,483,656"/><area shape="rect" id="node2" href="class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="183,5,305,171"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for Actor:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_actor__coll__graph.png" border="0" usemap="#_actor_coll__map" alt="Collaboration graph"/></div>
 <map name="_actor_coll__map" id="_actor_coll__map">
-<area shape="rect" id="node2" href="class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="18,5,141,171"/></map>
+<area shape="rect" id="node2" href="class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="57,5,180,171"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -115,14 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a0ff4335a1ee9096df90f288c026c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad807fe8f85e72ab263a0c05e3231cb39"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ad807fe8f85e72ab263a0c05e3231cb39">~Actor</a> ()</td></tr>
 <tr class="separator:ad807fe8f85e72ab263a0c05e3231cb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab48f5d34a91c27dffba96d497b70f37b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ab48f5d34a91c27dffba96d497b70f37b">accelerationRight</a> ()=0</td></tr>
-<tr class="separator:ab48f5d34a91c27dffba96d497b70f37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad447288ba0b7202ffd778815f4a5ee5d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ad447288ba0b7202ffd778815f4a5ee5d">accelerationLeft</a> ()=0</td></tr>
-<tr class="separator:ad447288ba0b7202ffd778815f4a5ee5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9819c45f4e0f8903a81e174a68ec983"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#aa9819c45f4e0f8903a81e174a68ec983">accelerationUp</a> ()=0</td></tr>
-<tr class="separator:aa9819c45f4e0f8903a81e174a68ec983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a347730f4e82dbbbb2bf45027634faa1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a347730f4e82dbbbb2bf45027634faa1a">accelerationDown</a> ()=0</td></tr>
-<tr class="separator:a347730f4e82dbbbb2bf45027634faa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9992ceb5499bff601e461c3bb93a8d48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a9992ceb5499bff601e461c3bb93a8d48">defaultAccelerationChangeMove</a> (<a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a> direction)=0</td></tr>
+<tr class="separator:a9992ceb5499bff601e461c3bb93a8d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56cff32076fef8392f4562fe281ea86"><td class="memItemLeft" align="right" valign="top">virtual sf::FloatRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ab56cff32076fef8392f4562fe281ea86">getGlobalBounds</a> ()=0</td></tr>
 <tr class="separator:ab56cff32076fef8392f4562fe281ea86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bd104ef42ef1e3c3eea5c58e94c2429"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a0bd104ef42ef1e3c3eea5c58e94c2429">isObjectOnScreen</a> (sf::RenderWindow &amp;window)=0</td></tr>
@@ -147,17 +142,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0adfb49f207e4a3e4f6b451da2a5b450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55731b8ed0e46d9b9ab953c93c19449a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a55731b8ed0e46d9b9ab953c93c19449a">is_dead</a></td></tr>
 <tr class="separator:a55731b8ed0e46d9b9ab953c93c19449a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0233eb62aed1d22d8371980fa0c55b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#aed0233eb62aed1d22d8371980fa0c55b">decision</a></td></tr>
-<tr class="separator:aed0233eb62aed1d22d8371980fa0c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_game_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_game_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_game_object.html">GameObject</a></td></tr>
 <tr class="memitem:a485ee182e36f89f5493801bdd3c88d4a inherit pub_attribs_class_game_object"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a485ee182e36f89f5493801bdd3c88d4a">speed</a></td></tr>
 <tr class="separator:a485ee182e36f89f5493801bdd3c88d4a inherit pub_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_class_game_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_game_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_game_object.html">GameObject</a></td></tr>
-<tr class="memitem:a852964d6b689b4e12cc399fc67f4f8bf inherit pro_attribs_class_game_object"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a852964d6b689b4e12cc399fc67f4f8bf">acceleration</a></td></tr>
-<tr class="separator:a852964d6b689b4e12cc399fc67f4f8bf inherit pro_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852964d6b689b4e12cc399fc67f4f8bf inherit pub_attribs_class_game_object"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a852964d6b689b4e12cc399fc67f4f8bf">acceleration</a></td></tr>
+<tr class="separator:a852964d6b689b4e12cc399fc67f4f8bf inherit pub_attribs_class_game_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2a0ff4335a1ee9096df90f288c026c8b"></a>
@@ -207,7 +196,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a347730f4e82dbbbb2bf45027634faa1a"></a>
+<a class="anchor" id="a9992ceb5499bff601e461c3bb93a8d48"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -215,9 +204,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Actor::accelerationDown </td>
+          <td class="memname">virtual void Actor::defaultAccelerationChangeMove </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a>&#160;</td>
+          <td class="paramname"><em>direction</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -228,116 +218,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_enemy.html#a901af192d36d757b0cfbd2c92c742ccc">Enemy</a>, and <a class="el" href="class_player.html#ab8ec47b1c74245dfe523999647b8cd4c">Player</a>.</p>
+<p>Implemented in <a class="el" href="class_enemy.html#ae642ab230b9b416142cfe2a6ed3e3aeb">Enemy</a>, and <a class="el" href="class_player.html#a48e3ad0f384cd58a64136a40d4a04b76">Player</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_actor_a347730f4e82dbbbb2bf45027634faa1a_icgraph.png" border="0" usemap="#class_actor_a347730f4e82dbbbb2bf45027634faa1a_icgraph" alt=""/></div>
-<map name="class_actor_a347730f4e82dbbbb2bf45027634faa1a_icgraph" id="class_actor_a347730f4e82dbbbb2bf45027634faa1a_icgraph">
-<area shape="rect" id="node2" href="class_move_actor_command.html#a62ff2dc8808da57913d1e5aa43c10cfb" title="MoveActorCommand::execute" alt="" coords="216,5,412,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ad447288ba0b7202ffd778815f4a5ee5d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Actor::accelerationLeft </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_player.html#a3d7d8283667bbbc2aa7b4ffe85f2a1c4">Player</a>, and <a class="el" href="class_enemy.html#a842ae08ff3a191b3bfd5a0f865b968be">Enemy</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_actor_ad447288ba0b7202ffd778815f4a5ee5d_icgraph.png" border="0" usemap="#class_actor_ad447288ba0b7202ffd778815f4a5ee5d_icgraph" alt=""/></div>
-<map name="class_actor_ad447288ba0b7202ffd778815f4a5ee5d_icgraph" id="class_actor_ad447288ba0b7202ffd778815f4a5ee5d_icgraph">
-<area shape="rect" id="node2" href="class_move_actor_command.html#a62ff2dc8808da57913d1e5aa43c10cfb" title="MoveActorCommand::execute" alt="" coords="205,5,401,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ab48f5d34a91c27dffba96d497b70f37b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Actor::accelerationRight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_enemy.html#a85901197eedd66445f316a9316b26bb7">Enemy</a>, and <a class="el" href="class_player.html#a807f037c5102000aeb93a3e73bfe9952">Player</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_actor_ab48f5d34a91c27dffba96d497b70f37b_icgraph.png" border="0" usemap="#class_actor_ab48f5d34a91c27dffba96d497b70f37b_icgraph" alt=""/></div>
-<map name="class_actor_ab48f5d34a91c27dffba96d497b70f37b_icgraph" id="class_actor_ab48f5d34a91c27dffba96d497b70f37b_icgraph">
-<area shape="rect" id="node2" href="class_move_actor_command.html#a62ff2dc8808da57913d1e5aa43c10cfb" title="MoveActorCommand::execute" alt="" coords="215,5,411,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aa9819c45f4e0f8903a81e174a68ec983"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Actor::accelerationUp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_enemy.html#acb3226b1c27efc097b3817a8efde1e93">Enemy</a>, and <a class="el" href="class_player.html#aaf5e60d89a206c6287c1360f93f6a8b9">Player</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_actor_aa9819c45f4e0f8903a81e174a68ec983_icgraph.png" border="0" usemap="#class_actor_aa9819c45f4e0f8903a81e174a68ec983_icgraph" alt=""/></div>
-<map name="class_actor_aa9819c45f4e0f8903a81e174a68ec983_icgraph" id="class_actor_aa9819c45f4e0f8903a81e174a68ec983_icgraph">
-<area shape="rect" id="node2" href="class_move_actor_command.html#a62ff2dc8808da57913d1e5aa43c10cfb" title="MoveActorCommand::execute" alt="" coords="200,5,396,32"/></map>
+<div class="center"><img src="class_actor_a9992ceb5499bff601e461c3bb93a8d48_icgraph.png" border="0" usemap="#class_actor_a9992ceb5499bff601e461c3bb93a8d48_icgraph" alt=""/></div>
+<map name="class_actor_a9992ceb5499bff601e461c3bb93a8d48_icgraph" id="class_actor_a9992ceb5499bff601e461c3bb93a8d48_icgraph">
+<area shape="rect" id="node2" href="class_move_actor_command.html#a62ff2dc8808da57913d1e5aa43c10cfb" title="MoveActorCommand::execute" alt="" coords="224,13,420,39"/></map>
 </div>
 </p>
 
@@ -364,14 +252,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_player.html#a04324f777f14ec311bc72399a368d24e">Player</a>, and <a class="el" href="class_enemy.html#abb50439b9517d5a2b4c6b6c6a4e91672">Enemy</a>.</p>
+<p>Implemented in <a class="el" href="class_player.html#ac2b21f8a74b6b1c0e9068a82e7e71e86">Player</a>, and <a class="el" href="class_enemy.html#abb50439b9517d5a2b4c6b6c6a4e91672">Enemy</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_actor_ab56cff32076fef8392f4562fe281ea86_icgraph.png" border="0" usemap="#class_actor_ab56cff32076fef8392f4562fe281ea86_icgraph" alt=""/></div>
 <map name="class_actor_ab56cff32076fef8392f4562fe281ea86_icgraph" id="class_actor_ab56cff32076fef8392f4562fe281ea86_icgraph">
-<area shape="rect" id="node2" href="class_ai_controler.html#a72b3ad15dcd00ef8285c299bee09e89d" title="AiControler::handleInput" alt="" coords="213,5,373,32"/></map>
+<area shape="rect" id="node2" href="class_ai_controler.html#a72891536d5ff122ae1e3a25fd62fd1b5" title="AiControler::handleInput" alt="" coords="213,5,373,32"/></map>
 </div>
 </p>
 
@@ -404,18 +292,6 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aed0233eb62aed1d22d8371980fa0c55b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Actor::decision</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a55731b8ed0e46d9b9ab953c93c19449a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -447,7 +323,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:52 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 22:03:04 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

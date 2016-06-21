@@ -1,4 +1,4 @@
 <map id="Player::isObjectOnScreen" name="Player::isObjectOnScreen">
-<area shape="rect" id="node2" href="$class_player.html#a202e63e22c98a31b6070d6939ca6f793" title="Player::getPosition" alt="" coords="244,5,376,32"/>
-<area shape="rect" id="node3" href="$class_player.html#a04324f777f14ec311bc72399a368d24e" title="Player::getGlobalBounds" alt="" coords="227,56,393,83"/>
+<area shape="rect" id="node2" href="$class_player.html#a7e3f22ccc3098fa91166deaed16c9b44" title="Player::getPosition" alt="" coords="244,5,376,32"/>
+<area shape="rect" id="node3" href="$class_player.html#ac2b21f8a74b6b1c0e9068a82e7e71e86" title="Player::getGlobalBounds" alt="" coords="227,56,393,83"/>
 </map>

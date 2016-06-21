@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -87,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_game_object-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GameObject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -100,14 +100,12 @@ Inheritance diagram for GameObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_object__inherit__graph.png" border="0" usemap="#_game_object_inherit__map" alt="Inheritance graph"/></div>
 <map name="_game_object_inherit__map" id="_game_object_inherit__map">
-<area shape="rect" id="node2" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="91,219,239,428"/><area shape="rect" id="node5" href="class_bullet.html" title="{Bullet\n||+ Bullet()\l+ ~Bullet()\l+ render()\l+ getPosition()\l+ move()\l+ isObjectAlive()\l}" alt="" coords="263,248,381,399"/><area shape="rect" id="node3" href="class_enemy.html" title="{Enemy\n|+ notshotable\l|+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ Enemy()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationDown()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ ~Enemy()\l+ isObjectOnScreen()\l}" alt="" coords="5,491,153,759"/><area shape="rect" id="node4" href="class_player.html" title="{Player\n|+ acceleration\l+ speed\l+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ accelerationRight()\l+ accelerationDown()\l+ accelerationLeft()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="177,476,325,773"/></map>
+<area shape="rect" id="node2" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="131,219,357,369"/><area shape="rect" id="node5" href="class_bullet.html" title="{Bullet\n||+ Bullet()\l+ ~Bullet()\l+ render()\l+ getPosition()\l+ move()\l+ isObjectAlive()\l}" alt="" coords="381,219,499,369"/><area shape="rect" id="node3" href="class_enemy.html" title="{Enemy\n|+ notshotable\l|+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ Enemy()\l+ defaultAccelerationChangeMove()\l+ accelerationLeft()\l+ accelerationDown()\l+ accelerationUp()\l+ update()\l+ getSpeed()\l+ ~Enemy()\l+ isObjectOnScreen()\l}" alt="" coords="5,417,232,671"/><area shape="rect" id="node4" href="class_player.html" title="{Player\n|+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="256,432,483,656"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for GameObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_object__coll__graph.png" border="0" usemap="#_game_object_coll__map" alt="Collaboration graph"/></div>
-<map name="_game_object_coll__map" id="_game_object_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -129,9 +127,6 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a485ee182e36f89f5493801bdd3c88d4a"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a485ee182e36f89f5493801bdd3c88d4a">speed</a></td></tr>
 <tr class="separator:a485ee182e36f89f5493801bdd3c88d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
 <tr class="memitem:a852964d6b689b4e12cc399fc67f4f8bf"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a852964d6b689b4e12cc399fc67f4f8bf">acceleration</a></td></tr>
 <tr class="separator:a852964d6b689b4e12cc399fc67f4f8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -196,14 +191,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_player.html#a202e63e22c98a31b6070d6939ca6f793">Player</a>, <a class="el" href="class_enemy.html#a986074549d08157336879f6b48ce632f">Enemy</a>, and <a class="el" href="class_bullet.html#a82f82d6367d1c403898a29d1ce91630d">Bullet</a>.</p>
+<p>Implemented in <a class="el" href="class_enemy.html#a986074549d08157336879f6b48ce632f">Enemy</a>, <a class="el" href="class_player.html#a7e3f22ccc3098fa91166deaed16c9b44">Player</a>, and <a class="el" href="class_bullet.html#a82f82d6367d1c403898a29d1ce91630d">Bullet</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph.png" border="0" usemap="#class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph" alt=""/></div>
 <map name="class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph" id="class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph">
-<area shape="rect" id="node2" href="class_ai_controler.html#a72b3ad15dcd00ef8285c299bee09e89d" title="AiControler::handleInput" alt="" coords="221,5,381,32"/></map>
+<area shape="rect" id="node2" href="class_ai_controler.html#a72891536d5ff122ae1e3a25fd62fd1b5" title="AiControler::handleInput" alt="" coords="221,5,381,32"/></map>
 </div>
 </p>
 
@@ -231,14 +226,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_bullet.html#a8715ab2edff76c8b45fabc6dc453e85d">Bullet</a>, <a class="el" href="class_player.html#aec7f6d54c177577609263dc1f31063b0">Player</a>, and <a class="el" href="class_enemy.html#a4db256c45aa8d835561e035969883069">Enemy</a>.</p>
+<p>Implemented in <a class="el" href="class_bullet.html#a8715ab2edff76c8b45fabc6dc453e85d">Bullet</a>, <a class="el" href="class_player.html#a0512220b727eb0cdc6e7d7141b13c7fd">Player</a>, and <a class="el" href="class_enemy.html#a4db256c45aa8d835561e035969883069">Enemy</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_object_a370e89c4bb00a8fb851d9279480f7f76_icgraph.png" border="0" usemap="#class_game_object_a370e89c4bb00a8fb851d9279480f7f76_icgraph" alt=""/></div>
 <map name="class_game_object_a370e89c4bb00a8fb851d9279480f7f76_icgraph" id="class_game_object_a370e89c4bb00a8fb851d9279480f7f76_icgraph">
-<area shape="rect" id="node2" href="class_game_object.html#ad4a07f19f6c5e2e71c89c07486f26244" title="GameObject::update" alt="" coords="187,5,329,32"/></map>
+<area shape="rect" id="node2" href="class_game_object.html#ad4a07f19f6c5e2e71c89c07486f26244" title="GameObject::update" alt="" coords="187,5,329,32"/><area shape="rect" id="node3" href="class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="377,5,484,32"/><area shape="rect" id="node4" href="class_engine.html#ad2ff110d5a86c1cd60b541d65915ac48" title="Engine::update" alt="" coords="532,5,641,32"/></map>
 </div>
 </p>
 
@@ -266,7 +261,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_player.html#ad2172bbd6077d0f2ca16d215a86b5b60">Player</a>, <a class="el" href="class_enemy.html#a409d7d48e2f6bb27f878691f14a79957">Enemy</a>, and <a class="el" href="class_bullet.html#ae4af350647e1b2a798eb3fd35a883b84">Bullet</a>.</p>
+<p>Implemented in <a class="el" href="class_enemy.html#a409d7d48e2f6bb27f878691f14a79957">Enemy</a>, <a class="el" href="class_player.html#a53938857e80374e79726309e78d1c15c">Player</a>, and <a class="el" href="class_bullet.html#ae4af350647e1b2a798eb3fd35a883b84">Bullet</a>.</p>
 
 </div>
 </div>
@@ -302,25 +297,26 @@ Here is the call graph for this function:</div>
 </div>
 </p>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_ad4a07f19f6c5e2e71c89c07486f26244_icgraph.png" border="0" usemap="#class_game_object_ad4a07f19f6c5e2e71c89c07486f26244_icgraph" alt=""/></div>
+<map name="class_game_object_ad4a07f19f6c5e2e71c89c07486f26244_icgraph" id="class_game_object_ad4a07f19f6c5e2e71c89c07486f26244_icgraph">
+<area shape="rect" id="node2" href="class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="196,5,303,32"/><area shape="rect" id="node3" href="class_engine.html#ad2ff110d5a86c1cd60b541d65915ac48" title="Engine::update" alt="" coords="351,5,460,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a852964d6b689b4e12cc399fc67f4f8bf"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">sf::Vector2f GameObject::acceleration</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -344,7 +340,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:53 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 22:03:05 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
