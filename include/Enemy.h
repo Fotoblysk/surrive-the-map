@@ -27,7 +27,6 @@ class Enemy : public Actor, public sf::CircleShape
         virtual ~Enemy();
         bool isObjectOnScreen(sf::RenderWindow& window)override;
     protected:
-        int notshotable;
     private:
 
 };
