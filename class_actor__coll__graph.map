@@ -1,0 +1,3 @@
+<map id="Actor" name="Actor">
+<area shape="rect" id="node2" href="$class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="57,5,180,171"/>
+</map>

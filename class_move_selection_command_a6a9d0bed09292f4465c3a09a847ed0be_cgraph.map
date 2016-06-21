@@ -1,0 +1,5 @@
+<map id="MoveSelectionCommand::findSelectedOnTextArray" name="MoveSelectionCommand::findSelectedOnTextArray">
+<area shape="rect" id="node2" href="$class_menu.html#aeed33b0a47d0c49de45e0c1bb1503585" title="Menu::getNumberOfMenuChoices" alt="" coords="228,5,445,32"/>
+<area shape="rect" id="node3" href="$class_menu.html#a42fb94aee459f7ae5d06a7be1b540f17" title="Menu::getMenuText" alt="" coords="268,56,405,83"/>
+<area shape="rect" id="node4" href="$class_menu.html#ac9a761729ba9bac25bae4ee1a25b6e11" title="Menu::getSelectedTextPtr" alt="" coords="250,107,423,133"/>
+</map>

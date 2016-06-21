@@ -1,0 +1,5 @@
+<map id="MenuInputHandler" name="MenuInputHandler">
+<area shape="rect" id="node2" href="$class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="5,233,128,325"/>
+<area shape="rect" id="node3" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="12,5,121,97"/>
+<area shape="rect" id="node4" href="$class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="152,160,299,399"/>
+</map>

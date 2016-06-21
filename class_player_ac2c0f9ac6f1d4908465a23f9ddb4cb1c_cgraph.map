@@ -1,0 +1,5 @@
+<map id="Player::isObjectOnScreen" name="Player::isObjectOnScreen">
+<area shape="rect" id="node2" href="$class_actor.html#ad9cefebed5d4035bcf94c5a84dea21f9" title="Actor::getShotStatus" alt="" coords="238,5,382,32"/>
+<area shape="rect" id="node3" href="$class_player.html#abbd4bab9c1c4f881b268b37c3f810bd0" title="Player::getPosition" alt="" coords="244,56,376,83"/>
+<area shape="rect" id="node4" href="$class_player.html#ac2b21f8a74b6b1c0e9068a82e7e71e86" title="Player::getGlobalBounds" alt="" coords="227,107,393,133"/>
+</map>

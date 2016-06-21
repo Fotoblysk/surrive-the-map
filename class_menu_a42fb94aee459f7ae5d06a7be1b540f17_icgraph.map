@@ -1,0 +1,4 @@
+<map id="Menu::getMenuText" name="Menu::getMenuText">
+<area shape="rect" id="node2" href="$class_move_selection_command.html#a0d2117e50adfe980744b3ca883ca7fc5" title="MoveSelectionCommand\l::execute" alt="" coords="413,5,579,47"/>
+<area shape="rect" id="node3" href="$class_move_selection_command.html#a6a9d0bed09292f4465c3a09a847ed0be" title="MoveSelectionCommand\l::findSelectedOnTextArray" alt="" coords="191,35,365,76"/>
+</map>

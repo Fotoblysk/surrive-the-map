@@ -1,0 +1,5 @@
+<map id="Game::run" name="Game::run">
+<area shape="rect" id="node2" href="$class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="136,31,279,57"/>
+<area shape="rect" id="node3" href="$class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="360,5,457,32"/>
+<area shape="rect" id="node4" href="$class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="327,56,491,83"/>
+</map>
