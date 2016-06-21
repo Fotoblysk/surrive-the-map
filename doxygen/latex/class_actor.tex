@@ -11,7 +11,7 @@ Inheritance diagram for Actor\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{class_actor__inherit__graph}
+\includegraphics[width=350pt]{class_actor__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,7 +21,7 @@ Collaboration diagram for Actor\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=191pt]{class_actor__coll__graph}
+\includegraphics[width=250pt]{class_actor__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -31,26 +31,24 @@ Collaboration diagram for Actor\+:
 \item 
 virtual \hyperlink{class_actor_ad807fe8f85e72ab263a0c05e3231cb39}{$\sim$\+Actor} ()
 \item 
-virtual void \hyperlink{class_actor_ab48f5d34a91c27dffba96d497b70f37b}{acceleration\+Right} ()=0
-\item 
-virtual void \hyperlink{class_actor_ad447288ba0b7202ffd778815f4a5ee5d}{acceleration\+Left} ()=0
-\item 
-virtual void \hyperlink{class_actor_aa9819c45f4e0f8903a81e174a68ec983}{acceleration\+Up} ()=0
-\item 
-virtual void \hyperlink{class_actor_a347730f4e82dbbbb2bf45027634faa1a}{acceleration\+Down} ()=0
+virtual void \hyperlink{class_actor_a9992ceb5499bff601e461c3bb93a8d48}{default\+Acceleration\+Change\+Move} (\hyperlink{namespace_general_tools_afedc3bd242369903830dec92c3ad569b}{General\+Tools\+::\+Direction} direction)=0
 \item 
 virtual sf\+::\+Float\+Rect \hyperlink{class_actor_ab56cff32076fef8392f4562fe281ea86}{get\+Global\+Bounds} ()=0
 \item 
 virtual bool \hyperlink{class_actor_a0bd104ef42ef1e3c3eea5c58e94c2429}{is\+Object\+On\+Screen} (sf\+::\+Render\+Window \&window)=0
+\item 
+virtual bool \hyperlink{class_actor_ad9cefebed5d4035bcf94c5a84dea21f9}{get\+Shot\+Status} () const 
+\item 
+virtual void \hyperlink{class_actor_a997ae7e0afe81e1423dd7135451be861}{get\+Shot\+Status} (bool new\+\_\+alive\+\_\+status)
+\item 
+virtual bool \hyperlink{class_actor_a85db8a17b338703247162f82f94cb957}{try\+To\+Shoot} ()
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
+bool \hyperlink{class_actor_a675662b7b4e2c52a766ed4f460e18230}{shot\+\_\+status}
+\item 
 float \hyperlink{class_actor_a0adfb49f207e4a3e4f6b451da2a5b450}{max\+\_\+speed}
-\item 
-bool \hyperlink{class_actor_a55731b8ed0e46d9b9ab953c93c19449a}{is\+\_\+dead}
-\item 
-int \hyperlink{class_actor_aed0233eb62aed1d22d8371980fa0c55b}{decision}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -73,94 +71,24 @@ int \hyperlink{class_actor_aed0233eb62aed1d22d8371980fa0c55b}{decision}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_actor_a347730f4e82dbbbb2bf45027634faa1a}{}\index{Actor@{Actor}!acceleration\+Down@{acceleration\+Down}}
-\index{acceleration\+Down@{acceleration\+Down}!Actor@{Actor}}
-\subsubsection[{acceleration\+Down}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actor\+::acceleration\+Down (
+\hypertarget{class_actor_a9992ceb5499bff601e461c3bb93a8d48}{}\index{Actor@{Actor}!default\+Acceleration\+Change\+Move@{default\+Acceleration\+Change\+Move}}
+\index{default\+Acceleration\+Change\+Move@{default\+Acceleration\+Change\+Move}!Actor@{Actor}}
+\subsubsection[{default\+Acceleration\+Change\+Move}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actor\+::default\+Acceleration\+Change\+Move (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf General\+Tools\+::\+Direction}}]{direction}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_actor_a347730f4e82dbbbb2bf45027634faa1a}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_actor_a9992ceb5499bff601e461c3bb93a8d48}
 
 
-Implemented in \hyperlink{class_enemy_a901af192d36d757b0cfbd2c92c742ccc}{Enemy}, and \hyperlink{class_player_ab8ec47b1c74245dfe523999647b8cd4c}{Player}.
+Implemented in \hyperlink{class_enemy_ae642ab230b9b416142cfe2a6ed3e3aeb}{Enemy}, and \hyperlink{class_player_a48e3ad0f384cd58a64136a40d4a04b76}{Player}.
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_actor_a347730f4e82dbbbb2bf45027634faa1a_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_actor_ad447288ba0b7202ffd778815f4a5ee5d}{}\index{Actor@{Actor}!acceleration\+Left@{acceleration\+Left}}
-\index{acceleration\+Left@{acceleration\+Left}!Actor@{Actor}}
-\subsubsection[{acceleration\+Left}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actor\+::acceleration\+Left (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_actor_ad447288ba0b7202ffd778815f4a5ee5d}
-
-
-Implemented in \hyperlink{class_player_a3d7d8283667bbbc2aa7b4ffe85f2a1c4}{Player}, and \hyperlink{class_enemy_a842ae08ff3a191b3bfd5a0f865b968be}{Enemy}.
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_actor_ad447288ba0b7202ffd778815f4a5ee5d_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_actor_ab48f5d34a91c27dffba96d497b70f37b}{}\index{Actor@{Actor}!acceleration\+Right@{acceleration\+Right}}
-\index{acceleration\+Right@{acceleration\+Right}!Actor@{Actor}}
-\subsubsection[{acceleration\+Right}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actor\+::acceleration\+Right (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_actor_ab48f5d34a91c27dffba96d497b70f37b}
-
-
-Implemented in \hyperlink{class_enemy_a85901197eedd66445f316a9316b26bb7}{Enemy}, and \hyperlink{class_player_a807f037c5102000aeb93a3e73bfe9952}{Player}.
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_actor_ab48f5d34a91c27dffba96d497b70f37b_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_actor_aa9819c45f4e0f8903a81e174a68ec983}{}\index{Actor@{Actor}!acceleration\+Up@{acceleration\+Up}}
-\index{acceleration\+Up@{acceleration\+Up}!Actor@{Actor}}
-\subsubsection[{acceleration\+Up}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actor\+::acceleration\+Up (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_actor_aa9819c45f4e0f8903a81e174a68ec983}
-
-
-Implemented in \hyperlink{class_enemy_acb3226b1c27efc097b3817a8efde1e93}{Enemy}, and \hyperlink{class_player_aaf5e60d89a206c6287c1360f93f6a8b9}{Player}.
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_actor_aa9819c45f4e0f8903a81e174a68ec983_icgraph}
+\includegraphics[width=350pt]{class_actor_a9992ceb5499bff601e461c3bb93a8d48_icgraph}
 \end{center}
 \end{figure}
 
@@ -174,12 +102,11 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_actor_ab56cff32076fef8392f4562fe281ea86}
 
 
-Implemented in \hyperlink{class_player_a04324f777f14ec311bc72399a368d24e}{Player}, and \hyperlink{class_enemy_abb50439b9517d5a2b4c6b6c6a4e91672}{Enemy}.
+Implemented in \hyperlink{class_player_ac2b21f8a74b6b1c0e9068a82e7e71e86}{Player}, and \hyperlink{class_enemy_abb50439b9517d5a2b4c6b6c6a4e91672}{Enemy}.
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -188,6 +115,32 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
+\hypertarget{class_actor_ad9cefebed5d4035bcf94c5a84dea21f9}{}\index{Actor@{Actor}!get\+Shot\+Status@{get\+Shot\+Status}}
+\index{get\+Shot\+Status@{get\+Shot\+Status}!Actor@{Actor}}
+\subsubsection[{get\+Shot\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool Actor\+::get\+Shot\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_actor_ad9cefebed5d4035bcf94c5a84dea21f9}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_actor_ad9cefebed5d4035bcf94c5a84dea21f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_actor_a997ae7e0afe81e1423dd7135451be861}{}\index{Actor@{Actor}!get\+Shot\+Status@{get\+Shot\+Status}}
+\index{get\+Shot\+Status@{get\+Shot\+Status}!Actor@{Actor}}
+\subsubsection[{get\+Shot\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void Actor\+::get\+Shot\+Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{new\+\_\+alive\+\_\+status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_actor_a997ae7e0afe81e1423dd7135451be861}
 \hypertarget{class_actor_a0bd104ef42ef1e3c3eea5c58e94c2429}{}\index{Actor@{Actor}!is\+Object\+On\+Screen@{is\+Object\+On\+Screen}}
 \index{is\+Object\+On\+Screen@{is\+Object\+On\+Screen}!Actor@{Actor}}
 \subsubsection[{is\+Object\+On\+Screen}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Actor\+::is\+Object\+On\+Screen (
@@ -199,18 +152,26 @@ Here is the caller graph for this function\+:
 
 Implemented in \hyperlink{class_enemy_a9a6b7416616b3d0464978d38cf7095e9}{Enemy}, and \hyperlink{class_player_ac2c0f9ac6f1d4908465a23f9ddb4cb1c}{Player}.
 
+\hypertarget{class_actor_a85db8a17b338703247162f82f94cb957}{}\index{Actor@{Actor}!try\+To\+Shoot@{try\+To\+Shoot}}
+\index{try\+To\+Shoot@{try\+To\+Shoot}!Actor@{Actor}}
+\subsubsection[{try\+To\+Shoot}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Actor\+::try\+To\+Shoot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_actor_a85db8a17b338703247162f82f94cb957}
+
+
+Reimplemented in \hyperlink{class_player_a52486292c25bc6ac6589423ef0c81b0e}{Player}.
+
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_actor_aed0233eb62aed1d22d8371980fa0c55b}{}\index{Actor@{Actor}!decision@{decision}}
-\index{decision@{decision}!Actor@{Actor}}
-\subsubsection[{decision}]{\setlength{\rightskip}{0pt plus 5cm}int Actor\+::decision}\label{class_actor_aed0233eb62aed1d22d8371980fa0c55b}
-\hypertarget{class_actor_a55731b8ed0e46d9b9ab953c93c19449a}{}\index{Actor@{Actor}!is\+\_\+dead@{is\+\_\+dead}}
-\index{is\+\_\+dead@{is\+\_\+dead}!Actor@{Actor}}
-\subsubsection[{is\+\_\+dead}]{\setlength{\rightskip}{0pt plus 5cm}bool Actor\+::is\+\_\+dead}\label{class_actor_a55731b8ed0e46d9b9ab953c93c19449a}
 \hypertarget{class_actor_a0adfb49f207e4a3e4f6b451da2a5b450}{}\index{Actor@{Actor}!max\+\_\+speed@{max\+\_\+speed}}
 \index{max\+\_\+speed@{max\+\_\+speed}!Actor@{Actor}}
-\subsubsection[{max\+\_\+speed}]{\setlength{\rightskip}{0pt plus 5cm}float Actor\+::max\+\_\+speed}\label{class_actor_a0adfb49f207e4a3e4f6b451da2a5b450}
+\subsubsection[{max\+\_\+speed}]{\setlength{\rightskip}{0pt plus 5cm}float Actor\+::max\+\_\+speed\hspace{0.3cm}{\ttfamily [protected]}}\label{class_actor_a0adfb49f207e4a3e4f6b451da2a5b450}
+\hypertarget{class_actor_a675662b7b4e2c52a766ed4f460e18230}{}\index{Actor@{Actor}!shot\+\_\+status@{shot\+\_\+status}}
+\index{shot\+\_\+status@{shot\+\_\+status}!Actor@{Actor}}
+\subsubsection[{shot\+\_\+status}]{\setlength{\rightskip}{0pt plus 5cm}bool Actor\+::shot\+\_\+status\hspace{0.3cm}{\ttfamily [protected]}}\label{class_actor_a675662b7b4e2c52a766ed4f460e18230}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

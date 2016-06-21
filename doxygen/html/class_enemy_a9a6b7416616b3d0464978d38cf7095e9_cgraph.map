@@ -1,4 +1,5 @@
 <map id="Enemy::isObjectOnScreen" name="Enemy::isObjectOnScreen">
-<area shape="rect" id="node2" href="$class_enemy.html#a986074549d08157336879f6b48ce632f" title="Enemy::getPosition" alt="" coords="248,5,384,32"/>
-<area shape="rect" id="node3" href="$class_enemy.html#abb50439b9517d5a2b4c6b6c6a4e91672" title="Enemy::getGlobalBounds" alt="" coords="231,56,401,83"/>
+<area shape="rect" id="node2" href="$class_actor.html#ad9cefebed5d4035bcf94c5a84dea21f9" title="Actor::getShotStatus" alt="" coords="244,5,388,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#ade0ec5d0a52a35a387a4cdcccf4c9ddc" title="Enemy::getPosition" alt="" coords="248,56,384,83"/>
+<area shape="rect" id="node4" href="$class_enemy.html#abb50439b9517d5a2b4c6b6c6a4e91672" title="Enemy::getGlobalBounds" alt="" coords="231,107,401,133"/>
 </map>

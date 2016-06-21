@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -99,7 +100,7 @@ Inheritance diagram for InputHandler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_input_handler__inherit__graph.png" border="0" usemap="#_input_handler_inherit__map" alt="Inheritance graph"/></div>
 <map name="_input_handler_inherit__map" id="_input_handler_inherit__map">
-<area shape="rect" id="node2" href="class_ai_controler.html" title="{AiControler\n|+ is_dead\l# max_speed\l# target\l# enemy\l# bullet\l# window\l|+ AiControler()\l+ ~AiControler()\l+ handleInput()\l+ normToMaxSpeed()\l}" alt="" coords="5,204,152,399"/><area shape="rect" id="node3" href="class_collision_handler.html" title="{CollisionHandler\n|+ engine\l|+ CollisionHandler()\l+ ~CollisionHandler()\l+ handleInput()\l}" alt="" coords="177,248,319,355"/><area shape="rect" id="node4" href="class_engine_input_handler.html" title="{EngineInputHandler\n|&#45; game\l&#45; key_escape\l&#45; closed\l&#45; key_d\l&#45; key_right\l&#45; key_s\l&#45; key_down\l&#45; key_w\l&#45; key_up\l&#45; key_a\l&#45; key_left\l&#45; key_q\l&#45; l_mouse_button\l|+ handleInput()\l+ EngineInputHandler()\l+ ~EngineInputHandler()\l&#45; handleKeyInput()\l&#45; handleRealTimeKeyInput()\l}" alt="" coords="344,145,525,457"/><area shape="rect" id="node5" href="class_menu_input_handler.html" title="{MenuInputHandler\n|&#45; game\l&#45; key_escape\l&#45; closed\l&#45; key_down\l&#45; key_s\l&#45; key_up\l&#45; key_w\l&#45; key_space\l|+ handleInput()\l+ MenuInputHandler()\l+ ~MenuInputHandler()\l&#45; handleKeyInput()\l}" alt="" coords="549,189,704,413"/></map>
+<area shape="rect" id="node2" href="class_ai_controler.html" title="{AiControler\n|&#45; is_dead\l&#45; max_speed\l&#45; target\l&#45; enemy\l&#45; bullet\l&#45; window\l&#45; decision\l|+ AiControler()\l+ ~AiControler()\l+ handleInput()\l&#45; normToMaxSpeed()\l}" alt="" coords="5,197,148,406"/><area shape="rect" id="node3" href="class_collision_handler.html" title="{CollisionHandler\n|# engine\l|+ CollisionHandler()\l+ ~CollisionHandler()\l+ handleInput()\l}" alt="" coords="172,248,315,355"/><area shape="rect" id="node4" href="class_engine_input_handler.html" title="{EngineInputHandler\n|&#45; game\l&#45; key_escape\l&#45; closed\l&#45; key_d\l&#45; key_right\l&#45; key_s\l&#45; key_down\l&#45; key_w\l&#45; key_up\l&#45; key_a\l&#45; key_left\l&#45; key_q\l&#45; l_mouse_button\l|+ handleInput()\l+ EngineInputHandler()\l+ ~EngineInputHandler()\l&#45; handleKeyInput()\l&#45; handleRealTimeKeyInput()\l}" alt="" coords="339,145,521,457"/><area shape="rect" id="node5" href="class_menu_input_handler.html" title="{MenuInputHandler\n|&#45; game\l&#45; key_escape\l&#45; closed\l&#45; key_down\l&#45; key_s\l&#45; key_up\l&#45; key_w\l&#45; key_space\l|+ handleInput()\l+ MenuInputHandler()\l+ ~MenuInputHandler()\l&#45; handleKeyInput()\l}" alt="" coords="545,189,699,413"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for InputHandler:</div>
@@ -167,16 +168,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_ai_controler.html#a72b3ad15dcd00ef8285c299bee09e89d">AiControler</a>, <a class="el" href="class_menu_input_handler.html#a60840342f557c79f31097aa713ba7a37">MenuInputHandler</a>, <a class="el" href="class_engine_input_handler.html#ade92afaf7657007c2be3b5bd745c96e3">EngineInputHandler</a>, and <a class="el" href="class_collision_handler.html#a7f6deb84dcebcc72e0020eb251ea617f">CollisionHandler</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_input_handler_a69b726d4a409a6f4ae443689cb69b404_icgraph.png" border="0" usemap="#class_input_handler_a69b726d4a409a6f4ae443689cb69b404_icgraph" alt=""/></div>
-<map name="class_input_handler_a69b726d4a409a6f4ae443689cb69b404_icgraph" id="class_input_handler_a69b726d4a409a6f4ae443689cb69b404_icgraph">
-<area shape="rect" id="node2" href="class_engine.html#ad2ff110d5a86c1cd60b541d65915ac48" title="Engine::update" alt="" coords="221,5,331,32"/><area shape="rect" id="node3" href="class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="379,52,543,79"/><area shape="rect" id="node8" href="class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="412,107,509,133"/><area shape="rect" id="node4" href="class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="609,107,752,133"/><area shape="rect" id="node7" href="class_start_single_game_command.html#a27e779a9ce1664557266c0e7679faab0" title="StartSingleGameCommand\l::execute" alt="" coords="591,41,771,82"/><area shape="rect" id="node5" href="class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa" title="Game::run" alt="" coords="819,107,901,133"/><area shape="rect" id="node6" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Runs RenderWindow. Runs game. " alt="" coords="949,107,1000,133"/></map>
-</div>
-</p>
+<p>Implemented in <a class="el" href="class_ai_controler.html#a72891536d5ff122ae1e3a25fd62fd1b5">AiControler</a>, <a class="el" href="class_menu_input_handler.html#a60840342f557c79f31097aa713ba7a37">MenuInputHandler</a>, <a class="el" href="class_engine_input_handler.html#ade92afaf7657007c2be3b5bd745c96e3">EngineInputHandler</a>, and <a class="el" href="class_collision_handler.html#a7f6deb84dcebcc72e0020eb251ea617f">CollisionHandler</a>.</p>
 
 </div>
 </div>
@@ -208,7 +200,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:53 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 23:23:23 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

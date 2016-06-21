@@ -9,16 +9,16 @@ game(game_in),
 key_escape(new QuitGameCommand(game)),// memory leaks, object is doubled
 closed(key_escape),
 
-key_d(new MoveActorCommand(game.engine->current_player, Command::Right)),
+key_d(new MoveActorCommand(game.engine->current_player, GeneralTools::Right)),
 key_right(key_d),
 
-key_s(new MoveActorCommand(game.engine->current_player, Command::Down)),
+key_s(new MoveActorCommand(game.engine->current_player, GeneralTools::Down)),
 key_down(key_s),
 
-key_w(new MoveActorCommand(game.engine->current_player, Command::Up)),
+key_w(new MoveActorCommand(game.engine->current_player, GeneralTools::Up)),
 key_up(key_w),
 
-key_a(new MoveActorCommand(game.engine->current_player, Command::Left)),
+key_a(new MoveActorCommand(game.engine->current_player, GeneralTools::Left)),
 key_left(key_a),
 
 key_q(new SpawnBulletCommand(game, sf::Vector2f(float (0.1), float (0.1)))),

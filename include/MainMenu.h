@@ -1,6 +1,6 @@
 #ifndef MAINMENU_H
 #define MAINMENU_H
-
+#include <memory>
 #include <Menu.h>
 
 
@@ -18,7 +18,7 @@ class MainMenu : public Menu
         //TODO: MEDIUM This can and should be in a base class.
         //'
         const int NUMBER_OF_MENU_CHOICES;
-        sf::Text* menu_text;
+        std::unique_ptr<sf::Text[]> menu_text;
         sf::Font font;
         sf::Text* selected_text;
         //'

@@ -15,7 +15,6 @@ Engine::~Engine()
 
 void Engine::update(){
     collisionHandler->handleInput();
-    player.update();
     Actor* tmp = enemy_spawner.update();
     AiControler* tmp_ai = new AiControler(current_player, tmp, bullet, window);
     if(tmp)
@@ -23,21 +22,18 @@ void Engine::update(){
         enemy.push_back(tmp);
         ai.push_back(tmp_ai);
     }
-    player.CircleShape::move(player.getAcceleration().x * TIME_STEP_AS_MICROS/1000000.f,player.getAcceleration().y *TIME_STEP_AS_MICROS/1000000.f);
+    player.CircleShape::move(player.getSpeed().x * TIME_STEP_AS_MICROS/1000000.f, player.getSpeed().y *TIME_STEP_AS_MICROS/1000000.f);
+    player.update();
     if(player.acceleration.x < 0.001 && player.acceleration.x > -0.001)
         player.speed.x/=1.1;
     if(player.acceleration.y < 0.001 && player.acceleration.y > -0.001)
         player.speed.y/=1.1;
     player.accelerationStop();
-    if(player.notshotable > 0)
-    {
-        player.notshotable--;
-    }
     for(auto i = 0; i<bullet.size(); i++)
         if(bullet[i])
         {
             bullet[i]->GameObject::update();
-            if(bullet[i]->isObjectAlive(window))
+            if(bullet[i]->isOnRenderArea(window))
                 window.draw(*bullet[i]);
             else{
                 std::swap(bullet[i],bullet[bullet.size()-1]);

@@ -10,10 +10,9 @@ class EnemySpawner
         virtual ~EnemySpawner();
         Enemy* update();
         Enemy* spawnEnemy();
-        const int spawn_delay;
-        int counter;
     protected:
-
+        int counter;
+        const int spawn_delay;
     private:
 };
 

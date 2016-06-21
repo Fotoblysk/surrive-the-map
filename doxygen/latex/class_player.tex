@@ -29,40 +29,37 @@ Collaboration diagram for Player\+:
 \item 
 \hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()
 \item 
-virtual sf\+::\+Float\+Rect \hyperlink{class_player_a04324f777f14ec311bc72399a368d24e}{get\+Global\+Bounds} () override
+sf\+::\+Float\+Rect \hyperlink{class_player_ac2b21f8a74b6b1c0e9068a82e7e71e86}{get\+Global\+Bounds} () override
 \item 
-virtual void \hyperlink{class_player_aec7f6d54c177577609263dc1f31063b0}{move} (const sf\+::\+Vector2f \&offset)
+void \hyperlink{class_player_a0512220b727eb0cdc6e7d7141b13c7fd}{move} (const sf\+::\+Vector2f \&offset)
 \item 
-virtual void \hyperlink{class_player_ad2172bbd6077d0f2ca16d215a86b5b60}{render} (sf\+::\+Render\+Window \&window)
+void \hyperlink{class_player_a53938857e80374e79726309e78d1c15c}{render} (sf\+::\+Render\+Window \&window)
 \item 
-const sf\+::\+Vector2f \& \hyperlink{class_player_a202e63e22c98a31b6070d6939ca6f793}{get\+Position} () override
+const sf\+::\+Vector2f \& \hyperlink{class_player_abbd4bab9c1c4f881b268b37c3f810bd0}{get\+Position} () const override
 \item 
-void \hyperlink{class_player_a807f037c5102000aeb93a3e73bfe9952}{acceleration\+Right} () override
-\item 
-void \hyperlink{class_player_ab8ec47b1c74245dfe523999647b8cd4c}{acceleration\+Down} () override
-\item 
-void \hyperlink{class_player_a3d7d8283667bbbc2aa7b4ffe85f2a1c4}{acceleration\+Left} () override
-\item 
-void \hyperlink{class_player_aaf5e60d89a206c6287c1360f93f6a8b9}{acceleration\+Up} () override
+void \hyperlink{class_player_a48e3ad0f384cd58a64136a40d4a04b76}{default\+Acceleration\+Change\+Move} (\hyperlink{namespace_general_tools_afedc3bd242369903830dec92c3ad569b}{General\+Tools\+::\+Direction} direction) override
 \item 
 void \hyperlink{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{update} ()
 \item 
 void \hyperlink{class_player_a0dce6ea2c5edb142604fc128b2bd9840}{acceleration\+Stop} ()
 \item 
-sf\+::\+Vector2f \hyperlink{class_player_a8d04e73e10b26db769818e8d9167b3f3}{get\+Acceleration} ()
+sf\+::\+Vector2f \hyperlink{class_player_abcb3bd2717548668a7c3e5873819c3b2}{get\+Speed} ()
 \item 
 bool \hyperlink{class_player_ac2c0f9ac6f1d4908465a23f9ddb4cb1c}{is\+Object\+On\+Screen} (sf\+::\+Render\+Window \&window)
 \item 
 virtual \hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player} ()
+\item 
+virtual bool \hyperlink{class_player_a52486292c25bc6ac6589423ef0c81b0e}{try\+To\+Shoot} () override
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-sf\+::\+Vector2f \hyperlink{class_player_ae31035c38fbcf2684f34d7b792bbb93d}{acceleration}
+unsigned int \hyperlink{class_player_ab6e35dfaece8703f3906fc3a09d61078}{shoot\+\_\+delay}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-sf\+::\+Vector2f \hyperlink{class_player_aac86a0c16c74e68268e6f37f1b21659f}{speed}
-\item 
-int \hyperlink{class_player_a170241ab79d607c2350bf81c6747ecd7}{notshotable}
+void \hyperlink{class_player_a6fe54860e65e5439dcc0c07e5d4e75a9}{shot\+Delay\+Update} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -85,121 +82,67 @@ int \hyperlink{class_player_a170241ab79d607c2350bf81c6747ecd7}{notshotable}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_player_ab8ec47b1c74245dfe523999647b8cd4c}{}\index{Player@{Player}!acceleration\+Down@{acceleration\+Down}}
-\index{acceleration\+Down@{acceleration\+Down}!Player@{Player}}
-\subsubsection[{acceleration\+Down}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::acceleration\+Down (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_ab8ec47b1c74245dfe523999647b8cd4c}
-
-
-Implements \hyperlink{class_actor_a347730f4e82dbbbb2bf45027634faa1a}{Actor}.
-
-\hypertarget{class_player_a3d7d8283667bbbc2aa7b4ffe85f2a1c4}{}\index{Player@{Player}!acceleration\+Left@{acceleration\+Left}}
-\index{acceleration\+Left@{acceleration\+Left}!Player@{Player}}
-\subsubsection[{acceleration\+Left}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::acceleration\+Left (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_a3d7d8283667bbbc2aa7b4ffe85f2a1c4}
-
-
-Implements \hyperlink{class_actor_ad447288ba0b7202ffd778815f4a5ee5d}{Actor}.
-
-\hypertarget{class_player_a807f037c5102000aeb93a3e73bfe9952}{}\index{Player@{Player}!acceleration\+Right@{acceleration\+Right}}
-\index{acceleration\+Right@{acceleration\+Right}!Player@{Player}}
-\subsubsection[{acceleration\+Right}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::acceleration\+Right (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_a807f037c5102000aeb93a3e73bfe9952}
-
-
-Implements \hyperlink{class_actor_ab48f5d34a91c27dffba96d497b70f37b}{Actor}.
-
 \hypertarget{class_player_a0dce6ea2c5edb142604fc128b2bd9840}{}\index{Player@{Player}!acceleration\+Stop@{acceleration\+Stop}}
 \index{acceleration\+Stop@{acceleration\+Stop}!Player@{Player}}
 \subsubsection[{acceleration\+Stop}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::acceleration\+Stop (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_player_a0dce6ea2c5edb142604fc128b2bd9840}
+)}\label{class_player_a0dce6ea2c5edb142604fc128b2bd9840}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_player_a0dce6ea2c5edb142604fc128b2bd9840_icgraph}
+\includegraphics[width=321pt]{class_player_a0dce6ea2c5edb142604fc128b2bd9840_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{class_player_aaf5e60d89a206c6287c1360f93f6a8b9}{}\index{Player@{Player}!acceleration\+Up@{acceleration\+Up}}
-\index{acceleration\+Up@{acceleration\+Up}!Player@{Player}}
-\subsubsection[{acceleration\+Up}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::acceleration\+Up (
+\hypertarget{class_player_a48e3ad0f384cd58a64136a40d4a04b76}{}\index{Player@{Player}!default\+Acceleration\+Change\+Move@{default\+Acceleration\+Change\+Move}}
+\index{default\+Acceleration\+Change\+Move@{default\+Acceleration\+Change\+Move}!Player@{Player}}
+\subsubsection[{default\+Acceleration\+Change\+Move}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::default\+Acceleration\+Change\+Move (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf General\+Tools\+::\+Direction}}]{direction}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_aaf5e60d89a206c6287c1360f93f6a8b9}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_a48e3ad0f384cd58a64136a40d4a04b76}
 
 
-Implements \hyperlink{class_actor_aa9819c45f4e0f8903a81e174a68ec983}{Actor}.
+Implements \hyperlink{class_actor_a9992ceb5499bff601e461c3bb93a8d48}{Actor}.
 
-\hypertarget{class_player_a8d04e73e10b26db769818e8d9167b3f3}{}\index{Player@{Player}!get\+Acceleration@{get\+Acceleration}}
-\index{get\+Acceleration@{get\+Acceleration}!Player@{Player}}
-\subsubsection[{get\+Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Player\+::get\+Acceleration (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_player_a8d04e73e10b26db769818e8d9167b3f3}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_a8d04e73e10b26db769818e8d9167b3f3_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_player_a04324f777f14ec311bc72399a368d24e}{}\index{Player@{Player}!get\+Global\+Bounds@{get\+Global\+Bounds}}
+\hypertarget{class_player_ac2b21f8a74b6b1c0e9068a82e7e71e86}{}\index{Player@{Player}!get\+Global\+Bounds@{get\+Global\+Bounds}}
 \index{get\+Global\+Bounds@{get\+Global\+Bounds}!Player@{Player}}
-\subsubsection[{get\+Global\+Bounds}]{\setlength{\rightskip}{0pt plus 5cm}virtual sf\+::\+Float\+Rect Player\+::get\+Global\+Bounds (
+\subsubsection[{get\+Global\+Bounds}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Float\+Rect Player\+::get\+Global\+Bounds (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_a04324f777f14ec311bc72399a368d24e}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_ac2b21f8a74b6b1c0e9068a82e7e71e86}
 
 
 Implements \hyperlink{class_actor_ab56cff32076fef8392f4562fe281ea86}{Actor}.
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_player_a04324f777f14ec311bc72399a368d24e_icgraph}
+\includegraphics[width=350pt]{class_player_ac2b21f8a74b6b1c0e9068a82e7e71e86_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{class_player_a202e63e22c98a31b6070d6939ca6f793}{}\index{Player@{Player}!get\+Position@{get\+Position}}
+\hypertarget{class_player_abbd4bab9c1c4f881b268b37c3f810bd0}{}\index{Player@{Player}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!Player@{Player}}
-\subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}const sf\+::\+Vector2f\& Player\+::get\+Position (
+\subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}const sf\+::\+Vector2f \& Player\+::get\+Position (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_a202e63e22c98a31b6070d6939ca6f793}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_abbd4bab9c1c4f881b268b37c3f810bd0}
 
 
-Implements \hyperlink{class_game_object_a3c1da4d2eaaf8384f3ca10735673991e}{Game\+Object}.
+Implements \hyperlink{class_game_object_aba7c07744a79defec4484fb09d917543}{Game\+Object}.
 
 
 
@@ -208,7 +151,25 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=345pt]{class_player_a202e63e22c98a31b6070d6939ca6f793_icgraph}
+\includegraphics[width=345pt]{class_player_abbd4bab9c1c4f881b268b37c3f810bd0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_player_abcb3bd2717548668a7c3e5873819c3b2}{}\index{Player@{Player}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Player@{Player}}
+\subsubsection[{get\+Speed}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Player\+::get\+Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_player_abcb3bd2717548668a7c3e5873819c3b2}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_player_abcb3bd2717548668a7c3e5873819c3b2_icgraph}
 \end{center}
 \end{figure}
 
@@ -236,38 +197,68 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
-\hypertarget{class_player_aec7f6d54c177577609263dc1f31063b0}{}\index{Player@{Player}!move@{move}}
+\hypertarget{class_player_a0512220b727eb0cdc6e7d7141b13c7fd}{}\index{Player@{Player}!move@{move}}
 \index{move@{move}!Player@{Player}}
-\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Player\+::move (
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::move (
 \begin{DoxyParamCaption}
 \item[{const sf\+::\+Vector2f \&}]{offset}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_player_aec7f6d54c177577609263dc1f31063b0}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_player_a0512220b727eb0cdc6e7d7141b13c7fd}
 
 
 Implements \hyperlink{class_game_object_a370e89c4bb00a8fb851d9279480f7f76}{Game\+Object}.
 
-\hypertarget{class_player_ad2172bbd6077d0f2ca16d215a86b5b60}{}\index{Player@{Player}!render@{render}}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a0512220b727eb0cdc6e7d7141b13c7fd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_player_a53938857e80374e79726309e78d1c15c}{}\index{Player@{Player}!render@{render}}
 \index{render@{render}!Player@{Player}}
-\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Player\+::render (
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::render (
 \begin{DoxyParamCaption}
 \item[{sf\+::\+Render\+Window \&}]{window}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_player_ad2172bbd6077d0f2ca16d215a86b5b60}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_player_a53938857e80374e79726309e78d1c15c}
 
 
 Implements \hyperlink{class_game_object_a07a0da194460f2642732f45d7ad369e8}{Game\+Object}.
 
-\hypertarget{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{}\index{Player@{Player}!update@{update}}
-\index{update@{update}!Player@{Player}}
-\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::update (
+\hypertarget{class_player_a6fe54860e65e5439dcc0c07e5d4e75a9}{}\index{Player@{Player}!shot\+Delay\+Update@{shot\+Delay\+Update}}
+\index{shot\+Delay\+Update@{shot\+Delay\+Update}!Player@{Player}}
+\subsubsection[{shot\+Delay\+Update}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::shot\+Delay\+Update (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_player_a6fe54860e65e5439dcc0c07e5d4e75a9}
 
 
-Reimplemented from \hyperlink{class_game_object_ad4a07f19f6c5e2e71c89c07486f26244}{Game\+Object}.
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a6fe54860e65e5439dcc0c07e5d4e75a9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_player_a52486292c25bc6ac6589423ef0c81b0e}{}\index{Player@{Player}!try\+To\+Shoot@{try\+To\+Shoot}}
+\index{try\+To\+Shoot@{try\+To\+Shoot}!Player@{Player}}
+\subsubsection[{try\+To\+Shoot}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\+::try\+To\+Shoot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_player_a52486292c25bc6ac6589423ef0c81b0e}
+
+
+Reimplemented from \hyperlink{class_actor_a85db8a17b338703247162f82f94cb957}{Actor}.
 
 
 
@@ -276,7 +267,41 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4_icgraph}
+\includegraphics[width=329pt]{class_player_a52486292c25bc6ac6589423ef0c81b0e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{}\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}
+
+
+Reimplemented from \hyperlink{class_game_object_ad4a07f19f6c5e2e71c89c07486f26244}{Game\+Object}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4_icgraph}
 \end{center}
 \end{figure}
 
@@ -284,15 +309,9 @@ Here is the caller graph for this function\+:
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_player_ae31035c38fbcf2684f34d7b792bbb93d}{}\index{Player@{Player}!acceleration@{acceleration}}
-\index{acceleration@{acceleration}!Player@{Player}}
-\subsubsection[{acceleration}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Player\+::acceleration}\label{class_player_ae31035c38fbcf2684f34d7b792bbb93d}
-\hypertarget{class_player_a170241ab79d607c2350bf81c6747ecd7}{}\index{Player@{Player}!notshotable@{notshotable}}
-\index{notshotable@{notshotable}!Player@{Player}}
-\subsubsection[{notshotable}]{\setlength{\rightskip}{0pt plus 5cm}int Player\+::notshotable}\label{class_player_a170241ab79d607c2350bf81c6747ecd7}
-\hypertarget{class_player_aac86a0c16c74e68268e6f37f1b21659f}{}\index{Player@{Player}!speed@{speed}}
-\index{speed@{speed}!Player@{Player}}
-\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Player\+::speed}\label{class_player_aac86a0c16c74e68268e6f37f1b21659f}
+\hypertarget{class_player_ab6e35dfaece8703f3906fc3a09d61078}{}\index{Player@{Player}!shoot\+\_\+delay@{shoot\+\_\+delay}}
+\index{shoot\+\_\+delay@{shoot\+\_\+delay}!Player@{Player}}
+\subsubsection[{shoot\+\_\+delay}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Player\+::shoot\+\_\+delay\hspace{0.3cm}{\ttfamily [protected]}}\label{class_player_ab6e35dfaece8703f3906fc3a09d61078}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

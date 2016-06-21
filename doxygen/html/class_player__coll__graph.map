@@ -1,4 +1,4 @@
 <map id="Player" name="Player">
-<area shape="rect" id="node2" href="$class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="5,219,153,428"/>
-<area shape="rect" id="node3" href="$class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="18,5,141,171"/>
+<area shape="rect" id="node2" href="$class_actor.html" title="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}" alt="" coords="5,219,232,413"/>
+<area shape="rect" id="node3" href="$class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="57,5,180,171"/>
 </map>

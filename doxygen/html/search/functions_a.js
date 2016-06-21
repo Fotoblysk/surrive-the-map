@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['player',['Player',['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player']]]
+  ['normtomaxspeed',['normToMaxSpeed',['../class_ai_controler.html#aa388145d3791cd80b1d53a5847428f68',1,'AiControler']]]
 ];

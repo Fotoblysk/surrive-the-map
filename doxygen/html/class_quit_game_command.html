@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -106,7 +107,7 @@ Collaboration diagram for QuitGameCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_quit_game_command__coll__graph.png" border="0" usemap="#_quit_game_command_coll__map" alt="Collaboration graph"/></div>
 <map name="_quit_game_command_coll__map" id="_quit_game_command_coll__map">
-<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="8,279,117,371"/><area shape="rect" id="node7" href="class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="72,595,195,687"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="109,1080,256,1275"/><area shape="rect" id="node4" href="class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="240,852,331,1017"/><area shape="rect" id="node5" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="342,220,490,429"/><area shape="rect" id="node9" href="class_player.html" title="{Player\n|+ acceleration\l+ speed\l+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ accelerationRight()\l+ accelerationDown()\l+ accelerationLeft()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="219,492,367,789"/><area shape="rect" id="node6" href="class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="355,5,477,171"/><area shape="rect" id="node8" href="class_enemy_spawner.html" title="{EnemySpawner\n|+ spawn_delay\l+ counter\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="535,573,676,709"/><area shape="rect" id="node11" href="class_menu.html" title="{Menu\n||+ render()\l+ getNumberOfMenuChoices()\l+ ~Menu()\l+ getSelectedTextPtr()\l+ getMenuText()\l}" alt="" coords="355,867,552,1003"/></map>
+<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,79,115,171"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,5,285,244"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -125,16 +126,6 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a44707efd79f562af0b78b40920365ee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quit_game_command.html#a44707efd79f562af0b78b40920365ee3">game</a></td></tr>
 <tr class="separator:a44707efd79f562af0b78b40920365ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_command"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_command')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_command.html">Command</a></td></tr>
-<tr class="memitem:a53ddb82f75ac3516b27d8f92f93c5e09 inherit pub_types_class_command"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> { <a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a0f13498a12abf82d3b7324eacb93405a">Left</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09ac22330c293a1fbc82603aa19d27ce109">Right</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a4101280bbe84fa51f2393dac71f830cf">Up</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a7d1a60c1738de3a81c3118facd710d42">Down</a>
- }</td></tr>
-<tr class="separator:a53ddb82f75ac3516b27d8f92f93c5e09 inherit pub_types_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae05171411d2210b38bd6ee08e2d90f15"></a>
@@ -248,7 +239,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:54 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 23:23:24 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -1,4 +1,6 @@
 <map id="MoveSelectionCommand.h" name="MoveSelectionCommand.h">
-<area shape="rect" id="node2" href="$_command_8h.html" title="Command.h" alt="" coords="5,80,97,107"/>
-<area shape="rect" id="node3" href="$_menu_8h.html" title="Menu.h" alt="" coords="121,80,187,107"/>
+<area shape="rect" id="node2" href="$_command_8h.html" title="Command.h" alt="" coords="55,80,147,107"/>
+<area shape="rect" id="node6" href="$_menu_8h.html" title="Menu.h" alt="" coords="201,80,266,107"/>
+<area shape="rect" id="node8" href="$_general_tools_8h.html" title="../GeneralTools.h" alt="" coords="290,80,411,107"/>
+<area shape="rect" id="node3" href="$debugging__tolls_8h.html" title="Personal debug macros. Include after defining NDEBUG to turn off. " alt="" coords="19,155,154,181"/>
 </map>

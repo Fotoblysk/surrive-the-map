@@ -6,6 +6,7 @@
 #include"Engine.h"
 #include"Menu.h"
 #include<string>
+#include<memory>
 /*!
  * \brief Game main class. Class which is used run engine.
  * This class will menage menu and settings
@@ -20,14 +21,14 @@ class Game
         sf::RenderWindow& getRenderWindow();
         void run();
         void startSinglePlayer();
-        Menu* main_menu;
-        Engine* engine;
+        std::unique_ptr <Menu> main_menu;
+        std::unique_ptr <Engine> engine;
     protected:
 
     private:
         void menu();
         sf::RenderWindow& window;           ///<Main game window
-        InputHandler* menu_input;
+        std::unique_ptr <InputHandler> menu_input;
         GameState state;
         void stateMachine();
 };

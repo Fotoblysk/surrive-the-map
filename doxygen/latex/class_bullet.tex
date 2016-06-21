@@ -33,11 +33,11 @@ virtual \hyperlink{class_bullet_aaeb5cb41d7db89f49007b08b41f1bfcf}{$\sim$\+Bulle
 \item 
 void \hyperlink{class_bullet_ae4af350647e1b2a798eb3fd35a883b84}{render} (sf\+::\+Render\+Window \&window) override
 \item 
-const sf\+::\+Vector2f \& \hyperlink{class_bullet_a82f82d6367d1c403898a29d1ce91630d}{get\+Position} () override
+const sf\+::\+Vector2f \& \hyperlink{class_bullet_a405c853cbdaffd53d506eb3ee474a3ef}{get\+Position} () const override
 \item 
 void \hyperlink{class_bullet_a8715ab2edff76c8b45fabc6dc453e85d}{move} (const sf\+::\+Vector2f \&offset) override
 \item 
-bool \hyperlink{class_bullet_a23cadfbb18a562482f0bae03f0edd029}{is\+Object\+Alive} (sf\+::\+Render\+Window \&window)
+bool \hyperlink{class_bullet_adb7fd96160370770ac03e05cb8aeee42}{is\+On\+Render\+Area} (sf\+::\+Render\+Window \&window) const 
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -61,16 +61,16 @@ bool \hyperlink{class_bullet_a23cadfbb18a562482f0bae03f0edd029}{is\+Object\+Aliv
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_bullet_a82f82d6367d1c403898a29d1ce91630d}{}\index{Bullet@{Bullet}!get\+Position@{get\+Position}}
+\hypertarget{class_bullet_a405c853cbdaffd53d506eb3ee474a3ef}{}\index{Bullet@{Bullet}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!Bullet@{Bullet}}
-\subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}const sf\+::\+Vector2f\& Bullet\+::get\+Position (
+\subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}const sf\+::\+Vector2f \& Bullet\+::get\+Position (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_bullet_a82f82d6367d1c403898a29d1ce91630d}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_bullet_a405c853cbdaffd53d506eb3ee474a3ef}
 
 
-Implements \hyperlink{class_game_object_a3c1da4d2eaaf8384f3ca10735673991e}{Game\+Object}.
+Implements \hyperlink{class_game_object_aba7c07744a79defec4484fb09d917543}{Game\+Object}.
 
 
 
@@ -79,18 +79,18 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_bullet_a82f82d6367d1c403898a29d1ce91630d_icgraph}
+\includegraphics[width=350pt]{class_bullet_a405c853cbdaffd53d506eb3ee474a3ef_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{class_bullet_a23cadfbb18a562482f0bae03f0edd029}{}\index{Bullet@{Bullet}!is\+Object\+Alive@{is\+Object\+Alive}}
-\index{is\+Object\+Alive@{is\+Object\+Alive}!Bullet@{Bullet}}
-\subsubsection[{is\+Object\+Alive}]{\setlength{\rightskip}{0pt plus 5cm}bool Bullet\+::is\+Object\+Alive (
+\hypertarget{class_bullet_adb7fd96160370770ac03e05cb8aeee42}{}\index{Bullet@{Bullet}!is\+On\+Render\+Area@{is\+On\+Render\+Area}}
+\index{is\+On\+Render\+Area@{is\+On\+Render\+Area}!Bullet@{Bullet}}
+\subsubsection[{is\+On\+Render\+Area}]{\setlength{\rightskip}{0pt plus 5cm}bool Bullet\+::is\+On\+Render\+Area (
 \begin{DoxyParamCaption}
 \item[{sf\+::\+Render\+Window \&}]{window}
 \end{DoxyParamCaption}
-)}\label{class_bullet_a23cadfbb18a562482f0bae03f0edd029}
+) const}\label{class_bullet_adb7fd96160370770ac03e05cb8aeee42}
 
 
 Here is the call graph for this function\+:
@@ -98,7 +98,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=316pt]{class_bullet_a23cadfbb18a562482f0bae03f0edd029_cgraph}
+\includegraphics[width=331pt]{class_bullet_adb7fd96160370770ac03e05cb8aeee42_cgraph}
 \end{center}
 \end{figure}
 
@@ -110,7 +110,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=340pt]{class_bullet_a23cadfbb18a562482f0bae03f0edd029_icgraph}
+\includegraphics[width=350pt]{class_bullet_adb7fd96160370770ac03e05cb8aeee42_icgraph}
 \end{center}
 \end{figure}
 
@@ -121,7 +121,7 @@ Here is the caller graph for this function\+:
 \begin{DoxyParamCaption}
 \item[{const sf\+::\+Vector2f \&}]{offset}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_bullet_a8715ab2edff76c8b45fabc6dc453e85d}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_bullet_a8715ab2edff76c8b45fabc6dc453e85d}
 
 
 Implements \hyperlink{class_game_object_a370e89c4bb00a8fb851d9279480f7f76}{Game\+Object}.

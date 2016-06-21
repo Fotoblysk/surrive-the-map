@@ -1,6 +1,4 @@
 <map id="Menu::getMenuText" name="Menu::getMenuText">
-<area shape="rect" id="node2" href="$class_enter_choice_command.html#a09b35eafcb1ba6d9e6fb93425702e6c4" title="EnterChoiceCommand\l::findSelectedOnTextArray" alt="" coords="191,5,365,47"/>
-<area shape="rect" id="node4" href="$class_move_selection_command.html#a0d2117e50adfe980744b3ca883ca7fc5" title="MoveSelectionCommand\l::execute" alt="" coords="413,96,579,137"/>
-<area shape="rect" id="node5" href="$class_move_selection_command.html#a6a9d0bed09292f4465c3a09a847ed0be" title="MoveSelectionCommand\l::findSelectedOnTextArray" alt="" coords="191,123,365,164"/>
-<area shape="rect" id="node3" href="$class_enter_choice_command.html#a684f65bfc296353ecefc6edc1c678c70" title="EnterChoiceCommand\l::execute" alt="" coords="420,5,572,47"/>
+<area shape="rect" id="node2" href="$class_move_selection_command.html#a0d2117e50adfe980744b3ca883ca7fc5" title="MoveSelectionCommand\l::execute" alt="" coords="413,5,579,47"/>
+<area shape="rect" id="node3" href="$class_move_selection_command.html#a6a9d0bed09292f4465c3a09a847ed0be" title="MoveSelectionCommand\l::findSelectedOnTextArray" alt="" coords="191,35,365,76"/>
 </map>

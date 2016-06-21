@@ -1,16 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa" title="Game::run" alt="" coords="104,81,187,108"/>
-<area shape="rect" id="node3" href="$class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="235,81,377,108"/>
-<area shape="rect" id="node4" href="$class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="459,56,556,83"/>
-<area shape="rect" id="node7" href="$class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="425,132,589,159"/>
-<area shape="rect" id="node5" href="$class_menu.html#aa2297a6abfaa404403fe1b7ae2521f88" title="Menu::render" alt="" coords="643,5,741,32"/>
-<area shape="rect" id="node6" href="$class_input_handler.html#a69b726d4a409a6f4ae443689cb69b404" title="InputHandler::handleInput" alt="" coords="795,56,963,83"/>
-<area shape="rect" id="node8" href="$class_engine.html#ad2ff110d5a86c1cd60b541d65915ac48" title="Engine::update" alt="" coords="637,157,747,184"/>
-<area shape="rect" id="node15" href="$class_engine.html#a7960743aefd62e846e7f3cd92c18bc73" title="Engine::render" alt="" coords="639,208,745,235"/>
-<area shape="rect" id="node9" href="$class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="825,107,932,133"/>
-<area shape="rect" id="node10" href="$class_enemy_spawner.html#a1b00731679380c088027072b11583d6c" title="EnemySpawner::update" alt="" coords="799,157,959,184"/>
-<area shape="rect" id="node13" href="$class_player.html#a8d04e73e10b26db769818e8d9167b3f3" title="Player::getAcceleration" alt="" coords="800,208,957,235"/>
-<area shape="rect" id="node14" href="$class_player.html#a0dce6ea2c5edb142604fc128b2bd9840" title="Player::accelerationStop" alt="" coords="797,259,961,285"/>
-<area shape="rect" id="node11" href="$class_enemy_spawner.html#adc9ba92ad7028dc28e1599fea871e132" title="EnemySpawner::spawnEnemy" alt="" coords="1011,157,1209,184"/>
-<area shape="rect" id="node12" href="$class_enemy.html#a901af192d36d757b0cfbd2c92c742ccc" title="Enemy::accelerationDown" alt="" coords="1257,157,1431,184"/>
+<area shape="rect" id="node2" href="$class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa" title="Game::run" alt="" coords="104,31,187,57"/>
+<area shape="rect" id="node3" href="$class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="235,31,377,57"/>
+<area shape="rect" id="node4" href="$class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="459,5,556,32"/>
+<area shape="rect" id="node5" href="$class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="425,56,589,83"/>
 </map>

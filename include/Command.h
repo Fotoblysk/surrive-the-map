@@ -1,12 +1,11 @@
 #ifndef COMMAND_H
 #define COMMAND_H
+#include"../debugging_tolls.h"
 class Command
 {
     public:
-    enum Direction {Left, Right, Up, Down};
         virtual ~Command();
-        virtual void execute()=0; //TODO: EASY write it all with new MainMenu class
-
+        virtual void execute()=0;
     protected:
 
     private:

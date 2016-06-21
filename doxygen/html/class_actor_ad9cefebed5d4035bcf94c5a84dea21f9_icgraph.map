@@ -1,0 +1,5 @@
+<map id="Actor::getShotStatus" name="Actor::getShotStatus">
+<area shape="rect" id="node2" href="$class_enemy.html#a94f30d348b6d2840fd71675472ba38dd" title="Enemy::Enemy" alt="" coords="230,5,342,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#a9a6b7416616b3d0464978d38cf7095e9" title="Enemy::isObjectOnScreen" alt="" coords="197,56,375,83"/>
+<area shape="rect" id="node4" href="$class_player.html#ac2c0f9ac6f1d4908465a23f9ddb4cb1c" title="Player::isObjectOnScreen" alt="" coords="199,107,373,133"/>
+</map>

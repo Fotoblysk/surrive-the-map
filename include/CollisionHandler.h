@@ -6,8 +6,7 @@ class CollisionHandler : public InputHandler
         CollisionHandler(Engine& engine_in);
         virtual ~CollisionHandler();
         Command** handleInput()override;
-        Engine& engine;
     protected:
-
+        Engine& engine;
     private:
 };

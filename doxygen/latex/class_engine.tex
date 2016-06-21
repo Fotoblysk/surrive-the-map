@@ -45,7 +45,7 @@ sf\+::\+Render\+Window \& \hyperlink{class_engine_ae5fb055a0acce41034a9bff218dd8
 \item 
 \hyperlink{class_enemy_spawner}{Enemy\+Spawner} \hyperlink{class_engine_ac38501b7527b3c8ce22f8b31a13821ea}{enemy\+\_\+spawner}
 \item 
-\hyperlink{class_input_handler}{Input\+Handler} $\ast$ \hyperlink{class_engine_a9c359f201d47e7fb35b9c379808d4263}{collision\+Handler}
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_input_handler}{Input\+Handler} $>$ \hyperlink{class_engine_a20fca6041ee94486e4ed1ec48d63dfef}{collision\+Handler}
 \end{DoxyCompactItemize}
 
 
@@ -74,18 +74,6 @@ sf\+::\+Render\+Window \& \hyperlink{class_engine_ae5fb055a0acce41034a9bff218dd8
 {}
 \end{DoxyParamCaption}
 )}\label{class_engine_a7960743aefd62e846e7f3cd92c18bc73}
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_engine_a7960743aefd62e846e7f3cd92c18bc73_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}{}\index{Engine@{Engine}!update@{update}}
 \index{update@{update}!Engine@{Engine}}
 \subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Engine\+::update (
@@ -107,18 +95,6 @@ Here is the call graph for this function\+:
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_engine_ad2ff110d5a86c1cd60b541d65915ac48_icgraph}
-\end{center}
-\end{figure}
-
-
-
-
 \subsection{Member Data Documentation}
 \hypertarget{class_engine_a82c1ca4ee6f6dd4e9b79918aa12c156f}{}\index{Engine@{Engine}!ai@{ai}}
 \index{ai@{ai}!Engine@{Engine}}
@@ -126,9 +102,9 @@ Here is the caller graph for this function\+:
 \hypertarget{class_engine_a267b13093cb4ea1de9c297a96b0314ea}{}\index{Engine@{Engine}!bullet@{bullet}}
 \index{bullet@{bullet}!Engine@{Engine}}
 \subsubsection[{bullet}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Bullet}$\ast$$>$ Engine\+::bullet}\label{class_engine_a267b13093cb4ea1de9c297a96b0314ea}
-\hypertarget{class_engine_a9c359f201d47e7fb35b9c379808d4263}{}\index{Engine@{Engine}!collision\+Handler@{collision\+Handler}}
+\hypertarget{class_engine_a20fca6041ee94486e4ed1ec48d63dfef}{}\index{Engine@{Engine}!collision\+Handler@{collision\+Handler}}
 \index{collision\+Handler@{collision\+Handler}!Engine@{Engine}}
-\subsubsection[{collision\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Input\+Handler}$\ast$ Engine\+::collision\+Handler\hspace{0.3cm}{\ttfamily [protected]}}\label{class_engine_a9c359f201d47e7fb35b9c379808d4263}
+\subsubsection[{collision\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Input\+Handler}$>$ Engine\+::collision\+Handler\hspace{0.3cm}{\ttfamily [protected]}}\label{class_engine_a20fca6041ee94486e4ed1ec48d63dfef}
 \hypertarget{class_engine_ab488c2946ac31376f272acc1eaf815b7}{}\index{Engine@{Engine}!current\+\_\+player@{current\+\_\+player}}
 \index{current\+\_\+player@{current\+\_\+player}!Engine@{Engine}}
 \subsubsection[{current\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actor}$\ast$ Engine\+::current\+\_\+player}\label{class_engine_ab488c2946ac31376f272acc1eaf815b7}

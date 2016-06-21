@@ -1,6 +1,6 @@
 #ifndef MOVERIGHTCOMMAND_H
 #define MOVERIGHTCOMMAND_H
-
+#include "../GeneralTools.h"
 #include <Command.h>
 #include <Game.h>
 
@@ -8,7 +8,7 @@
 class MoveActorCommand : public Command
 {
     public:
-        MoveActorCommand(Actor*& actor_ptr_in, Direction direction_in);
+        MoveActorCommand(Actor*& actor_ptr_in, GeneralTools::Direction direction_in);
         void execute()override;
         virtual ~MoveActorCommand();
         int findSelectedOnTextArray();
@@ -16,7 +16,7 @@ class MoveActorCommand : public Command
 
     private:
         Actor*& actor_ptr;
-        Direction direction;
+        GeneralTools::Direction direction;
 };
 
 #endif // MOVERIGHTCOMMAND_H

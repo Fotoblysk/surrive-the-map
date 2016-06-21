@@ -1,31 +1,18 @@
 #include "MoveActorCommand.h"
 
-MoveActorCommand::MoveActorCommand(Actor*& actor_ptr_in, Direction direction_in):
+MoveActorCommand::MoveActorCommand(Actor*& actor_ptr_in, GeneralTools::Direction direction_in):
 actor_ptr(actor_ptr_in),
 direction(direction_in){
-
+    DEBUG_MSG("Creating actor move command"<<std::endl);
 }
 
 
 MoveActorCommand::~MoveActorCommand(){
-
+    DEBUG_MSG("Removing actor move command"<<std::endl);
 }
 void MoveActorCommand::execute(){
-    switch(direction)
-    {
-    case Right:
-        actor_ptr->accelerationRight();
-        break;
-    case Left:
-        actor_ptr->accelerationLeft();
-        break;
-    case Up:
-        actor_ptr->accelerationUp();
-        break;
-    case Down:
-        actor_ptr->accelerationDown();
-        break;
-    }
+    //DEBUG_MSG("Exec actor move command"<<std::endl);
+    actor_ptr->defaultAccelerationChangeMove(direction);
 }
 
 

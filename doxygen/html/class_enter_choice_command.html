@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -106,7 +107,7 @@ Collaboration diagram for EnterChoiceCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_enter_choice_command__coll__graph.png" border="0" usemap="#_enter_choice_command_coll__map" alt="Collaboration graph"/></div>
 <map name="_enter_choice_command_coll__map" id="_enter_choice_command_coll__map">
-<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="17,279,127,371"/><area shape="rect" id="node7" href="class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="81,595,204,687"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="119,1080,265,1275"/><area shape="rect" id="node4" href="class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="249,852,340,1017"/><area shape="rect" id="node5" href="class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="351,220,499,429"/><area shape="rect" id="node9" href="class_player.html" title="{Player\n|+ acceleration\l+ speed\l+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ accelerationRight()\l+ accelerationDown()\l+ accelerationLeft()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="229,492,377,789"/><area shape="rect" id="node6" href="class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="364,5,487,171"/><area shape="rect" id="node8" href="class_enemy_spawner.html" title="{EnemySpawner\n|+ spawn_delay\l+ counter\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="544,573,685,709"/><area shape="rect" id="node11" href="class_menu.html" title="{Menu\n||+ render()\l+ getNumberOfMenuChoices()\l+ ~Menu()\l+ getSelectedTextPtr()\l+ getMenuText()\l}" alt="" coords="364,867,561,1003"/></map>
+<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,79,115,171"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,5,285,244"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -127,16 +128,6 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a53c2b9d8c1ee8b9bdbed6ad4889f10b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enter_choice_command.html#a53c2b9d8c1ee8b9bdbed6ad4889f10b0">game</a></td></tr>
 <tr class="separator:a53c2b9d8c1ee8b9bdbed6ad4889f10b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_command"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_command')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_command.html">Command</a></td></tr>
-<tr class="memitem:a53ddb82f75ac3516b27d8f92f93c5e09 inherit pub_types_class_command"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> { <a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a0f13498a12abf82d3b7324eacb93405a">Left</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09ac22330c293a1fbc82603aa19d27ce109">Right</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a4101280bbe84fa51f2393dac71f830cf">Up</a>, 
-<a class="el" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09a7d1a60c1738de3a81c3118facd710d42">Down</a>
- }</td></tr>
-<tr class="separator:a53ddb82f75ac3516b27d8f92f93c5e09 inherit pub_types_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab28cfc3f238985775ec33ebb33c355a6"></a>
@@ -207,7 +198,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_enter_choice_command_a684f65bfc296353ecefc6edc1c678c70_cgraph.png" border="0" usemap="#class_enter_choice_command_a684f65bfc296353ecefc6edc1c678c70_cgraph" alt=""/></div>
 <map name="class_enter_choice_command_a684f65bfc296353ecefc6edc1c678c70_cgraph" id="class_enter_choice_command_a684f65bfc296353ecefc6edc1c678c70_cgraph">
-<area shape="rect" id="node2" href="class_enter_choice_command.html#a09b35eafcb1ba6d9e6fb93425702e6c4" title="EnterChoiceCommand\l::findSelectedOnTextArray" alt="" coords="215,49,390,90"/><area shape="rect" id="node6" href="class_game.html#a82e2140cdedd171aecaed897d3aea5a0" title="Game::changeState" alt="" coords="487,161,626,188"/><area shape="rect" id="node7" href="class_quit_game_command.html#ad39d43150a927d7e8b0dd7162eb840eb" title="QuitGameCommand::execute" alt="" coords="205,165,400,192"/><area shape="rect" id="node3" href="class_menu.html#aeed33b0a47d0c49de45e0c1bb1503585" title="Menu::getNumberOfMenuChoices" alt="" coords="448,5,665,32"/><area shape="rect" id="node4" href="class_menu.html#a42fb94aee459f7ae5d06a7be1b540f17" title="Menu::getMenuText" alt="" coords="488,56,625,83"/><area shape="rect" id="node5" href="class_menu.html#ac9a761729ba9bac25bae4ee1a25b6e11" title="Menu::getSelectedTextPtr" alt="" coords="470,107,643,133"/></map>
+<area shape="rect" id="node2" href="class_enter_choice_command.html#a09b35eafcb1ba6d9e6fb93425702e6c4" title="EnterChoiceCommand\l::findSelectedOnTextArray" alt="" coords="215,5,390,47"/><area shape="rect" id="node3" href="class_game.html#a82e2140cdedd171aecaed897d3aea5a0" title="Game::changeState" alt="" coords="448,97,587,123"/><area shape="rect" id="node4" href="class_quit_game_command.html#ad39d43150a927d7e8b0dd7162eb840eb" title="QuitGameCommand::execute" alt="" coords="205,122,400,149"/></map>
 </div>
 </p>
 
@@ -225,15 +216,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph.png" border="0" usemap="#class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph" alt=""/></div>
-<map name="class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph" id="class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph">
-<area shape="rect" id="node2" href="class_menu.html#aeed33b0a47d0c49de45e0c1bb1503585" title="Menu::getNumberOfMenuChoices" alt="" coords="228,5,445,32"/><area shape="rect" id="node3" href="class_menu.html#a42fb94aee459f7ae5d06a7be1b540f17" title="Menu::getMenuText" alt="" coords="268,56,405,83"/><area shape="rect" id="node4" href="class_menu.html#ac9a761729ba9bac25bae4ee1a25b6e11" title="Menu::getSelectedTextPtr" alt="" coords="250,107,423,133"/></map>
-</div>
-</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -274,7 +256,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:53 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 23:23:22 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

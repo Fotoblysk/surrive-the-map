@@ -22,7 +22,7 @@ class Engine
     protected:
         sf::RenderWindow& window;
         EnemySpawner enemy_spawner;
-        InputHandler* collisionHandler;
+        std::unique_ptr<InputHandler> collisionHandler;
     private:
 };
 

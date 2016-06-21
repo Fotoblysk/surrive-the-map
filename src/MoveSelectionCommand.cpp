@@ -1,10 +1,10 @@
 #include "MoveSelectionCommand.h"
-
-MoveSelectionCommand::MoveSelectionCommand(Menu& menu_in, Command::Direction direction_in) :
+#include"../debugging_tolls.h"
+MoveSelectionCommand::MoveSelectionCommand(Menu& menu_in, GeneralTools::Direction direction_in) :
 menu(menu_in),
 direction(direction_in)
 {
-
+    DEBUG_MSG("MSCCREATE ");
 }
 
 
@@ -14,7 +14,7 @@ MoveSelectionCommand::~MoveSelectionCommand()
 }
 void MoveSelectionCommand::execute(){
     switch(direction){
-        case Command::Down :
+        case GeneralTools::Down :
             if(menu.getSelectedTextPtr() == nullptr)
                 menu.getSelectedTextPtr() = &menu.getMenuText(0);
             else{
@@ -27,7 +27,7 @@ void MoveSelectionCommand::execute(){
             //hilighting current one
             menu.getSelectedTextPtr() -> setColor(sf::Color::Yellow);
             break;
-        case Command::Up :
+        case GeneralTools::Up :
             if(menu.getSelectedTextPtr() == nullptr)
                 menu.getSelectedTextPtr() = &menu.getMenuText(menu.getNumberOfMenuChoices()-1);
             else{

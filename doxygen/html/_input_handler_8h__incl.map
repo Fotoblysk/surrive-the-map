@@ -1,3 +1,4 @@
 <map id="InputHandler.h" name="InputHandler.h">
-<area shape="rect" id="node2" href="$_command_8h.html" title="Command.h" alt="" coords="12,80,104,107"/>
+<area shape="rect" id="node2" href="$_command_8h.html" title="Command.h" alt="" coords="41,80,133,107"/>
+<area shape="rect" id="node3" href="$debugging__tolls_8h.html" title="Personal debug macros. Include after defining NDEBUG to turn off. " alt="" coords="19,155,154,181"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right',['Right',['../class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09ac22330c293a1fbc82603aa19d27ce109',1,'Command']]]
+  ['right',['Right',['../namespace_general_tools.html#afedc3bd242369903830dec92c3ad569ba7775452bf315556da946fb19953566c6',1,'GeneralTools']]]
 ];

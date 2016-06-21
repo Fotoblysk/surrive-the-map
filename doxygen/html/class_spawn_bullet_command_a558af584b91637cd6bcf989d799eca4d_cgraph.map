@@ -1,5 +1,6 @@
 <map id="SpawnBulletCommand::execute" name="SpawnBulletCommand::execute">
-<area shape="rect" id="node2" href="$class_player.html#a202e63e22c98a31b6070d6939ca6f793" title="Player::getPosition" alt="" coords="226,5,358,32"/>
-<area shape="rect" id="node3" href="$class_player.html#a04324f777f14ec311bc72399a368d24e" title="Player::getGlobalBounds" alt="" coords="209,56,375,83"/>
-<area shape="rect" id="node4" href="$class_game.html#ada9faa2a1f4e1453420adead02fd9865" title="Game::getRenderWindow" alt="" coords="207,107,377,133"/>
+<area shape="rect" id="node2" href="$class_player.html#a52486292c25bc6ac6589423ef0c81b0e" title="Player::tryToShoot" alt="" coords="227,5,357,32"/>
+<area shape="rect" id="node3" href="$class_player.html#abbd4bab9c1c4f881b268b37c3f810bd0" title="Player::getPosition" alt="" coords="226,56,358,83"/>
+<area shape="rect" id="node4" href="$class_player.html#ac2b21f8a74b6b1c0e9068a82e7e71e86" title="Player::getGlobalBounds" alt="" coords="209,107,375,133"/>
+<area shape="rect" id="node5" href="$class_game.html#ada9faa2a1f4e1453420adead02fd9865" title="Game::getRenderWindow" alt="" coords="207,157,377,184"/>
 </map>

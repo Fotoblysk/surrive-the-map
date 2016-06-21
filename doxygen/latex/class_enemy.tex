@@ -33,11 +33,11 @@ virtual void \hyperlink{class_enemy_a4db256c45aa8d835561e035969883069}{move} (co
 \item 
 virtual void \hyperlink{class_enemy_a409d7d48e2f6bb27f878691f14a79957}{render} (sf\+::\+Render\+Window \&window)
 \item 
-const sf\+::\+Vector2f \& \hyperlink{class_enemy_a986074549d08157336879f6b48ce632f}{get\+Position} () override
+const sf\+::\+Vector2f \& \hyperlink{class_enemy_ade0ec5d0a52a35a387a4cdcccf4c9ddc}{get\+Position} () const override
 \item 
 \hyperlink{class_enemy_a94f30d348b6d2840fd71675472ba38dd}{Enemy} ()
 \item 
-void \hyperlink{class_enemy_a85901197eedd66445f316a9316b26bb7}{acceleration\+Right} ()
+void \hyperlink{class_enemy_ae642ab230b9b416142cfe2a6ed3e3aeb}{default\+Acceleration\+Change\+Move} (\hyperlink{namespace_general_tools_afedc3bd242369903830dec92c3ad569b}{General\+Tools\+::\+Direction} direction)
 \item 
 void \hyperlink{class_enemy_a842ae08ff3a191b3bfd5a0f865b968be}{acceleration\+Left} ()
 \item 
@@ -47,15 +47,13 @@ void \hyperlink{class_enemy_acb3226b1c27efc097b3817a8efde1e93}{acceleration\+Up}
 \item 
 void \hyperlink{class_enemy_aa70d742da02995011f1618acc9e303db}{update} () override
 \item 
-void \hyperlink{class_enemy_afdf316b90bdf73cba5848548e8ba5180}{acceleration\+Stop} ()
-\item 
-sf\+::\+Vector2f \hyperlink{class_enemy_a68ad097a3d7752f0cadf18d6a961f9c7}{get\+Acceleration} ()
+sf\+::\+Vector2f \hyperlink{class_enemy_a8c53ca8541fdfc43b8464feeabefc150}{get\+Speed} ()
 \item 
 virtual \hyperlink{class_enemy_ac0eec4755e28c02688065f9657150ac3}{$\sim$\+Enemy} ()
 \item 
 bool \hyperlink{class_enemy_a9a6b7416616b3d0464978d38cf7095e9}{is\+Object\+On\+Screen} (sf\+::\+Render\+Window \&window) override
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 int \hyperlink{class_enemy_a330c49a49d5c017292a6ab66678f853a}{notshotable}
@@ -71,6 +69,18 @@ int \hyperlink{class_enemy_a330c49a49d5c017292a6ab66678f853a}{notshotable}
 {}
 \end{DoxyParamCaption}
 )}\label{class_enemy_a94f30d348b6d2840fd71675472ba38dd}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_enemy_a94f30d348b6d2840fd71675472ba38dd_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_enemy_ac0eec4755e28c02688065f9657150ac3}{}\index{Enemy@{Enemy}!````~Enemy@{$\sim$\+Enemy}}
 \index{````~Enemy@{$\sim$\+Enemy}!Enemy@{Enemy}}
 \subsubsection[{$\sim$\+Enemy}]{\setlength{\rightskip}{0pt plus 5cm}Enemy\+::$\sim$\+Enemy (
@@ -87,15 +97,10 @@ int \hyperlink{class_enemy_a330c49a49d5c017292a6ab66678f853a}{notshotable}
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_enemy_a901af192d36d757b0cfbd2c92c742ccc}
+)}\label{class_enemy_a901af192d36d757b0cfbd2c92c742ccc}
 
 
-Implements \hyperlink{class_actor_a347730f4e82dbbbb2bf45027634faa1a}{Actor}.
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -110,47 +115,25 @@ Here is the caller graph for this function\+:
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_enemy_a842ae08ff3a191b3bfd5a0f865b968be}
-
-
-Implements \hyperlink{class_actor_ad447288ba0b7202ffd778815f4a5ee5d}{Actor}.
-
-\hypertarget{class_enemy_a85901197eedd66445f316a9316b26bb7}{}\index{Enemy@{Enemy}!acceleration\+Right@{acceleration\+Right}}
-\index{acceleration\+Right@{acceleration\+Right}!Enemy@{Enemy}}
-\subsubsection[{acceleration\+Right}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+::acceleration\+Right (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_enemy_a85901197eedd66445f316a9316b26bb7}
-
-
-Implements \hyperlink{class_actor_ab48f5d34a91c27dffba96d497b70f37b}{Actor}.
-
-\hypertarget{class_enemy_afdf316b90bdf73cba5848548e8ba5180}{}\index{Enemy@{Enemy}!acceleration\+Stop@{acceleration\+Stop}}
-\index{acceleration\+Stop@{acceleration\+Stop}!Enemy@{Enemy}}
-\subsubsection[{acceleration\+Stop}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+::acceleration\+Stop (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_enemy_afdf316b90bdf73cba5848548e8ba5180}
+)}\label{class_enemy_a842ae08ff3a191b3bfd5a0f865b968be}
 \hypertarget{class_enemy_acb3226b1c27efc097b3817a8efde1e93}{}\index{Enemy@{Enemy}!acceleration\+Up@{acceleration\+Up}}
 \index{acceleration\+Up@{acceleration\+Up}!Enemy@{Enemy}}
 \subsubsection[{acceleration\+Up}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+::acceleration\+Up (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_enemy_acb3226b1c27efc097b3817a8efde1e93}
-
-
-Implements \hyperlink{class_actor_aa9819c45f4e0f8903a81e174a68ec983}{Actor}.
-
-\hypertarget{class_enemy_a68ad097a3d7752f0cadf18d6a961f9c7}{}\index{Enemy@{Enemy}!get\+Acceleration@{get\+Acceleration}}
-\index{get\+Acceleration@{get\+Acceleration}!Enemy@{Enemy}}
-\subsubsection[{get\+Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Enemy\+::get\+Acceleration (
+)}\label{class_enemy_acb3226b1c27efc097b3817a8efde1e93}
+\hypertarget{class_enemy_ae642ab230b9b416142cfe2a6ed3e3aeb}{}\index{Enemy@{Enemy}!default\+Acceleration\+Change\+Move@{default\+Acceleration\+Change\+Move}}
+\index{default\+Acceleration\+Change\+Move@{default\+Acceleration\+Change\+Move}!Enemy@{Enemy}}
+\subsubsection[{default\+Acceleration\+Change\+Move}]{\setlength{\rightskip}{0pt plus 5cm}void Enemy\+::default\+Acceleration\+Change\+Move (
 \begin{DoxyParamCaption}
-{}
+\item[{{\bf General\+Tools\+::\+Direction}}]{direction}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_enemy_a68ad097a3d7752f0cadf18d6a961f9c7}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_enemy_ae642ab230b9b416142cfe2a6ed3e3aeb}
+
+
+Implements \hyperlink{class_actor_a9992ceb5499bff601e461c3bb93a8d48}{Actor}.
+
 \hypertarget{class_enemy_abb50439b9517d5a2b4c6b6c6a4e91672}{}\index{Enemy@{Enemy}!get\+Global\+Bounds@{get\+Global\+Bounds}}
 \index{get\+Global\+Bounds@{get\+Global\+Bounds}!Enemy@{Enemy}}
 \subsubsection[{get\+Global\+Bounds}]{\setlength{\rightskip}{0pt plus 5cm}virtual sf\+::\+Float\+Rect Enemy\+::get\+Global\+Bounds (
@@ -164,8 +147,7 @@ Implements \hyperlink{class_actor_ab56cff32076fef8392f4562fe281ea86}{Actor}.
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -174,16 +156,16 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
-\hypertarget{class_enemy_a986074549d08157336879f6b48ce632f}{}\index{Enemy@{Enemy}!get\+Position@{get\+Position}}
+\hypertarget{class_enemy_ade0ec5d0a52a35a387a4cdcccf4c9ddc}{}\index{Enemy@{Enemy}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!Enemy@{Enemy}}
-\subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}const sf\+::\+Vector2f\& Enemy\+::get\+Position (
+\subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}const sf\+::\+Vector2f \& Enemy\+::get\+Position (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_enemy_a986074549d08157336879f6b48ce632f}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_enemy_ade0ec5d0a52a35a387a4cdcccf4c9ddc}
 
 
-Implements \hyperlink{class_game_object_a3c1da4d2eaaf8384f3ca10735673991e}{Game\+Object}.
+Implements \hyperlink{class_game_object_aba7c07744a79defec4484fb09d917543}{Game\+Object}.
 
 
 
@@ -192,11 +174,18 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_enemy_a986074549d08157336879f6b48ce632f_icgraph}
+\includegraphics[width=350pt]{class_enemy_ade0ec5d0a52a35a387a4cdcccf4c9ddc_icgraph}
 \end{center}
 \end{figure}
 
 
+\hypertarget{class_enemy_a8c53ca8541fdfc43b8464feeabefc150}{}\index{Enemy@{Enemy}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Enemy@{Enemy}}
+\subsubsection[{get\+Speed}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Enemy\+::get\+Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_enemy_a8c53ca8541fdfc43b8464feeabefc150}
 \hypertarget{class_enemy_a9a6b7416616b3d0464978d38cf7095e9}{}\index{Enemy@{Enemy}!is\+Object\+On\+Screen@{is\+Object\+On\+Screen}}
 \index{is\+Object\+On\+Screen@{is\+Object\+On\+Screen}!Enemy@{Enemy}}
 \subsubsection[{is\+Object\+On\+Screen}]{\setlength{\rightskip}{0pt plus 5cm}bool Enemy\+::is\+Object\+On\+Screen (
@@ -233,8 +222,7 @@ Implements \hyperlink{class_game_object_a370e89c4bb00a8fb851d9279480f7f76}{Game\
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -260,15 +248,14 @@ Implements \hyperlink{class_game_object_a07a0da194460f2642732f45d7ad369e8}{Game\
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_enemy_aa70d742da02995011f1618acc9e303db}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_enemy_aa70d742da02995011f1618acc9e303db}
 
 
 Reimplemented from \hyperlink{class_game_object_ad4a07f19f6c5e2e71c89c07486f26244}{Game\+Object}.
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -282,7 +269,7 @@ Here is the call graph for this function\+:
 \subsection{Member Data Documentation}
 \hypertarget{class_enemy_a330c49a49d5c017292a6ab66678f853a}{}\index{Enemy@{Enemy}!notshotable@{notshotable}}
 \index{notshotable@{notshotable}!Enemy@{Enemy}}
-\subsubsection[{notshotable}]{\setlength{\rightskip}{0pt plus 5cm}int Enemy\+::notshotable}\label{class_enemy_a330c49a49d5c017292a6ab66678f853a}
+\subsubsection[{notshotable}]{\setlength{\rightskip}{0pt plus 5cm}int Enemy\+::notshotable\hspace{0.3cm}{\ttfamily [protected]}}\label{class_enemy_a330c49a49d5c017292a6ab66678f853a}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

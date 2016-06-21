@@ -13,7 +13,7 @@ EnterChoiceCommand::~EnterChoiceCommand()
 }
 
 void EnterChoiceCommand::execute(){ //TODO: HARD THIS IS BAD WAY TO MENAGE OPTIONS TO FIX , text options should specify behavior however I don't want to run game and ectr. in InputMenager/Command class
-    int current_option_index = findSelectedOnTextArray();
+    auto current_option_index = findSelectedOnTextArray();
     switch(current_option_index)
     {
     case 0:

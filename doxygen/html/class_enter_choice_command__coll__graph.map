@@ -1,11 +1,4 @@
 <map id="EnterChoiceCommand" name="EnterChoiceCommand">
-<area shape="rect" id="node2" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="17,279,127,371"/>
-<area shape="rect" id="node7" href="$class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="81,595,204,687"/>
-<area shape="rect" id="node3" href="$class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="119,1080,265,1275"/>
-<area shape="rect" id="node4" href="$class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="249,852,340,1017"/>
-<area shape="rect" id="node5" href="$class_actor.html" title="{Actor\n|+ max_speed\l+ is_dead\l+ decision\l|+ Actor()\l+ ~Actor()\l+ accelerationRight()\l+ accelerationLeft()\l+ accelerationUp()\l+ accelerationDown()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l}" alt="" coords="351,220,499,429"/>
-<area shape="rect" id="node9" href="$class_player.html" title="{Player\n|+ acceleration\l+ speed\l+ notshotable\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ accelerationRight()\l+ accelerationDown()\l+ accelerationLeft()\l+ accelerationUp()\l+ update()\l+ accelerationStop()\l+ getAcceleration()\l+ isObjectOnScreen()\l+ ~Player()\l}" alt="" coords="229,492,377,789"/>
-<area shape="rect" id="node6" href="$class_game_object.html" title="{GameObject\n|+ speed\l# acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="364,5,487,171"/>
-<area shape="rect" id="node8" href="$class_enemy_spawner.html" title="{EnemySpawner\n|+ spawn_delay\l+ counter\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="544,573,685,709"/>
-<area shape="rect" id="node11" href="$class_menu.html" title="{Menu\n||+ render()\l+ getNumberOfMenuChoices()\l+ ~Menu()\l+ getSelectedTextPtr()\l+ getMenuText()\l}" alt="" coords="364,867,561,1003"/>
+<area shape="rect" id="node2" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,79,115,171"/>
+<area shape="rect" id="node3" href="$class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,5,285,244"/>
 </map>

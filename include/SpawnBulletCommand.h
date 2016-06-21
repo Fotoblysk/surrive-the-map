@@ -16,7 +16,7 @@ class SpawnBulletCommand : public Command
         sf::Vector2f speed;
     private:
         Game& game;
-        Direction direction;
+        GeneralTools::Direction direction;
 };
 
 #endif // SPAWNBULLETCOMMAND_H

@@ -40,6 +40,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="_move_actor_command_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MOVERIGHTCOMMAND_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MOVERIGHTCOMMAND_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../GeneralTools.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_command_8h.html">Command.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_game_8h.html">Game.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
@@ -100,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_move_actor_command.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_move_actor_command.html">MoveActorCommand</a> : <span class="keyword">public</span> <a class="code" href="class_command.html">Command</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_move_actor_command.html#a5ccb3e4f5df4cb5347a7ef309eef3e41">MoveActorCommand</a>(<a class="code" href="class_actor.html">Actor</a>*&amp; actor_ptr_in, <a class="code" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> direction_in);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="class_move_actor_command.html#af042d9025beccabd97665aabd434297e">MoveActorCommand</a>(<a class="code" href="class_actor.html">Actor</a>*&amp; actor_ptr_in, <a class="code" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a> direction_in);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_move_actor_command.html#a62ff2dc8808da57913d1e5aa43c10cfb">execute</a>()<span class="keyword">override</span>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_move_actor_command.html#a6b826449c1ca94181966deaabeb02ede">~MoveActorCommand</a>();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_move_actor_command.html#a4e29605f2a8d05b9d91f622001b22749">findSelectedOnTextArray</a>();</div>
@@ -108,26 +109,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_move_actor_command.html#a1385801ea83705b51333acef7315c7bc">   18</a></span>&#160;        <a class="code" href="class_actor.html">Actor</a>*&amp; <a class="code" href="class_move_actor_command.html#a1385801ea83705b51333acef7315c7bc">actor_ptr</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_move_actor_command.html#aa28d07b900906c1e740d30bd877d2afe">   19</a></span>&#160;        <a class="code" href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Direction</a> <a class="code" href="class_move_actor_command.html#aa28d07b900906c1e740d30bd877d2afe">direction</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_move_actor_command.html#a861dbc2f40f80e60242b997bb015917d">   19</a></span>&#160;        <a class="code" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a> <a class="code" href="class_move_actor_command.html#a861dbc2f40f80e60242b997bb015917d">direction</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // MOVERIGHTCOMMAND_H</span></div>
-<div class="ttc" id="class_command_html_a53ddb82f75ac3516b27d8f92f93c5e09"><div class="ttname"><a href="class_command.html#a53ddb82f75ac3516b27d8f92f93c5e09">Command::Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> Command.h:6</div></div>
+<div class="ttc" id="class_move_actor_command_html_af042d9025beccabd97665aabd434297e"><div class="ttname"><a href="class_move_actor_command.html#af042d9025beccabd97665aabd434297e">MoveActorCommand::MoveActorCommand</a></div><div class="ttdeci">MoveActorCommand(Actor *&amp;actor_ptr_in, GeneralTools::Direction direction_in)</div><div class="ttdef"><b>Definition:</b> MoveActorCommand.cpp:3</div></div>
 <div class="ttc" id="_command_8h_html"><div class="ttname"><a href="_command_8h.html">Command.h</a></div></div>
+<div class="ttc" id="class_move_actor_command_html_a861dbc2f40f80e60242b997bb015917d"><div class="ttname"><a href="class_move_actor_command.html#a861dbc2f40f80e60242b997bb015917d">MoveActorCommand::direction</a></div><div class="ttdeci">GeneralTools::Direction direction</div><div class="ttdef"><b>Definition:</b> MoveActorCommand.h:19</div></div>
 <div class="ttc" id="class_move_actor_command_html_a6b826449c1ca94181966deaabeb02ede"><div class="ttname"><a href="class_move_actor_command.html#a6b826449c1ca94181966deaabeb02ede">MoveActorCommand::~MoveActorCommand</a></div><div class="ttdeci">virtual ~MoveActorCommand()</div><div class="ttdef"><b>Definition:</b> MoveActorCommand.cpp:10</div></div>
 <div class="ttc" id="class_move_actor_command_html"><div class="ttname"><a href="class_move_actor_command.html">MoveActorCommand</a></div><div class="ttdef"><b>Definition:</b> MoveActorCommand.h:8</div></div>
 <div class="ttc" id="class_move_actor_command_html_a62ff2dc8808da57913d1e5aa43c10cfb"><div class="ttname"><a href="class_move_actor_command.html#a62ff2dc8808da57913d1e5aa43c10cfb">MoveActorCommand::execute</a></div><div class="ttdeci">void execute() override</div><div class="ttdef"><b>Definition:</b> MoveActorCommand.cpp:13</div></div>
-<div class="ttc" id="class_move_actor_command_html_a5ccb3e4f5df4cb5347a7ef309eef3e41"><div class="ttname"><a href="class_move_actor_command.html#a5ccb3e4f5df4cb5347a7ef309eef3e41">MoveActorCommand::MoveActorCommand</a></div><div class="ttdeci">MoveActorCommand(Actor *&amp;actor_ptr_in, Direction direction_in)</div><div class="ttdef"><b>Definition:</b> MoveActorCommand.cpp:3</div></div>
-<div class="ttc" id="class_command_html"><div class="ttname"><a href="class_command.html">Command</a></div><div class="ttdef"><b>Definition:</b> Command.h:3</div></div>
+<div class="ttc" id="class_command_html"><div class="ttname"><a href="class_command.html">Command</a></div><div class="ttdef"><b>Definition:</b> Command.h:4</div></div>
 <div class="ttc" id="class_actor_html"><div class="ttname"><a href="class_actor.html">Actor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:5</div></div>
-<div class="ttc" id="class_move_actor_command_html_aa28d07b900906c1e740d30bd877d2afe"><div class="ttname"><a href="class_move_actor_command.html#aa28d07b900906c1e740d30bd877d2afe">MoveActorCommand::direction</a></div><div class="ttdeci">Direction direction</div><div class="ttdef"><b>Definition:</b> MoveActorCommand.h:19</div></div>
 <div class="ttc" id="class_move_actor_command_html_a1385801ea83705b51333acef7315c7bc"><div class="ttname"><a href="class_move_actor_command.html#a1385801ea83705b51333acef7315c7bc">MoveActorCommand::actor_ptr</a></div><div class="ttdeci">Actor *&amp; actor_ptr</div><div class="ttdef"><b>Definition:</b> MoveActorCommand.h:18</div></div>
 <div class="ttc" id="_game_8h_html"><div class="ttname"><a href="_game_8h.html">Game.h</a></div></div>
+<div class="ttc" id="namespace_general_tools_html_afedc3bd242369903830dec92c3ad569b"><div class="ttname"><a href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> GeneralTools.h:6</div></div>
 <div class="ttc" id="class_move_actor_command_html_a4e29605f2a8d05b9d91f622001b22749"><div class="ttname"><a href="class_move_actor_command.html#a4e29605f2a8d05b9d91f622001b22749">MoveActorCommand::findSelectedOnTextArray</a></div><div class="ttdeci">int findSelectedOnTextArray()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 19 2016 20:03:51 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 21 2016 23:23:17 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

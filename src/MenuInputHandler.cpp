@@ -3,22 +3,20 @@
 MenuInputHandler::MenuInputHandler(Game& game_in):
 game(game_in),
 key_escape(new QuitGameCommand(game)),// memory leaks, object is doubled
-closed(key_escape),
 
-key_down(new MoveSelectionCommand(*game.main_menu, Command::Down)),
-key_s(key_down),
 
-key_up(new MoveSelectionCommand(*game.main_menu, Command::Up)),
-key_w(key_up),
+key_down(new MoveSelectionCommand(*game.main_menu, GeneralTools::Down)),
+
+key_up(new MoveSelectionCommand(*game.main_menu, GeneralTools::Up)),
 
 key_space(new EnterChoiceCommand(game))
 {
+    closed = key_escape;
+    key_s = key_down;
+    key_w = key_up;
     current_command_array = new Command*[SIZE];
 }
-MenuInputHandler::~MenuInputHandler()
-{
-    //dtor
-}
+
 Command** MenuInputHandler::handleInput(){
     sf::Event event;
     auto i = 0;
@@ -30,7 +28,7 @@ Command** MenuInputHandler::handleInput(){
         switch(event.type)
         {
             case sf::Event::Closed :
-                current_command_array[i++] = closed;
+                current_command_array[i++] = closed.get();
                 break;
             case sf::Event::KeyPressed :
                 current_command_array[i] = handleKeyInput(event, i);
@@ -46,30 +44,31 @@ Command* MenuInputHandler::handleKeyInput(sf::Event& event, int& i){
     {
         case sf::Keyboard::Escape :
             i++;
-            return key_escape;
+            return key_escape.get();
             break;
 
         case sf::Keyboard::Down :
             i++;
-            return key_down;
+            return key_down.get();
             break;
         case sf::Keyboard::S :
             i++;
-            return key_s;
+            return key_s.get();
             break;
 
         case sf::Keyboard::Up :
             i++;
-            return key_up;
+            return key_up.get();
             break;
         case sf::Keyboard::W :
             i++;
-            return key_w;
+            DEBUG_MSG("w detected"<<std::endl);
+            return key_w.get();
             break;
 
         case sf::Keyboard::Space :
             i++;
-            return key_space;
+            return key_space.get();
             break;
         default :
             break;

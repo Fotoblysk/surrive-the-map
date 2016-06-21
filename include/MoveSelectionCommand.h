@@ -2,11 +2,12 @@
 #define MOVESELECTIONCOMMAND_H
 #include "Command.h"
 #include "Menu.h"
+#include "../GeneralTools.h"
 
 class MoveSelectionCommand : public Command
 {
     public:
-        MoveSelectionCommand(Menu& game_in, Direction direction_in);
+        MoveSelectionCommand(Menu& game_in, GeneralTools::Direction direction_in);
         void execute()override;
         virtual ~MoveSelectionCommand();
         int findSelectedOnTextArray();
@@ -14,7 +15,7 @@ class MoveSelectionCommand : public Command
 
     private:
         Menu& menu;
-        Direction direction;
+        GeneralTools::Direction direction;
 };
 
 #endif // MOVESELECTIONDOWNCOMMAND_H

@@ -7,11 +7,11 @@ engine(engine_in)
 }
 Command** CollisionHandler::handleInput(){
     for(auto i = 0; i<SIZE; i++)
-        current_command_array[i] = nullptr;
+        current_command_array[i] = nullptr;;
     for(auto j = 0; j<engine.bullet.size(); j++)
         for(auto i = 0; i<engine.enemy.size(); i++)
             if(engine.enemy[i]->getGlobalBounds().contains(engine.bullet[j]->getPosition()))
-                engine.enemy[i]->is_dead = true;
+                engine.enemy[i]->getShotStatus(false);
     return current_command_array;
 }
 CollisionHandler::~CollisionHandler()

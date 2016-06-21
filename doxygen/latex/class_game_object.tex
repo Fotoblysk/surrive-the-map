@@ -11,13 +11,12 @@ Inheritance diagram for Game\+Object\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{class_game_object__inherit__graph}
+\includegraphics[width=350pt]{class_game_object__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Game\+Object\+:
-\nopagebreak
+Collaboration diagram for Game\+Object\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -33,7 +32,7 @@ virtual \hyperlink{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}{$\sim$\+
 \item 
 virtual void \hyperlink{class_game_object_a370e89c4bb00a8fb851d9279480f7f76}{move} (const sf\+::\+Vector2f \&offset)=0
 \item 
-virtual const sf\+::\+Vector2f \& \hyperlink{class_game_object_a3c1da4d2eaaf8384f3ca10735673991e}{get\+Position} ()=0
+virtual const sf\+::\+Vector2f \& \hyperlink{class_game_object_aba7c07744a79defec4484fb09d917543}{get\+Position} () const =0
 \item 
 virtual void \hyperlink{class_game_object_ad4a07f19f6c5e2e71c89c07486f26244}{update} ()
 \item 
@@ -43,9 +42,6 @@ virtual void \hyperlink{class_game_object_a07a0da194460f2642732f45d7ad369e8}{ren
 \begin{DoxyCompactItemize}
 \item 
 sf\+::\+Vector2f \hyperlink{class_game_object_a485ee182e36f89f5493801bdd3c88d4a}{speed}
-\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
 \item 
 sf\+::\+Vector2f \hyperlink{class_game_object_a852964d6b689b4e12cc399fc67f4f8bf}{acceleration}
 \end{DoxyCompactItemize}
@@ -69,16 +65,16 @@ sf\+::\+Vector2f \hyperlink{class_game_object_a852964d6b689b4e12cc399fc67f4f8bf}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_game_object_a3c1da4d2eaaf8384f3ca10735673991e}{}\index{Game\+Object@{Game\+Object}!get\+Position@{get\+Position}}
+\hypertarget{class_game_object_aba7c07744a79defec4484fb09d917543}{}\index{Game\+Object@{Game\+Object}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!Game\+Object@{Game\+Object}}
 \subsubsection[{get\+Position}]{\setlength{\rightskip}{0pt plus 5cm}virtual const sf\+::\+Vector2f\& Game\+Object\+::get\+Position (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_game_object_a3c1da4d2eaaf8384f3ca10735673991e}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_game_object_aba7c07744a79defec4484fb09d917543}
 
 
-Implemented in \hyperlink{class_player_a202e63e22c98a31b6070d6939ca6f793}{Player}, \hyperlink{class_enemy_a986074549d08157336879f6b48ce632f}{Enemy}, and \hyperlink{class_bullet_a82f82d6367d1c403898a29d1ce91630d}{Bullet}.
+Implemented in \hyperlink{class_enemy_ade0ec5d0a52a35a387a4cdcccf4c9ddc}{Enemy}, \hyperlink{class_player_abbd4bab9c1c4f881b268b37c3f810bd0}{Player}, and \hyperlink{class_bullet_a405c853cbdaffd53d506eb3ee474a3ef}{Bullet}.
 
 
 
@@ -87,7 +83,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_game_object_a3c1da4d2eaaf8384f3ca10735673991e_icgraph}
+\includegraphics[width=350pt]{class_game_object_aba7c07744a79defec4484fb09d917543_icgraph}
 \end{center}
 \end{figure}
 
@@ -101,16 +97,15 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_game_object_a370e89c4bb00a8fb851d9279480f7f76}
 
 
-Implemented in \hyperlink{class_bullet_a8715ab2edff76c8b45fabc6dc453e85d}{Bullet}, \hyperlink{class_player_aec7f6d54c177577609263dc1f31063b0}{Player}, and \hyperlink{class_enemy_a4db256c45aa8d835561e035969883069}{Enemy}.
+Implemented in \hyperlink{class_bullet_a8715ab2edff76c8b45fabc6dc453e85d}{Bullet}, \hyperlink{class_player_a0512220b727eb0cdc6e7d7141b13c7fd}{Player}, and \hyperlink{class_enemy_a4db256c45aa8d835561e035969883069}{Enemy}.
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=323pt]{class_game_object_a370e89c4bb00a8fb851d9279480f7f76_icgraph}
+\includegraphics[width=350pt]{class_game_object_a370e89c4bb00a8fb851d9279480f7f76_icgraph}
 \end{center}
 \end{figure}
 
@@ -124,7 +119,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_game_object_a07a0da194460f2642732f45d7ad369e8}
 
 
-Implemented in \hyperlink{class_player_ad2172bbd6077d0f2ca16d215a86b5b60}{Player}, \hyperlink{class_enemy_a409d7d48e2f6bb27f878691f14a79957}{Enemy}, and \hyperlink{class_bullet_ae4af350647e1b2a798eb3fd35a883b84}{Bullet}.
+Implemented in \hyperlink{class_enemy_a409d7d48e2f6bb27f878691f14a79957}{Enemy}, \hyperlink{class_player_a53938857e80374e79726309e78d1c15c}{Player}, and \hyperlink{class_bullet_ae4af350647e1b2a798eb3fd35a883b84}{Bullet}.
 
 \hypertarget{class_game_object_ad4a07f19f6c5e2e71c89c07486f26244}{}\index{Game\+Object@{Game\+Object}!update@{update}}
 \index{update@{update}!Game\+Object@{Game\+Object}}
@@ -139,8 +134,7 @@ Reimplemented in \hyperlink{class_enemy_aa70d742da02995011f1618acc9e303db}{Enemy
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -151,10 +145,21 @@ Here is the call graph for this function\+:
 
 
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_object_ad4a07f19f6c5e2e71c89c07486f26244_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
 \subsection{Member Data Documentation}
 \hypertarget{class_game_object_a852964d6b689b4e12cc399fc67f4f8bf}{}\index{Game\+Object@{Game\+Object}!acceleration@{acceleration}}
 \index{acceleration@{acceleration}!Game\+Object@{Game\+Object}}
-\subsubsection[{acceleration}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Game\+Object\+::acceleration\hspace{0.3cm}{\ttfamily [protected]}}\label{class_game_object_a852964d6b689b4e12cc399fc67f4f8bf}
+\subsubsection[{acceleration}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Game\+Object\+::acceleration}\label{class_game_object_a852964d6b689b4e12cc399fc67f4f8bf}
 \hypertarget{class_game_object_a485ee182e36f89f5493801bdd3c88d4a}{}\index{Game\+Object@{Game\+Object}!speed@{speed}}
 \index{speed@{speed}!Game\+Object@{Game\+Object}}
 \subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Game\+Object\+::speed}\label{class_game_object_a485ee182e36f89f5493801bdd3c88d4a}

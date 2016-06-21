@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['isobjectalive',['isObjectAlive',['../class_bullet.html#a23cadfbb18a562482f0bae03f0edd029',1,'Bullet']]],
-  ['isobjectonscreen',['isObjectOnScreen',['../class_actor.html#a0bd104ef42ef1e3c3eea5c58e94c2429',1,'Actor::isObjectOnScreen()'],['../class_enemy.html#a9a6b7416616b3d0464978d38cf7095e9',1,'Enemy::isObjectOnScreen()'],['../class_player.html#ac2c0f9ac6f1d4908465a23f9ddb4cb1c',1,'Player::isObjectOnScreen()']]]
+  ['handleinput',['handleInput',['../class_ai_controler.html#a72891536d5ff122ae1e3a25fd62fd1b5',1,'AiControler::handleInput()'],['../class_collision_handler.html#a7f6deb84dcebcc72e0020eb251ea617f',1,'CollisionHandler::handleInput()'],['../class_engine_input_handler.html#ade92afaf7657007c2be3b5bd745c96e3',1,'EngineInputHandler::handleInput()'],['../class_input_handler.html#a69b726d4a409a6f4ae443689cb69b404',1,'InputHandler::handleInput()'],['../class_menu_input_handler.html#a60840342f557c79f31097aa713ba7a37',1,'MenuInputHandler::handleInput()']]],
+  ['handlekeyinput',['handleKeyInput',['../class_engine_input_handler.html#a6b350fc8a379b04d36b2a60d4d673dcd',1,'EngineInputHandler::handleKeyInput()'],['../class_menu_input_handler.html#aefd1edfd9f0d0770383c4977416de3bf',1,'MenuInputHandler::handleKeyInput()']]],
+  ['handlerealtimekeyinput',['handleRealTimeKeyInput',['../class_engine_input_handler.html#a7e4a2c1a4cacf7ba3129c1e3a998de53',1,'EngineInputHandler']]]
 ];

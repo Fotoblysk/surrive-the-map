@@ -12,7 +12,6 @@ Game::Game(sf::RenderWindow& window_in):
 }
 Game::~Game()
 {
-    delete menu_input;
 }
 void Game::changeState(GameState new_state){
     state = new_state;
@@ -21,8 +20,8 @@ sf::RenderWindow& Game::getRenderWindow(){
     return window;
 }
 void Game::menu(){
-    main_menu = new MainMenu;
-    menu_input = new MenuInputHandler(*this);
+    main_menu = std::move(std::unique_ptr <Menu> (new MainMenu));
+    menu_input = std::move(std::unique_ptr <InputHandler> (new MenuInputHandler(*this)));
     window.clear();
     while (state == MenuState)
     {
@@ -41,8 +40,8 @@ void Game::run(){
 void Game::startSinglePlayer(){
     window.clear();
     DEBUG_MSG("YOU RUNNED SINGLEPLAYER GAME \n AWSOME :D"<<std::endl);
-    engine = new Engine(window);
-    menu_input = new EngineInputHandler(*this);
+    engine = std::move(std::unique_ptr <Engine>(new Engine(window)));
+    menu_input = std::move(std::unique_ptr<InputHandler>(new EngineInputHandler(*this)));
     //const int TIME_STEP_AS_MICROS = 33333;
     long long accumulator = 0;
     sf::Clock clock;
