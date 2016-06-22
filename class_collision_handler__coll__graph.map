@@ -1,9 +1,8 @@
 <map id="CollisionHandler" name="CollisionHandler">
-<area shape="rect" id="node2" href="$class_input_handler.html" title="{InputHandler\n||+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="141,824,264,916"/>
-<area shape="rect" id="node3" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,545,115,637"/>
-<area shape="rect" id="node4" href="$class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l# collisionHandler\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="310,780,434,960"/>
-<area shape="rect" id="node5" href="$class_actor.html" title="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}" alt="" coords="300,220,527,415"/>
-<area shape="rect" id="node8" href="$class_player.html" title="{Player\n|# shoot_delay\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l+ tryToShoot()\l&#45; shotDelayUpdate()\l}" alt="" coords="139,464,365,717"/>
-<area shape="rect" id="node6" href="$class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="352,5,475,171"/>
-<area shape="rect" id="node7" href="$class_enemy_spawner.html" title="{EnemySpawner\n|# counter\l# spawn_delay\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="532,523,673,659"/>
+<area shape="rect" id="node2" href="$class_input_handler.html" title="{InputHandler\n|# current_command_array\l|+ InputHandler()\l+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="20,817,193,923"/>
+<area shape="rect" id="node3" href="$class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l# collisionHandler\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="218,780,342,960"/>
+<area shape="rect" id="node4" href="$class_actor.html" title="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}" alt="" coords="167,220,393,415"/>
+<area shape="rect" id="node7" href="$class_player.html" title="{Player\n|# shoot_delay\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l+ tryToShoot()\l&#45; shotDelayUpdate()\l}" alt="" coords="5,464,232,717"/>
+<area shape="rect" id="node5" href="$class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="219,5,341,171"/>
+<area shape="rect" id="node6" href="$class_enemy_spawner.html" title="{EnemySpawner\n|# counter\l# spawn_delay\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="399,523,540,659"/>
 </map>
