@@ -1,6 +1,7 @@
 #include "MenuInputHandler.h"
 #include "EnterChoiceCommand.h"
 MenuInputHandler::MenuInputHandler(Game& game_in):
+InputHandler::InputHandler(SIZE),
 game(game_in),
 key_escape(new QuitGameCommand(game)),// memory leaks, object is doubled
 
@@ -14,7 +15,6 @@ key_space(new EnterChoiceCommand(game))
     closed = key_escape;
     key_s = key_down;
     key_w = key_up;
-    current_command_array = new Command*[SIZE];
 }
 
 Command** MenuInputHandler::handleInput(){
@@ -37,7 +37,7 @@ Command** MenuInputHandler::handleInput(){
                 break;
         }
     }
-    return current_command_array;
+    return current_command_array.get();
 }
 Command* MenuInputHandler::handleKeyInput(sf::Event& event, int& i){
     switch(event.key.code)

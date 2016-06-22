@@ -61,7 +61,7 @@ int main()
 {
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;
-    sf::RenderWindow window(sf::VideoMode(500, 500), "surrive-the-map", sf::Style::Fullscreen  ,settings );
+    sf::RenderWindow window(sf::VideoMode(500, 500), "surrive-the-map", sf::Style::Fullscreen, settings);
     Game game(window);
     game.run();
     return EXIT_SUCCESS;

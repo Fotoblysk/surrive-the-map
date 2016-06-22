@@ -16,9 +16,9 @@ Engine::~Engine()
 void Engine::update(){
     collisionHandler->handleInput();
     Actor* tmp = enemy_spawner.update();
-    AiControler* tmp_ai = new AiControler(current_player, tmp, bullet, window);
     if(tmp)
     {
+        AiControler* tmp_ai = new AiControler(current_player, tmp, bullet, window);
         enemy.push_back(tmp);
         ai.push_back(tmp_ai);
     }
@@ -42,9 +42,8 @@ void Engine::update(){
             }
         }
     for(auto i = 0; i<enemy.size(); i++)
-        if(enemy[i])
         {
-          //  enemy[i] -> update();
+            assert(enemy[i] != nullptr);
             ai[i] -> handleInput();
             enemy[i]->update();
             if(enemy[i] -> isObjectOnScreen(window)){
@@ -53,7 +52,7 @@ void Engine::update(){
             else{
                 enemy[enemy.size()-1]->render(window);
                 std::swap(enemy[i],enemy[enemy.size()-1]);
-                std::swap(ai[i],ai[enemy.size()-1]);
+                std::swap(ai[i],ai[ai.size()-1]);
                 delete ai[ai.size()-1];
                 delete enemy[enemy.size()-1];
                 ai.pop_back();

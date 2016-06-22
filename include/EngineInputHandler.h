@@ -15,23 +15,23 @@ class EngineInputHandler : public InputHandler
         Command* handleKeyInput(sf::Event& event, int& i);
         Command** handleRealTimeKeyInput(sf::Event& event, int& i);
 
-        Command* key_escape;//sf::Event::key::code::Escape
-        Command* closed;
+        std::shared_ptr<Command> key_escape;//sf::Event::key::code::Escape
+        std::shared_ptr<Command> closed;
 
-        Command* key_d;
-        Command* key_right;
+        std::shared_ptr<Command> key_d;
+        std::shared_ptr<Command> key_right;
 
-        Command* key_s;
-        Command* key_down;
+        std::shared_ptr<Command> key_s;
+        std::shared_ptr<Command> key_down;
 
-        Command* key_w;
-        Command* key_up;
+        std::shared_ptr<Command> key_w;
+        std::shared_ptr<Command> key_up;
 
-        Command* key_a;
-        Command* key_left;
+        std::shared_ptr<Command> key_a;
+        std::shared_ptr<Command> key_left;
 
-        Command* key_q;
-        Command* l_mouse_button;
+        std::shared_ptr<Command> key_q;
+        std::shared_ptr<Command> l_mouse_button;
 
 };
 

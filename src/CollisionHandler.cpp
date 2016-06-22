@@ -1,10 +1,11 @@
 #include "CollisionHandler.h"
 
 CollisionHandler::CollisionHandler(Engine & engine_in):
+InputHandler::InputHandler(SIZE),
 engine(engine_in)
 {
-    current_command_array = new Command*[SIZE];
 }
+
 Command** CollisionHandler::handleInput(){
     for(auto i = 0; i<SIZE; i++)
         current_command_array[i] = nullptr;;
@@ -12,7 +13,7 @@ Command** CollisionHandler::handleInput(){
         for(auto i = 0; i<engine.enemy.size(); i++)
             if(engine.enemy[i]->getGlobalBounds().contains(engine.bullet[j]->getPosition()))
                 engine.enemy[i]->getShotStatus(false);
-    return current_command_array;
+    return current_command_array.get();
 }
 CollisionHandler::~CollisionHandler()
 {

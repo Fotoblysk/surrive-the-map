@@ -6,10 +6,11 @@
 class InputHandler
 {
     public:
+        InputHandler(int size);
         virtual ~InputHandler();
         virtual Command** handleInput()=0;
     protected:
-        Command** current_command_array;
+        std::unique_ptr<Command*[]> current_command_array;
 };
 
 #endif // INPUTHANDLER_H

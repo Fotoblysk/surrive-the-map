@@ -2,6 +2,7 @@
 
 
 AiControler::AiControler(Actor*& target_in, Actor*& enemy_in, std::vector<Bullet*>& bullet_in, sf::RenderWindow& window_in):
+InputHandler::InputHandler(SIZE),
 target(target_in),
 enemy(enemy_in),
 is_dead(false),
@@ -9,7 +10,6 @@ bullet(bullet_in),
 window(window_in),
 decision(0)
 {
-    current_command_array = new Command*[SIZE];
 }
 
 AiControler::~AiControler()
@@ -23,7 +23,7 @@ Command** AiControler::handleInput(){
     {
         const float gain = 100;
         sf::Vector2f tmp_speed(sf::Vector2f (target->getPosition()-enemy->getPosition()));
-        tmp_speed=normToMaxSpeed(tmp_speed, gain);
+        tmp_speed = normToMaxSpeed(tmp_speed, gain);
         //DEBUG_MSG(sqrt(tmp_speed.x*tmp_speed.x+tmp_speed.y*tmp_speed.y)*30<<std::endl);
         enemy->speed = tmp_speed;
         //enemy->move(tmp_speed);
@@ -70,7 +70,7 @@ Command** AiControler::handleInput(){
             }
         }
     }
-    return current_command_array;
+    return current_command_array.get();
 }
 sf::Vector2f AiControler::normToMaxSpeed(sf::Vector2f in_vector, const float& gain){
     float x_tmp = in_vector.x;
