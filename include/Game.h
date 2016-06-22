@@ -21,10 +21,10 @@ class Game
         void run();
         void startSinglePlayer();
         std::unique_ptr <Engine> engine;
-        GameState game_state;
     protected:
 
     private:
+        GameState game_state;
         std::unique_ptr <Menu> main_menu;
         void menu();
         sf::RenderWindow& window;           ///<Main game window

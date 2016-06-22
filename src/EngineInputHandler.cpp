@@ -4,25 +4,25 @@
 #include "SpawnBulletCommand.h"
 #include <SFML/System/Vector2.hpp>
 #include "Game.h"
-EngineInputHandler::EngineInputHandler(Game& game_in):
+EngineInputHandler::EngineInputHandler(Engine* engine, sf::RenderWindow& window_in, GameState& game_state):
+window(window_in),
 InputHandler::InputHandler(SIZE),
-game(game_in),
-key_escape(new QuitGameCommand(game_in.game_state)),// memory leaks, object is doubled
+key_escape(new QuitGameCommand(game_state)),// memory leaks, object is doubled
 closed(key_escape),
 
-key_d(new MoveActorCommand(game.engine->current_player, GeneralTools::Right)),
+key_d(new MoveActorCommand(engine->current_player, GeneralTools::Right)),
 key_right(key_d),
 
-key_s(new MoveActorCommand(game.engine->current_player, GeneralTools::Down)),
+key_s(new MoveActorCommand(engine->current_player, GeneralTools::Down)),
 key_down(key_s),
 
-key_w(new MoveActorCommand(game.engine->current_player, GeneralTools::Up)),
+key_w(new MoveActorCommand(engine->current_player, GeneralTools::Up)),
 key_up(key_w),
 
-key_a(new MoveActorCommand(game.engine->current_player, GeneralTools::Left)),
+key_a(new MoveActorCommand(engine->current_player, GeneralTools::Left)),
 key_left(key_a),
 
-key_q(new SpawnBulletCommand(game, sf::Vector2f(float (0.1), float (0.1)))),
+key_q(new SpawnBulletCommand(engine, sf::Vector2f(float (0.1), float (0.1)), window, &(engine->player))),
 l_mouse_button(key_q)
 {
 
@@ -38,7 +38,7 @@ Command** EngineInputHandler::handleInput(){
     for(i = 0; i<SIZE; i++)
         current_command_array[i]=  nullptr;
     i=0;
-    while (game.getRenderWindow().pollEvent(event))
+    while (window.pollEvent(event))
     {
         switch(event.type)
         {

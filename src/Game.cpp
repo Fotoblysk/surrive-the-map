@@ -40,7 +40,7 @@ void Game::startSinglePlayer(){
     window.clear();
     DEBUG_MSG("YOU RUNNED SINGLEPLAYER GAME \n AWSOME :D"<<std::endl);
     engine = std::move(std::unique_ptr <Engine>(new Engine(window)));
-    input = std::move(std::unique_ptr<InputHandler>(new EngineInputHandler(*this)));
+    input = std::move(std::unique_ptr<InputHandler>(new EngineInputHandler(engine.get(), window, game_state)));
     //const int TIME_STEP_AS_MICROS = 33333;
     long long accumulator = 0;
     sf::Clock clock;

@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for Spawn\+Bullet\+Command\+:\nopagebreak
+Inheritance diagram for Spawn\+Bullet\+Command\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,37 +27,38 @@ Collaboration diagram for Spawn\+Bullet\+Command\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_spawn_bullet_command_a279b39ecc9491fe12812ac633ecbb992}{Spawn\+Bullet\+Command} (\hyperlink{class_game}{Game} \&game\+\_\+in, sf\+::\+Vector2f speed\+\_\+in)
+\hyperlink{class_spawn_bullet_command_afb9ba5b912fcd791bf294433f0888b25}{Spawn\+Bullet\+Command} (\hyperlink{class_engine}{Engine} $\ast$engine\+\_\+in, sf\+::\+Vector2f speed\+\_\+in, sf\+::\+Render\+Window \&window\+\_\+in, \hyperlink{class_actor}{Actor} $\ast$actor\+\_\+in)
 \item 
 void \hyperlink{class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d}{execute} () override
 \item 
 virtual \hyperlink{class_spawn_bullet_command_ac22b1ce86d8ae1d7fb1df78745cb4db6}{$\sim$\+Spawn\+Bullet\+Command} ()
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_spawn_bullet_command_a36d5fec5d82d09a70954be0fb1fe519f}{actor}
-\item 
-sf\+::\+Vector2f \hyperlink{class_spawn_bullet_command_a5f302f0a55b2e9102e16f7ff9eec9396}{speed}
-\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_game}{Game} \& \hyperlink{class_spawn_bullet_command_a9e98531440220e01f46fb91b3fa78cef}{game}
+\hyperlink{class_actor}{Actor} $\ast$ \hyperlink{class_spawn_bullet_command_a7bb6134d4c393ecde2e836dc3db81834}{actor}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_spawn_bullet_command_a5d0554f50bb223ed223319884b8c0e39}{window}
+\item 
+\hyperlink{class_engine}{Engine} $\ast$ \hyperlink{class_spawn_bullet_command_a435f4a05484eb04a81fa96bbc2cfbe26}{engine}
+\item 
+sf\+::\+Vector2f \hyperlink{class_spawn_bullet_command_a5f302f0a55b2e9102e16f7ff9eec9396}{speed}
 \item 
 \hyperlink{namespace_general_tools_afedc3bd242369903830dec92c3ad569b}{General\+Tools\+::\+Direction} \hyperlink{class_spawn_bullet_command_a7d2d824d68a8df88aec7b86500c27a13}{direction}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_spawn_bullet_command_a279b39ecc9491fe12812ac633ecbb992}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
+\hypertarget{class_spawn_bullet_command_afb9ba5b912fcd791bf294433f0888b25}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
 \index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
 \subsubsection[{Spawn\+Bullet\+Command}]{\setlength{\rightskip}{0pt plus 5cm}Spawn\+Bullet\+Command\+::\+Spawn\+Bullet\+Command (
 \begin{DoxyParamCaption}
-\item[{{\bf Game} \&}]{game\+\_\+in, }
-\item[{sf\+::\+Vector2f}]{speed\+\_\+in}
+\item[{{\bf Engine} $\ast$}]{engine\+\_\+in, }
+\item[{sf\+::\+Vector2f}]{speed\+\_\+in, }
+\item[{sf\+::\+Render\+Window \&}]{window\+\_\+in, }
+\item[{{\bf Actor} $\ast$}]{actor\+\_\+in}
 \end{DoxyParamCaption}
-)}\label{class_spawn_bullet_command_a279b39ecc9491fe12812ac633ecbb992}
+)}\label{class_spawn_bullet_command_afb9ba5b912fcd791bf294433f0888b25}
 \hypertarget{class_spawn_bullet_command_ac22b1ce86d8ae1d7fb1df78745cb4db6}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!````~Spawn\+Bullet\+Command@{$\sim$\+Spawn\+Bullet\+Command}}
 \index{````~Spawn\+Bullet\+Command@{$\sim$\+Spawn\+Bullet\+Command}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
 \subsubsection[{$\sim$\+Spawn\+Bullet\+Command}]{\setlength{\rightskip}{0pt plus 5cm}Spawn\+Bullet\+Command\+::$\sim$\+Spawn\+Bullet\+Command (
@@ -80,7 +82,8 @@ Implements \hyperlink{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}.
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -92,18 +95,21 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_spawn_bullet_command_a36d5fec5d82d09a70954be0fb1fe519f}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!actor@{actor}}
+\hypertarget{class_spawn_bullet_command_a7bb6134d4c393ecde2e836dc3db81834}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!actor@{actor}}
 \index{actor@{actor}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
-\subsubsection[{actor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}$\ast$ Spawn\+Bullet\+Command\+::actor\hspace{0.3cm}{\ttfamily [protected]}}\label{class_spawn_bullet_command_a36d5fec5d82d09a70954be0fb1fe519f}
+\subsubsection[{actor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actor}$\ast$ Spawn\+Bullet\+Command\+::actor\hspace{0.3cm}{\ttfamily [private]}}\label{class_spawn_bullet_command_a7bb6134d4c393ecde2e836dc3db81834}
 \hypertarget{class_spawn_bullet_command_a7d2d824d68a8df88aec7b86500c27a13}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!direction@{direction}}
 \index{direction@{direction}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
 \subsubsection[{direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf General\+Tools\+::\+Direction} Spawn\+Bullet\+Command\+::direction\hspace{0.3cm}{\ttfamily [private]}}\label{class_spawn_bullet_command_a7d2d824d68a8df88aec7b86500c27a13}
-\hypertarget{class_spawn_bullet_command_a9e98531440220e01f46fb91b3fa78cef}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!game@{game}}
-\index{game@{game}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
-\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}\& Spawn\+Bullet\+Command\+::game\hspace{0.3cm}{\ttfamily [private]}}\label{class_spawn_bullet_command_a9e98531440220e01f46fb91b3fa78cef}
+\hypertarget{class_spawn_bullet_command_a435f4a05484eb04a81fa96bbc2cfbe26}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!engine@{engine}}
+\index{engine@{engine}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
+\subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Engine}$\ast$ Spawn\+Bullet\+Command\+::engine\hspace{0.3cm}{\ttfamily [private]}}\label{class_spawn_bullet_command_a435f4a05484eb04a81fa96bbc2cfbe26}
 \hypertarget{class_spawn_bullet_command_a5f302f0a55b2e9102e16f7ff9eec9396}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!speed@{speed}}
 \index{speed@{speed}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
-\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Spawn\+Bullet\+Command\+::speed\hspace{0.3cm}{\ttfamily [protected]}}\label{class_spawn_bullet_command_a5f302f0a55b2e9102e16f7ff9eec9396}
+\subsubsection[{speed}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Spawn\+Bullet\+Command\+::speed\hspace{0.3cm}{\ttfamily [private]}}\label{class_spawn_bullet_command_a5f302f0a55b2e9102e16f7ff9eec9396}
+\hypertarget{class_spawn_bullet_command_a5d0554f50bb223ed223319884b8c0e39}{}\index{Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}!window@{window}}
+\index{window@{window}!Spawn\+Bullet\+Command@{Spawn\+Bullet\+Command}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Render\+Window\& Spawn\+Bullet\+Command\+::window\hspace{0.3cm}{\ttfamily [private]}}\label{class_spawn_bullet_command_a5d0554f50bb223ed223319884b8c0e39}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

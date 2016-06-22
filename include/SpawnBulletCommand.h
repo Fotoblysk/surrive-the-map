@@ -8,14 +8,16 @@
 class SpawnBulletCommand : public Command
 {
     public:
-        SpawnBulletCommand(Game& game_in, sf::Vector2f speed_in);
+        SpawnBulletCommand(Engine* engine_in, sf::Vector2f speed_in, sf::RenderWindow& window_in, Actor* actor_in);
         void execute()override;
         virtual ~SpawnBulletCommand();
     protected:
-        Player* actor;
-        sf::Vector2f speed;
+
     private:
-        Game& game;
+        Actor* actor;
+        sf::RenderWindow& window;
+        Engine* engine;
+        sf::Vector2f speed;
         GeneralTools::Direction direction;
 };
 

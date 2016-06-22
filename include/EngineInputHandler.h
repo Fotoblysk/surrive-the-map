@@ -8,10 +8,10 @@ class EngineInputHandler : public InputHandler
 {
     public:
         Command** handleInput()override;
-        EngineInputHandler(Game& game_in);
+        EngineInputHandler(Engine* engine, sf::RenderWindow& window_in, GameState& game_state);
         virtual ~EngineInputHandler();
     private:
-        Game& game;
+        sf::RenderWindow& window;
         Command* handleKeyInput(sf::Event& event, int& i);
         Command** handleRealTimeKeyInput(sf::Event& event, int& i);
 

@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for Engine\+Input\+Handler\+:\nopagebreak
+Inheritance diagram for Engine\+Input\+Handler\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,7 +21,7 @@ Collaboration diagram for Engine\+Input\+Handler\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{class_engine_input_handler__coll__graph}
+\includegraphics[width=216pt]{class_engine_input_handler__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -28,7 +29,7 @@ Collaboration diagram for Engine\+Input\+Handler\+:
 \item 
 \hyperlink{class_command}{Command} $\ast$$\ast$ \hyperlink{class_engine_input_handler_ade92afaf7657007c2be3b5bd745c96e3}{handle\+Input} () override
 \item 
-\hyperlink{class_engine_input_handler_ac33be38a17d38deb390b879ceb2e1e2f}{Engine\+Input\+Handler} (\hyperlink{class_game}{Game} \&game\+\_\+in)
+\hyperlink{class_engine_input_handler_a0fb16f260399a8f4384001b9ffa352de}{Engine\+Input\+Handler} (\hyperlink{class_engine}{Engine} $\ast$engine, sf\+::\+Render\+Window \&window\+\_\+in, \hyperlink{class_game_state}{Game\+State} \&game\+\_\+state)
 \item 
 virtual \hyperlink{class_engine_input_handler_a92a875197705110bd6b2debfe7dbee6a}{$\sim$\+Engine\+Input\+Handler} ()
 \end{DoxyCompactItemize}
@@ -42,7 +43,7 @@ virtual \hyperlink{class_engine_input_handler_a92a875197705110bd6b2debfe7dbee6a}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_game}{Game} \& \hyperlink{class_engine_input_handler_a449d615b9968227381db153f57b7299d}{game}
+sf\+::\+Render\+Window \& \hyperlink{class_engine_input_handler_ae534eb94ba995a38f87faf37ed309ba5}{window}
 \item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_command}{Command} $>$ \hyperlink{class_engine_input_handler_a864479881a1e214952f4a2aea3a307bf}{key\+\_\+escape}
 \item 
@@ -72,13 +73,15 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_command}{Command} $>$ \hyperlink{clas
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_engine_input_handler_ac33be38a17d38deb390b879ceb2e1e2f}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\hypertarget{class_engine_input_handler_a0fb16f260399a8f4384001b9ffa352de}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
 \index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
 \subsubsection[{Engine\+Input\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+Input\+Handler\+::\+Engine\+Input\+Handler (
 \begin{DoxyParamCaption}
-\item[{{\bf Game} \&}]{game\+\_\+in}
+\item[{{\bf Engine} $\ast$}]{engine, }
+\item[{sf\+::\+Render\+Window \&}]{window\+\_\+in, }
+\item[{{\bf Game\+State} \&}]{game\+\_\+state}
 \end{DoxyParamCaption}
-)}\label{class_engine_input_handler_ac33be38a17d38deb390b879ceb2e1e2f}
+)}\label{class_engine_input_handler_a0fb16f260399a8f4384001b9ffa352de}
 \hypertarget{class_engine_input_handler_a92a875197705110bd6b2debfe7dbee6a}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!````~Engine\+Input\+Handler@{$\sim$\+Engine\+Input\+Handler}}
 \index{````~Engine\+Input\+Handler@{$\sim$\+Engine\+Input\+Handler}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
 \subsubsection[{$\sim$\+Engine\+Input\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Engine\+Input\+Handler\+::$\sim$\+Engine\+Input\+Handler (
@@ -102,7 +105,8 @@ Implements \hyperlink{class_input_handler_a69b726d4a409a6f4ae443689cb69b404}{Inp
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -155,9 +159,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \hypertarget{class_engine_input_handler_a0795da79edb03ad26aa5d8aec9fc2a04}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!closed@{closed}}
 \index{closed@{closed}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
 \subsubsection[{closed}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Command}$>$ Engine\+Input\+Handler\+::closed\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a0795da79edb03ad26aa5d8aec9fc2a04}
-\hypertarget{class_engine_input_handler_a449d615b9968227381db153f57b7299d}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!game@{game}}
-\index{game@{game}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
-\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}\& Engine\+Input\+Handler\+::game\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a449d615b9968227381db153f57b7299d}
 \hypertarget{class_engine_input_handler_ae2da02fb4013bf0e85c951ad16efd48a}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!key\+\_\+a@{key\+\_\+a}}
 \index{key\+\_\+a@{key\+\_\+a}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
 \subsubsection[{key\+\_\+a}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Command}$>$ Engine\+Input\+Handler\+::key\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_ae2da02fb4013bf0e85c951ad16efd48a}
@@ -191,6 +192,9 @@ Here is the caller graph for this function\+:\nopagebreak
 \hypertarget{class_engine_input_handler_a1d5d91670520e1424bf5dac389d65069}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!l\+\_\+mouse\+\_\+button@{l\+\_\+mouse\+\_\+button}}
 \index{l\+\_\+mouse\+\_\+button@{l\+\_\+mouse\+\_\+button}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
 \subsubsection[{l\+\_\+mouse\+\_\+button}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Command}$>$ Engine\+Input\+Handler\+::l\+\_\+mouse\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_a1d5d91670520e1424bf5dac389d65069}
+\hypertarget{class_engine_input_handler_ae534eb94ba995a38f87faf37ed309ba5}{}\index{Engine\+Input\+Handler@{Engine\+Input\+Handler}!window@{window}}
+\index{window@{window}!Engine\+Input\+Handler@{Engine\+Input\+Handler}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Render\+Window\& Engine\+Input\+Handler\+::window\hspace{0.3cm}{\ttfamily [private]}}\label{class_engine_input_handler_ae534eb94ba995a38f87faf37ed309ba5}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
