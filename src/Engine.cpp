@@ -8,9 +8,15 @@ collisionHandler(new CollisionHandler(*this))
     //ctor
 }
 
-Engine::~Engine()
-{
-    //dtor
+Engine::~Engine(){
+    for(auto i = 0; i<enemy.size(); i++)
+    {
+        assert(enemy[i] != nullptr);
+        assert(ai[i] != nullptr);
+        delete ai[i];
+        delete enemy[i];
+        DEBUG_MSG("Removing Enemy"<<std::endl);
+    }
 }
 
 void Engine::update(){
