@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamestate',['GameState',['../class_game.html#a7f57a7a8408e554d0a72882c287e1d04',1,'Game']]]
+  ['gamestatestatus',['GameStateStatus',['../class_game_state.html#a921b00cc8c4eb15a3ae9f5061f44bd85',1,'GameState']]]
 ];

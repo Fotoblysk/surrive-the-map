@@ -16,6 +16,5 @@ var searchData=
   ['startsinglegamecommand_2ecpp',['StartSingleGameCommand.cpp',['../_start_single_game_command_8cpp.html',1,'']]],
   ['startsinglegamecommand_2eh',['StartSingleGameCommand.h',['../_start_single_game_command_8h.html',1,'']]],
   ['startsingleplayer',['startSinglePlayer',['../class_game.html#afbc524f7661c9ce1bea6ca45fd212093',1,'Game']]],
-  ['state',['state',['../class_game.html#ad9fc2a8710ee56916f79314b91112ed0',1,'Game']]],
   ['statemachine',['stateMachine',['../class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72',1,'Game']]]
 ];

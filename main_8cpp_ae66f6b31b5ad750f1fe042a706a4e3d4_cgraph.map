@@ -1,6 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa" title="Game::run" alt="" coords="104,31,187,57"/>
-<area shape="rect" id="node3" href="$class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="235,31,377,57"/>
-<area shape="rect" id="node4" href="$class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="459,5,556,32"/>
-<area shape="rect" id="node5" href="$class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="425,56,589,83"/>
+<area shape="rect" id="node2" href="$class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa" title="Game::run" alt="" coords="104,5,187,32"/>
+<area shape="rect" id="node3" href="$class_game_state.html#a9f10dd6cb64501f748c31a9f7ecc3466" title="GameState::changeState" alt="" coords="637,5,807,32"/>
+<area shape="rect" id="node4" href="$class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="235,56,377,83"/>
+<area shape="rect" id="node5" href="$class_game_state.html#a9b808c211f0155b3d2994ec1e2c32f33" title="GameState::getState" alt="" coords="649,81,795,108"/>
+<area shape="rect" id="node6" href="$class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="459,132,556,159"/>
+<area shape="rect" id="node7" href="$class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="425,31,589,57"/>
 </map>

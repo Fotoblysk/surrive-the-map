@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['input',['input',['../class_game.html#a737881663b793b4e7068d60a00937bba',1,'Game']]],
   ['inputhandler',['InputHandler',['../class_input_handler.html',1,'InputHandler'],['../class_input_handler.html#a1b1ccf055510e8ae1fc6a4a1d1fadbe4',1,'InputHandler::InputHandler()']]],
   ['inputhandler_2ecpp',['InputHandler.cpp',['../_input_handler_8cpp.html',1,'']]],
   ['inputhandler_2eh',['InputHandler.h',['../_input_handler_8h.html',1,'']]],
