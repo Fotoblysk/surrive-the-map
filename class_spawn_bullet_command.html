@@ -87,7 +87,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_spawn_bullet_command-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -108,13 +107,13 @@ Collaboration diagram for SpawnBulletCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_spawn_bullet_command__coll__graph.png" border="0" usemap="#_spawn_bullet_command_coll__map" alt="Collaboration graph"/></div>
 <map name="_spawn_bullet_command_coll__map" id="_spawn_bullet_command_coll__map">
-<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,558,115,650"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,499,285,709"/><area shape="rect" id="node4" href="class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="141,257,283,378"/><area shape="rect" id="node5" href="class_player.html" title="{Player\n|# shoot_delay\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l+ tryToShoot()\l&#45; shotDelayUpdate()\l}" alt="" coords="309,477,536,731"/><area shape="rect" id="node6" href="class_actor.html" title="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}" alt="" coords="308,220,535,415"/><area shape="rect" id="node7" href="class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="360,5,483,171"/></map>
+<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,824,115,916"/><area shape="rect" id="node3" href="class_engine.html" title="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l# collisionHandler\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l}" alt="" coords="289,780,413,960"/><area shape="rect" id="node4" href="class_actor.html" title="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}" alt="" coords="100,220,327,415"/><area shape="rect" id="node7" href="class_player.html" title="{Player\n|# shoot_delay\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l+ tryToShoot()\l&#45; shotDelayUpdate()\l}" alt="" coords="497,464,724,717"/><area shape="rect" id="node5" href="class_game_object.html" title="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}" alt="" coords="152,5,275,171"/><area shape="rect" id="node6" href="class_enemy_spawner.html" title="{EnemySpawner\n|# counter\l# spawn_delay\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}" alt="" coords="332,523,473,659"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a279b39ecc9491fe12812ac633ecbb992"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a279b39ecc9491fe12812ac633ecbb992">SpawnBulletCommand</a> (<a class="el" href="class_game.html">Game</a> &amp;game_in, sf::Vector2f speed_in)</td></tr>
-<tr class="separator:a279b39ecc9491fe12812ac633ecbb992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9ba5b912fcd791bf294433f0888b25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#afb9ba5b912fcd791bf294433f0888b25">SpawnBulletCommand</a> (<a class="el" href="class_engine.html">Engine</a> *engine_in, sf::Vector2f speed_in, sf::RenderWindow &amp;window_in, <a class="el" href="class_actor.html">Actor</a> *actor_in)</td></tr>
+<tr class="separator:afb9ba5b912fcd791bf294433f0888b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558af584b91637cd6bcf989d799eca4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a558af584b91637cd6bcf989d799eca4d">execute</a> () override</td></tr>
 <tr class="separator:a558af584b91637cd6bcf989d799eca4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac22b1ce86d8ae1d7fb1df78745cb4db6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#ac22b1ce86d8ae1d7fb1df78745cb4db6">~SpawnBulletCommand</a> ()</td></tr>
@@ -123,36 +122,47 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab552bb3a07fdd1acbfd8ea76e69b2278 inherit pub_methods_class_command"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_command.html#ab552bb3a07fdd1acbfd8ea76e69b2278">~Command</a> ()</td></tr>
 <tr class="separator:ab552bb3a07fdd1acbfd8ea76e69b2278 inherit pub_methods_class_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a36d5fec5d82d09a70954be0fb1fe519f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a36d5fec5d82d09a70954be0fb1fe519f">actor</a></td></tr>
-<tr class="separator:a36d5fec5d82d09a70954be0fb1fe519f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f302f0a55b2e9102e16f7ff9eec9396"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a5f302f0a55b2e9102e16f7ff9eec9396">speed</a></td></tr>
-<tr class="separator:a5f302f0a55b2e9102e16f7ff9eec9396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9e98531440220e01f46fb91b3fa78cef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a9e98531440220e01f46fb91b3fa78cef">game</a></td></tr>
-<tr class="separator:a9e98531440220e01f46fb91b3fa78cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb6134d4c393ecde2e836dc3db81834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_actor.html">Actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a7bb6134d4c393ecde2e836dc3db81834">actor</a></td></tr>
+<tr class="separator:a7bb6134d4c393ecde2e836dc3db81834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0554f50bb223ed223319884b8c0e39"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a5d0554f50bb223ed223319884b8c0e39">window</a></td></tr>
+<tr class="separator:a5d0554f50bb223ed223319884b8c0e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435f4a05484eb04a81fa96bbc2cfbe26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_engine.html">Engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a435f4a05484eb04a81fa96bbc2cfbe26">engine</a></td></tr>
+<tr class="separator:a435f4a05484eb04a81fa96bbc2cfbe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f302f0a55b2e9102e16f7ff9eec9396"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a5f302f0a55b2e9102e16f7ff9eec9396">speed</a></td></tr>
+<tr class="separator:a5f302f0a55b2e9102e16f7ff9eec9396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2d824d68a8df88aec7b86500c27a13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_general_tools.html#afedc3bd242369903830dec92c3ad569b">GeneralTools::Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spawn_bullet_command.html#a7d2d824d68a8df88aec7b86500c27a13">direction</a></td></tr>
 <tr class="separator:a7d2d824d68a8df88aec7b86500c27a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a279b39ecc9491fe12812ac633ecbb992"></a>
+<a class="anchor" id="afb9ba5b912fcd791bf294433f0888b25"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">SpawnBulletCommand::SpawnBulletCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td>
-          <td class="paramname"><em>game_in</em>, </td>
+          <td class="paramtype"><a class="el" href="class_engine.html">Engine</a> *&#160;</td>
+          <td class="paramname"><em>engine_in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">sf::Vector2f&#160;</td>
-          <td class="paramname"><em>speed_in</em>&#160;</td>
+          <td class="paramname"><em>speed_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_actor.html">Actor</a> *&#160;</td>
+          <td class="paramname"><em>actor_in</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -216,14 +226,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d_cgraph.png" border="0" usemap="#class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d_cgraph" alt=""/></div>
 <map name="class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d_cgraph" id="class_spawn_bullet_command_a558af584b91637cd6bcf989d799eca4d_cgraph">
-<area shape="rect" id="node2" href="class_player.html#a52486292c25bc6ac6589423ef0c81b0e" title="Player::tryToShoot" alt="" coords="227,5,357,32"/><area shape="rect" id="node3" href="class_player.html#abbd4bab9c1c4f881b268b37c3f810bd0" title="Player::getPosition" alt="" coords="226,56,358,83"/><area shape="rect" id="node4" href="class_player.html#ac2b21f8a74b6b1c0e9068a82e7e71e86" title="Player::getGlobalBounds" alt="" coords="209,107,375,133"/><area shape="rect" id="node5" href="class_game.html#ada9faa2a1f4e1453420adead02fd9865" title="Game::getRenderWindow" alt="" coords="207,157,377,184"/></map>
+<area shape="rect" id="node2" href="class_actor.html#a85db8a17b338703247162f82f94cb957" title="Actor::tryToShoot" alt="" coords="229,5,353,32"/><area shape="rect" id="node3" href="class_game_object.html#aba7c07744a79defec4484fb09d917543" title="GameObject::getPosition" alt="" coords="207,56,375,83"/><area shape="rect" id="node4" href="class_actor.html#ab56cff32076fef8392f4562fe281ea86" title="Actor::getGlobalBounds" alt="" coords="211,107,371,133"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a36d5fec5d82d09a70954be0fb1fe519f"></a>
+<a class="anchor" id="a7bb6134d4c393ecde2e836dc3db81834"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -231,12 +241,12 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_player.html">Player</a>* SpawnBulletCommand::actor</td>
+          <td class="memname"><a class="el" href="class_actor.html">Actor</a>* SpawnBulletCommand::actor</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -263,7 +273,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a9e98531440220e01f46fb91b3fa78cef"></a>
+<a class="anchor" id="a435f4a05484eb04a81fa96bbc2cfbe26"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -271,7 +281,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_game.html">Game</a>&amp; SpawnBulletCommand::game</td>
+          <td class="memname"><a class="el" href="class_engine.html">Engine</a>* SpawnBulletCommand::engine</td>
         </tr>
       </table>
   </td>
@@ -296,7 +306,27 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d0554f50bb223ed223319884b8c0e39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::RenderWindow&amp; SpawnBulletCommand::window</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -310,7 +340,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 22 2016 12:11:30 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 22 2016 12:44:10 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

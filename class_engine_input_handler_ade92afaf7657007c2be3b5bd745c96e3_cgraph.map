@@ -1,5 +1,4 @@
 <map id="EngineInputHandler::handleInput" name="EngineInputHandler::handleInput">
-<area shape="rect" id="node2" href="$class_game.html#ada9faa2a1f4e1453420adead02fd9865" title="Game::getRenderWindow" alt="" coords="189,5,360,32"/>
-<area shape="rect" id="node3" href="$class_engine_input_handler.html#a6b350fc8a379b04d36b2a60d4d673dcd" title="EngineInputHandler\l::handleKeyInput" alt="" coords="207,57,342,98"/>
-<area shape="rect" id="node4" href="$class_engine_input_handler.html#a7e4a2c1a4cacf7ba3129c1e3a998de53" title="EngineInputHandler\l::handleRealTimeKeyInput" alt="" coords="188,122,361,163"/>
+<area shape="rect" id="node2" href="$class_engine_input_handler.html#a6b350fc8a379b04d36b2a60d4d673dcd" title="EngineInputHandler\l::handleKeyInput" alt="" coords="207,5,342,47"/>
+<area shape="rect" id="node3" href="$class_engine_input_handler.html#a7e4a2c1a4cacf7ba3129c1e3a998de53" title="EngineInputHandler\l::handleRealTimeKeyInput" alt="" coords="188,71,361,112"/>
 </map>
