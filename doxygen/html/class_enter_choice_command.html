@@ -107,13 +107,13 @@ Collaboration diagram for EnterChoiceCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_enter_choice_command__coll__graph.png" border="0" usemap="#_enter_choice_command_coll__map" alt="Collaboration graph"/></div>
 <map name="_enter_choice_command_coll__map" id="_enter_choice_command_coll__map">
-<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,79,115,171"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,5,285,244"/></map>
+<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,27,115,119"/><area shape="rect" id="node3" href="class_menu.html" title="{Menu\n||+ render()\l+ getNumberOfMenuChoices()\l+ ~Menu()\l+ getSelectedTextPtr()\l+ getMenuText()\l}" alt="" coords="139,5,336,141"/><area shape="rect" id="node4" href="class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="360,13,501,134"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab28cfc3f238985775ec33ebb33c355a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enter_choice_command.html#ab28cfc3f238985775ec33ebb33c355a6">EnterChoiceCommand</a> (<a class="el" href="class_game.html">Game</a> &amp;game_in)</td></tr>
-<tr class="separator:ab28cfc3f238985775ec33ebb33c355a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319735ec5c0c2ba71fc28b395ed83f4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enter_choice_command.html#a319735ec5c0c2ba71fc28b395ed83f4c">EnterChoiceCommand</a> (<a class="el" href="class_game_state.html">GameState</a> &amp;game_state_in, <a class="el" href="class_menu.html">Menu</a> *menu_in)</td></tr>
+<tr class="separator:a319735ec5c0c2ba71fc28b395ed83f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a330dcd6ffcf6f806c26b577bba21c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enter_choice_command.html#aa7a330dcd6ffcf6f806c26b577bba21c">~EnterChoiceCommand</a> ()</td></tr>
 <tr class="separator:aa7a330dcd6ffcf6f806c26b577bba21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a684f65bfc296353ecefc6edc1c678c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enter_choice_command.html#a684f65bfc296353ecefc6edc1c678c70">execute</a> () override</td></tr>
@@ -126,20 +126,32 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a53c2b9d8c1ee8b9bdbed6ad4889f10b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enter_choice_command.html#a53c2b9d8c1ee8b9bdbed6ad4889f10b0">game</a></td></tr>
-<tr class="separator:a53c2b9d8c1ee8b9bdbed6ad4889f10b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62848655ea22c482e3b0231b2db296f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_state.html">GameState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enter_choice_command.html#ae62848655ea22c482e3b0231b2db296f">game_state</a></td></tr>
+<tr class="separator:ae62848655ea22c482e3b0231b2db296f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf91b40b9f53c09048e23830e37f1fe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_menu.html">Menu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enter_choice_command.html#abf91b40b9f53c09048e23830e37f1fe0">menu</a></td></tr>
+<tr class="separator:abf91b40b9f53c09048e23830e37f1fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab28cfc3f238985775ec33ebb33c355a6"></a>
+<a class="anchor" id="a319735ec5c0c2ba71fc28b395ed83f4c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">EnterChoiceCommand::EnterChoiceCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td>
-          <td class="paramname"><em>game_in</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_game_state.html">GameState</a> &amp;&#160;</td>
+          <td class="paramname"><em>game_state_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_menu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>menu_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -198,7 +210,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_enter_choice_command_a684f65bfc296353ecefc6edc1c678c70_cgraph.png" border="0" usemap="#class_enter_choice_command_a684f65bfc296353ecefc6edc1c678c70_cgraph" alt=""/></div>
 <map name="class_enter_choice_command_a684f65bfc296353ecefc6edc1c678c70_cgraph" id="class_enter_choice_command_a684f65bfc296353ecefc6edc1c678c70_cgraph">
-<area shape="rect" id="node2" href="class_enter_choice_command.html#a09b35eafcb1ba6d9e6fb93425702e6c4" title="EnterChoiceCommand\l::findSelectedOnTextArray" alt="" coords="215,5,390,47"/><area shape="rect" id="node3" href="class_game.html#a82e2140cdedd171aecaed897d3aea5a0" title="Game::changeState" alt="" coords="448,97,587,123"/><area shape="rect" id="node4" href="class_quit_game_command.html#ad39d43150a927d7e8b0dd7162eb840eb" title="QuitGameCommand::execute" alt="" coords="205,122,400,149"/></map>
+<area shape="rect" id="node2" href="class_enter_choice_command.html#a09b35eafcb1ba6d9e6fb93425702e6c4" title="EnterChoiceCommand\l::findSelectedOnTextArray" alt="" coords="215,49,390,90"/><area shape="rect" id="node6" href="class_game_state.html#a9f10dd6cb64501f748c31a9f7ecc3466" title="GameState::changeState" alt="" coords="472,161,641,188"/><area shape="rect" id="node7" href="class_quit_game_command.html#ad39d43150a927d7e8b0dd7162eb840eb" title="QuitGameCommand::execute" alt="" coords="205,165,400,192"/><area shape="rect" id="node3" href="class_menu.html#aeed33b0a47d0c49de45e0c1bb1503585" title="Menu::getNumberOfMenuChoices" alt="" coords="448,5,665,32"/><area shape="rect" id="node4" href="class_menu.html#a42fb94aee459f7ae5d06a7be1b540f17" title="Menu::getMenuText" alt="" coords="488,56,625,83"/><area shape="rect" id="node5" href="class_menu.html#ac9a761729ba9bac25bae4ee1a25b6e11" title="Menu::getSelectedTextPtr" alt="" coords="470,107,643,133"/></map>
 </div>
 </p>
 
@@ -218,6 +230,15 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph.png" border="0" usemap="#class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph" alt=""/></div>
+<map name="class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph" id="class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph">
+<area shape="rect" id="node2" href="class_menu.html#aeed33b0a47d0c49de45e0c1bb1503585" title="Menu::getNumberOfMenuChoices" alt="" coords="228,5,445,32"/><area shape="rect" id="node3" href="class_menu.html#a42fb94aee459f7ae5d06a7be1b540f17" title="Menu::getMenuText" alt="" coords="268,56,405,83"/><area shape="rect" id="node4" href="class_menu.html#ac9a761729ba9bac25bae4ee1a25b6e11" title="Menu::getSelectedTextPtr" alt="" coords="250,107,423,133"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_icgraph.png" border="0" usemap="#class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_icgraph" alt=""/></div>
@@ -229,7 +250,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a53c2b9d8c1ee8b9bdbed6ad4889f10b0"></a>
+<a class="anchor" id="ae62848655ea22c482e3b0231b2db296f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -237,7 +258,27 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_game.html">Game</a>&amp; EnterChoiceCommand::game</td>
+          <td class="memname"><a class="el" href="class_game_state.html">GameState</a>&amp; EnterChoiceCommand::game_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf91b40b9f53c09048e23830e37f1fe0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_menu.html">Menu</a>* EnterChoiceCommand::menu</td>
         </tr>
       </table>
   </td>
@@ -256,7 +297,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 22 2016 08:45:19 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 22 2016 12:11:29 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

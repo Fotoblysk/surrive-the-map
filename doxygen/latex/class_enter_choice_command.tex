@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for Enter\+Choice\+Command\+:\nopagebreak
+Inheritance diagram for Enter\+Choice\+Command\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,17 +16,18 @@ Inheritance diagram for Enter\+Choice\+Command\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Enter\+Choice\+Command\+:\nopagebreak
+Collaboration diagram for Enter\+Choice\+Command\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=290pt]{class_enter_choice_command__coll__graph}
+\includegraphics[width=350pt]{class_enter_choice_command__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_enter_choice_command_ab28cfc3f238985775ec33ebb33c355a6}{Enter\+Choice\+Command} (\hyperlink{class_game}{Game} \&game\+\_\+in)
+\hyperlink{class_enter_choice_command_a319735ec5c0c2ba71fc28b395ed83f4c}{Enter\+Choice\+Command} (\hyperlink{class_game_state}{Game\+State} \&game\+\_\+state\+\_\+in, \hyperlink{class_menu}{Menu} $\ast$menu\+\_\+in)
 \item 
 virtual \hyperlink{class_enter_choice_command_aa7a330dcd6ffcf6f806c26b577bba21c}{$\sim$\+Enter\+Choice\+Command} ()
 \item 
@@ -36,18 +38,21 @@ int \hyperlink{class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4}{fin
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_game}{Game} \& \hyperlink{class_enter_choice_command_a53c2b9d8c1ee8b9bdbed6ad4889f10b0}{game}
+\hyperlink{class_game_state}{Game\+State} \& \hyperlink{class_enter_choice_command_ae62848655ea22c482e3b0231b2db296f}{game\+\_\+state}
+\item 
+\hyperlink{class_menu}{Menu} $\ast$ \hyperlink{class_enter_choice_command_abf91b40b9f53c09048e23830e37f1fe0}{menu}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_enter_choice_command_ab28cfc3f238985775ec33ebb33c355a6}{}\index{Enter\+Choice\+Command@{Enter\+Choice\+Command}!Enter\+Choice\+Command@{Enter\+Choice\+Command}}
+\hypertarget{class_enter_choice_command_a319735ec5c0c2ba71fc28b395ed83f4c}{}\index{Enter\+Choice\+Command@{Enter\+Choice\+Command}!Enter\+Choice\+Command@{Enter\+Choice\+Command}}
 \index{Enter\+Choice\+Command@{Enter\+Choice\+Command}!Enter\+Choice\+Command@{Enter\+Choice\+Command}}
 \subsubsection[{Enter\+Choice\+Command}]{\setlength{\rightskip}{0pt plus 5cm}Enter\+Choice\+Command\+::\+Enter\+Choice\+Command (
 \begin{DoxyParamCaption}
-\item[{{\bf Game} \&}]{game\+\_\+in}
+\item[{{\bf Game\+State} \&}]{game\+\_\+state\+\_\+in, }
+\item[{{\bf Menu} $\ast$}]{menu\+\_\+in}
 \end{DoxyParamCaption}
-)}\label{class_enter_choice_command_ab28cfc3f238985775ec33ebb33c355a6}
+)}\label{class_enter_choice_command_a319735ec5c0c2ba71fc28b395ed83f4c}
 \hypertarget{class_enter_choice_command_aa7a330dcd6ffcf6f806c26b577bba21c}{}\index{Enter\+Choice\+Command@{Enter\+Choice\+Command}!````~Enter\+Choice\+Command@{$\sim$\+Enter\+Choice\+Command}}
 \index{````~Enter\+Choice\+Command@{$\sim$\+Enter\+Choice\+Command}!Enter\+Choice\+Command@{Enter\+Choice\+Command}}
 \subsubsection[{$\sim$\+Enter\+Choice\+Command}]{\setlength{\rightskip}{0pt plus 5cm}Enter\+Choice\+Command\+::$\sim$\+Enter\+Choice\+Command (
@@ -71,7 +76,8 @@ Implements \hyperlink{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}.
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -89,6 +95,17 @@ Here is the call graph for this function\+:\nopagebreak
 )}\label{class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4}
 
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enter_choice_command_a09b35eafcb1ba6d9e6fb93425702e6c4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -101,9 +118,12 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_enter_choice_command_a53c2b9d8c1ee8b9bdbed6ad4889f10b0}{}\index{Enter\+Choice\+Command@{Enter\+Choice\+Command}!game@{game}}
-\index{game@{game}!Enter\+Choice\+Command@{Enter\+Choice\+Command}}
-\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}\& Enter\+Choice\+Command\+::game\hspace{0.3cm}{\ttfamily [protected]}}\label{class_enter_choice_command_a53c2b9d8c1ee8b9bdbed6ad4889f10b0}
+\hypertarget{class_enter_choice_command_ae62848655ea22c482e3b0231b2db296f}{}\index{Enter\+Choice\+Command@{Enter\+Choice\+Command}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!Enter\+Choice\+Command@{Enter\+Choice\+Command}}
+\subsubsection[{game\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+State}\& Enter\+Choice\+Command\+::game\+\_\+state\hspace{0.3cm}{\ttfamily [protected]}}\label{class_enter_choice_command_ae62848655ea22c482e3b0231b2db296f}
+\hypertarget{class_enter_choice_command_abf91b40b9f53c09048e23830e37f1fe0}{}\index{Enter\+Choice\+Command@{Enter\+Choice\+Command}!menu@{menu}}
+\index{menu@{menu}!Enter\+Choice\+Command@{Enter\+Choice\+Command}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu}$\ast$ Enter\+Choice\+Command\+::menu\hspace{0.3cm}{\ttfamily [protected]}}\label{class_enter_choice_command_abf91b40b9f53c09048e23830e37f1fe0}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

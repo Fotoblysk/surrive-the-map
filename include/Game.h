@@ -5,6 +5,7 @@
 #include"InputHandler.h"
 #include"Engine.h"
 #include"Menu.h"
+#include"GameState.h"
 #include<string>
 #include<memory>
 /*!
@@ -14,22 +15,20 @@
 class Game
 {
     public:
-        enum GameState{MenuState, PlaySingleState, EndState};
         Game(sf::RenderWindow& window_in);     ///< Initialization of RenderWindow& window - main window of the game.
         virtual ~Game();                       ///< Runs StartGame() function
-        void changeState(GameState new_state);
         sf::RenderWindow& getRenderWindow();
         void run();
         void startSinglePlayer();
-        std::unique_ptr <Menu> main_menu;
         std::unique_ptr <Engine> engine;
+        GameState game_state;
     protected:
 
     private:
+        std::unique_ptr <Menu> main_menu;
         void menu();
         sf::RenderWindow& window;           ///<Main game window
-        std::unique_ptr <InputHandler> menu_input;
-        GameState state;
+        std::unique_ptr <InputHandler> input;
         void stateMachine();
 };
 

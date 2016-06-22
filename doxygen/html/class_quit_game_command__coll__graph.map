@@ -1,4 +1,4 @@
 <map id="QuitGameCommand" name="QuitGameCommand">
-<area shape="rect" id="node2" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,79,115,171"/>
-<area shape="rect" id="node3" href="$class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,5,285,244"/>
+<area shape="rect" id="node2" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,20,115,112"/>
+<area shape="rect" id="node3" href="$class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="139,5,280,127"/>
 </map>

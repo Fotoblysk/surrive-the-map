@@ -6,7 +6,7 @@ engine(engine_in)
 {
 }
 
-Command** CollisionHandler::handleInput(){
+Command** CollisionHandler::handleInput(){ //TODO: no command returned, returned command should execute collision action
     for(auto i = 0; i<SIZE; i++)
         current_command_array[i] = nullptr;;
     for(auto j = 0; j<engine.bullet.size(); j++)

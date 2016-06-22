@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['endstate',['EndState',['../class_game.html#a7f57a7a8408e554d0a72882c287e1d04afc92d30e44f9ec0ff71b695a3ec6d5ca',1,'Game']]]
+  ['endstate',['EndState',['../class_game_state.html#a921b00cc8c4eb15a3ae9f5061f44bd85a3470235edc7f9177b35063100d4117ee',1,'GameState']]]
 ];

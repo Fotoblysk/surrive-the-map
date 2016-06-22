@@ -107,13 +107,13 @@ Collaboration diagram for QuitGameCommand:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_quit_game_command__coll__graph.png" border="0" usemap="#_quit_game_command_coll__map" alt="Collaboration graph"/></div>
 <map name="_quit_game_command_coll__map" id="_quit_game_command_coll__map">
-<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,79,115,171"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="139,5,285,244"/></map>
+<area shape="rect" id="node2" href="class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="5,20,115,112"/><area shape="rect" id="node3" href="class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="139,5,280,127"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae05171411d2210b38bd6ee08e2d90f15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quit_game_command.html#ae05171411d2210b38bd6ee08e2d90f15">QuitGameCommand</a> (<a class="el" href="class_game.html">Game</a> &amp;game_in)</td></tr>
-<tr class="separator:ae05171411d2210b38bd6ee08e2d90f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e9e7a9917b35d4adb7865a324f196e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quit_game_command.html#a08e9e7a9917b35d4adb7865a324f196e">QuitGameCommand</a> (<a class="el" href="class_game_state.html">GameState</a> &amp;game_state_in)</td></tr>
+<tr class="separator:a08e9e7a9917b35d4adb7865a324f196e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad39d43150a927d7e8b0dd7162eb840eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quit_game_command.html#ad39d43150a927d7e8b0dd7162eb840eb">execute</a> () override</td></tr>
 <tr class="separator:ad39d43150a927d7e8b0dd7162eb840eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af19303e2bf11dcd6f65359b4f9608540"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quit_game_command.html#af19303e2bf11dcd6f65359b4f9608540">~QuitGameCommand</a> ()</td></tr>
@@ -124,19 +124,19 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a44707efd79f562af0b78b40920365ee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quit_game_command.html#a44707efd79f562af0b78b40920365ee3">game</a></td></tr>
-<tr class="separator:a44707efd79f562af0b78b40920365ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fca8a15889eab4484aaa674f6a1823c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_state.html">GameState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quit_game_command.html#a5fca8a15889eab4484aaa674f6a1823c">game_state</a></td></tr>
+<tr class="separator:a5fca8a15889eab4484aaa674f6a1823c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae05171411d2210b38bd6ee08e2d90f15"></a>
+<a class="anchor" id="a08e9e7a9917b35d4adb7865a324f196e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">QuitGameCommand::QuitGameCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td>
-          <td class="paramname"><em>game_in</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_game_state.html">GameState</a> &amp;&#160;</td>
+          <td class="paramname"><em>game_state_in</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -196,7 +196,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_quit_game_command_ad39d43150a927d7e8b0dd7162eb840eb_cgraph.png" border="0" usemap="#class_quit_game_command_ad39d43150a927d7e8b0dd7162eb840eb_cgraph" alt=""/></div>
 <map name="class_quit_game_command_ad39d43150a927d7e8b0dd7162eb840eb_cgraph" id="class_quit_game_command_ad39d43150a927d7e8b0dd7162eb840eb_cgraph">
-<area shape="rect" id="node2" href="class_game.html#a82e2140cdedd171aecaed897d3aea5a0" title="Game::changeState" alt="" coords="248,5,387,32"/></map>
+<area shape="rect" id="node2" href="class_game_state.html#a9f10dd6cb64501f748c31a9f7ecc3466" title="GameState::changeState" alt="" coords="248,5,417,32"/></map>
 </div>
 </p>
 
@@ -212,7 +212,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a44707efd79f562af0b78b40920365ee3"></a>
+<a class="anchor" id="a5fca8a15889eab4484aaa674f6a1823c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -220,7 +220,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_game.html">Game</a>&amp; QuitGameCommand::game</td>
+          <td class="memname"><a class="el" href="class_game_state.html">GameState</a>&amp; QuitGameCommand::game_state</td>
         </tr>
       </table>
   </td>
@@ -239,7 +239,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 22 2016 08:45:21 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 22 2016 12:11:30 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

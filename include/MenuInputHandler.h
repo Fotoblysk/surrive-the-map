@@ -9,10 +9,12 @@ class MenuInputHandler: public InputHandler
 {
     public:
         Command** handleInput()override;
-        MenuInputHandler(Game& game_in);
-        virtual ~MenuInputHandler(){DEBUG_MSG("destroy  ");}
+        MenuInputHandler(GameState& game_state_in, Menu* menu_in, sf::RenderWindow& window_in);//TODO : Don't like that- not readable, use Observer pattern, or just use Game& and make getState() public, and add accessors to menu.
+        virtual ~MenuInputHandler();
     private:
-        Game& game;
+        GameState& game_state;
+        sf::RenderWindow& window;
+        Menu* menu;
         Command* handleKeyInput(sf::Event& event, int& i);
 
 

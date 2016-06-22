@@ -3,11 +3,11 @@
 #include "MoveActorCommand.h"
 #include "SpawnBulletCommand.h"
 #include <SFML/System/Vector2.hpp>
-
+#include "Game.h"
 EngineInputHandler::EngineInputHandler(Game& game_in):
 InputHandler::InputHandler(SIZE),
 game(game_in),
-key_escape(new QuitGameCommand(game)),// memory leaks, object is doubled
+key_escape(new QuitGameCommand(game_in.game_state)),// memory leaks, object is doubled
 closed(key_escape),
 
 key_d(new MoveActorCommand(game.engine->current_player, GeneralTools::Right)),

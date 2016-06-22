@@ -11,21 +11,14 @@
 
 
 
-Collaboration diagram for Game\+:\nopagebreak
+Collaboration diagram for Game\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=190pt]{class_game__coll__graph}
+\includegraphics[width=196pt]{class_game__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Types}
-\begin{DoxyCompactItemize}
-\item 
-enum \hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State} \{ \hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04a7a51f25e2194782f14973800a89e58fd}{Menu\+State}, 
-\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04a08c295bf12e492bf9d64b14d8d83b736}{Play\+Single\+State}, 
-\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04afc92d30e44f9ec0ff71b695a3ec6d5ca}{End\+State}
- \}
-\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,8 +26,6 @@ enum \hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State} \{ \h
 \begin{DoxyCompactList}\small\item\em Initialization of Render\+Window\& window -\/ main window of the game. \end{DoxyCompactList}\item 
 virtual \hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game} ()
 \begin{DoxyCompactList}\small\item\em Runs Start\+Game() function. \end{DoxyCompactList}\item 
-void \hyperlink{class_game_a82e2140cdedd171aecaed897d3aea5a0}{change\+State} (\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State} new\+\_\+state)
-\item 
 sf\+::\+Render\+Window \& \hyperlink{class_game_ada9faa2a1f4e1453420adead02fd9865}{get\+Render\+Window} ()
 \item 
 void \hyperlink{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{run} ()
@@ -44,9 +35,9 @@ void \hyperlink{class_game_afbc524f7661c9ce1bea6ca45fd212093}{start\+Single\+Pla
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::unique\+\_\+ptr$<$ \hyperlink{class_menu}{Menu} $>$ \hyperlink{class_game_ae08cf171b4f973d47def68d69f561e2c}{main\+\_\+menu}
-\item 
 std\+::unique\+\_\+ptr$<$ \hyperlink{class_engine}{Engine} $>$ \hyperlink{class_game_aee6b9ebe224001f736e1ed71a3b28223}{engine}
+\item 
+\hyperlink{class_game_state}{Game\+State} \hyperlink{class_game_a12c5a68cb0b0f1ca4bd238824253db7c}{game\+\_\+state}
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -58,33 +49,16 @@ void \hyperlink{class_game_a8bc94200bfbf0421b83b7c2b2b45da72}{state\+Machine} ()
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_menu}{Menu} $>$ \hyperlink{class_game_ae08cf171b4f973d47def68d69f561e2c}{main\+\_\+menu}
+\item 
 sf\+::\+Render\+Window \& \hyperlink{class_game_ad0fb4d8653dcf289fd6573cf5ba0f3d1}{window}
 \begin{DoxyCompactList}\small\item\em Main game window. \end{DoxyCompactList}\item 
-std\+::unique\+\_\+ptr$<$ \hyperlink{class_input_handler}{Input\+Handler} $>$ \hyperlink{class_game_a82776f65732ac43cf35b8b7c7120c873}{menu\+\_\+input}
-\item 
-\hyperlink{class_game_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State} \hyperlink{class_game_ad9fc2a8710ee56916f79314b91112ed0}{state}
+std\+::unique\+\_\+ptr$<$ \hyperlink{class_input_handler}{Input\+Handler} $>$ \hyperlink{class_game_a737881663b793b4e7068d60a00937bba}{input}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \hyperlink{class_game}{Game} main class. Class which is used run engine. This class will menage menu and settings. 
-
-\subsection{Member Enumeration Documentation}
-\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04}{}\index{Game@{Game}!Game\+State@{Game\+State}}
-\index{Game\+State@{Game\+State}!Game@{Game}}
-\subsubsection[{Game\+State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Game\+::\+Game\+State}}\label{class_game_a7f57a7a8408e554d0a72882c287e1d04}
-\begin{Desc}
-\item[Enumerator]\par
-\begin{description}
-\index{Menu\+State@{Menu\+State}!Game@{Game}}\index{Game@{Game}!Menu\+State@{Menu\+State}}\item[{\em 
-\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04a7a51f25e2194782f14973800a89e58fd}{}Menu\+State\label{class_game_a7f57a7a8408e554d0a72882c287e1d04a7a51f25e2194782f14973800a89e58fd}
-}]\index{Play\+Single\+State@{Play\+Single\+State}!Game@{Game}}\index{Game@{Game}!Play\+Single\+State@{Play\+Single\+State}}\item[{\em 
-\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04a08c295bf12e492bf9d64b14d8d83b736}{}Play\+Single\+State\label{class_game_a7f57a7a8408e554d0a72882c287e1d04a08c295bf12e492bf9d64b14d8d83b736}
-}]\index{End\+State@{End\+State}!Game@{Game}}\index{Game@{Game}!End\+State@{End\+State}}\item[{\em 
-\hypertarget{class_game_a7f57a7a8408e554d0a72882c287e1d04afc92d30e44f9ec0ff71b695a3ec6d5ca}{}End\+State\label{class_game_a7f57a7a8408e554d0a72882c287e1d04afc92d30e44f9ec0ff71b695a3ec6d5ca}
-}]\end{description}
-\end{Desc}
-
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_game_a0010695fcd27f6fc91b37b5cf3ed0543}{}\index{Game@{Game}!Game@{Game}}
@@ -97,6 +71,18 @@ std\+::unique\+\_\+ptr$<$ \hyperlink{class_input_handler}{Input\+Handler} $>$ \h
 
 
 Initialization of Render\+Window\& window -\/ main window of the game. 
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_game_a0010695fcd27f6fc91b37b5cf3ed0543_cgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}{}\index{Game@{Game}!````~Game@{$\sim$\+Game}}
 \index{````~Game@{$\sim$\+Game}!Game@{Game}}
@@ -112,24 +98,6 @@ Runs Start\+Game() function.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_game_a82e2140cdedd171aecaed897d3aea5a0}{}\index{Game@{Game}!change\+State@{change\+State}}
-\index{change\+State@{change\+State}!Game@{Game}}
-\subsubsection[{change\+State}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::change\+State (
-\begin{DoxyParamCaption}
-\item[{{\bf Game\+State}}]{new\+\_\+state}
-\end{DoxyParamCaption}
-)}\label{class_game_a82e2140cdedd171aecaed897d3aea5a0}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_game_a82e2140cdedd171aecaed897d3aea5a0_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_game_ada9faa2a1f4e1453420adead02fd9865}{}\index{Game@{Game}!get\+Render\+Window@{get\+Render\+Window}}
 \index{get\+Render\+Window@{get\+Render\+Window}!Game@{Game}}
 \subsubsection[{get\+Render\+Window}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Render\+Window \& Game\+::get\+Render\+Window (
@@ -139,7 +107,8 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\label{class_game_ada9faa2a1f4e1453420adead02fd9865}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -155,6 +124,18 @@ Here is the caller graph for this function\+:\nopagebreak
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a463932fa7ca2f1ce243279bf2422fc48}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_game_a463932fa7ca2f1ce243279bf2422fc48_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Here is the caller graph for this function\+:\nopagebreak
@@ -175,7 +156,8 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\label{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -204,6 +186,18 @@ Here is the caller graph for this function\+:\nopagebreak
 )}\label{class_game_afbc524f7661c9ce1bea6ca45fd212093}
 
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_afbc524f7661c9ce1bea6ca45fd212093_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -222,11 +216,12 @@ Here is the caller graph for this function\+:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a8bc94200bfbf0421b83b7c2b2b45da72}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{class_game_a8bc94200bfbf0421b83b7c2b2b45da72_cgraph}
+\includegraphics[width=350pt]{class_game_a8bc94200bfbf0421b83b7c2b2b45da72_cgraph}
 \end{center}
 \end{figure}
 
@@ -248,15 +243,15 @@ Here is the caller graph for this function\+:\nopagebreak
 \hypertarget{class_game_aee6b9ebe224001f736e1ed71a3b28223}{}\index{Game@{Game}!engine@{engine}}
 \index{engine@{engine}!Game@{Game}}
 \subsubsection[{engine}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Engine}$>$ Game\+::engine}\label{class_game_aee6b9ebe224001f736e1ed71a3b28223}
+\hypertarget{class_game_a12c5a68cb0b0f1ca4bd238824253db7c}{}\index{Game@{Game}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!Game@{Game}}
+\subsubsection[{game\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+State} Game\+::game\+\_\+state}\label{class_game_a12c5a68cb0b0f1ca4bd238824253db7c}
+\hypertarget{class_game_a737881663b793b4e7068d60a00937bba}{}\index{Game@{Game}!input@{input}}
+\index{input@{input}!Game@{Game}}
+\subsubsection[{input}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Input\+Handler}$>$ Game\+::input\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a737881663b793b4e7068d60a00937bba}
 \hypertarget{class_game_ae08cf171b4f973d47def68d69f561e2c}{}\index{Game@{Game}!main\+\_\+menu@{main\+\_\+menu}}
 \index{main\+\_\+menu@{main\+\_\+menu}!Game@{Game}}
-\subsubsection[{main\+\_\+menu}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Menu}$>$ Game\+::main\+\_\+menu}\label{class_game_ae08cf171b4f973d47def68d69f561e2c}
-\hypertarget{class_game_a82776f65732ac43cf35b8b7c7120c873}{}\index{Game@{Game}!menu\+\_\+input@{menu\+\_\+input}}
-\index{menu\+\_\+input@{menu\+\_\+input}!Game@{Game}}
-\subsubsection[{menu\+\_\+input}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Input\+Handler}$>$ Game\+::menu\+\_\+input\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_a82776f65732ac43cf35b8b7c7120c873}
-\hypertarget{class_game_ad9fc2a8710ee56916f79314b91112ed0}{}\index{Game@{Game}!state@{state}}
-\index{state@{state}!Game@{Game}}
-\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+State} Game\+::state\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_ad9fc2a8710ee56916f79314b91112ed0}
+\subsubsection[{main\+\_\+menu}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Menu}$>$ Game\+::main\+\_\+menu\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_ae08cf171b4f973d47def68d69f561e2c}
 \hypertarget{class_game_ad0fb4d8653dcf289fd6573cf5ba0f3d1}{}\index{Game@{Game}!window@{window}}
 \index{window@{window}!Game@{Game}}
 \subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Render\+Window\& Game\+::window\hspace{0.3cm}{\ttfamily [private]}}\label{class_game_ad0fb4d8653dcf289fd6573cf5ba0f3d1}

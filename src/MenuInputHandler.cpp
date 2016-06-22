@@ -1,29 +1,33 @@
 #include "MenuInputHandler.h"
 #include "EnterChoiceCommand.h"
-MenuInputHandler::MenuInputHandler(Game& game_in):
+MenuInputHandler::MenuInputHandler(GameState& game_state_in, Menu* menu_in, sf::RenderWindow& window_in):
+window(window_in),
 InputHandler::InputHandler(SIZE),
-game(game_in),
-key_escape(new QuitGameCommand(game)),// memory leaks, object is doubled
+game_state(game_state_in),
+menu(menu_in),
+key_escape(new QuitGameCommand(game_state_in)),
 
 
-key_down(new MoveSelectionCommand(*game.main_menu, GeneralTools::Down)),
+key_down(new MoveSelectionCommand(menu_in, GeneralTools::Down)),
 
-key_up(new MoveSelectionCommand(*game.main_menu, GeneralTools::Up)),
+key_up(new MoveSelectionCommand(menu_in, GeneralTools::Up)),
 
-key_space(new EnterChoiceCommand(game))
+key_space(new EnterChoiceCommand(game_state_in, menu_in))
 {
     closed = key_escape;
     key_s = key_down;
     key_w = key_up;
 }
-
+MenuInputHandler::~MenuInputHandler(){
+    DEBUG_MSG("MenuInputHandler delete"<<std::endl);
+}
 Command** MenuInputHandler::handleInput(){
     sf::Event event;
     auto i = 0;
     for(i = 0; i<SIZE; i++)
         current_command_array[i] = nullptr;
     i = 0;
-    if (game.getRenderWindow().pollEvent(event))
+    if (window.pollEvent(event))
     {
         switch(event.type)
         {

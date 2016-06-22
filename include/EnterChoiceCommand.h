@@ -8,13 +8,14 @@
 class EnterChoiceCommand : public Command
 {
     public:
-        EnterChoiceCommand(Game& game_in);
+        EnterChoiceCommand(GameState& game_state_in, Menu* menu_in);
         virtual ~EnterChoiceCommand();
         void  execute() override;
         int findSelectedOnTextArray();
 
     protected:
-        Game& game;
+        GameState& game_state;
+        Menu* menu;
     private:
 };
 

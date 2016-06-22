@@ -7,14 +7,14 @@
 class MoveSelectionCommand : public Command
 {
     public:
-        MoveSelectionCommand(Menu& game_in, GeneralTools::Direction direction_in);
+        MoveSelectionCommand(Menu* menu_in, GeneralTools::Direction direction_in);
         void execute()override;
         virtual ~MoveSelectionCommand();
         int findSelectedOnTextArray();
     protected:
 
     private:
-        Menu& menu;
+        Menu* menu;
         GeneralTools::Direction direction;
 };
 

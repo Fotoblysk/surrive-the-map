@@ -3,15 +3,15 @@
 
 Bullet::~Bullet()
 {
-   // DEBUG_MSG("removing bulletto"<<std::endl);
+   // DEBUG_MSG("Bullet delete"<<std::endl);
 }
 Bullet::Bullet(sf::Vector2f position_in, sf::Vector2f speed_in)
 {
-    speed = speed_in;
+    speed = speed_in; // ctor with param in game object, to add it in init list
     setPosition(position_in);
     setRadius(5);
     setFillColor(sf::Color::Blue);
-    //DEBUG_MSG("bullet created"<<std::endl);
+    //DEBUG_MSG("Bullet add"<<std::endl);
 }
 void Bullet::render(sf::RenderWindow& window){
     window.draw(*this);

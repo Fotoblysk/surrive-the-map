@@ -21,7 +21,7 @@ Collaboration diagram for Menu\+Input\+Handler\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=338pt]{class_menu_input_handler__coll__graph}
+\includegraphics[width=350pt]{class_menu_input_handler__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -29,9 +29,9 @@ Collaboration diagram for Menu\+Input\+Handler\+:
 \item 
 \hyperlink{class_command}{Command} $\ast$$\ast$ \hyperlink{class_menu_input_handler_a60840342f557c79f31097aa713ba7a37}{handle\+Input} () override
 \item 
-\hyperlink{class_menu_input_handler_ae0a666273bb8b76cea8352e600b987fc}{Menu\+Input\+Handler} (\hyperlink{class_game}{Game} \&game\+\_\+in)
+\hyperlink{class_menu_input_handler_a244c829acc6ffe44795e44cb2980615b}{Menu\+Input\+Handler} (\hyperlink{class_game_state}{Game\+State} \&game\+\_\+state\+\_\+in, \hyperlink{class_menu}{Menu} $\ast$menu\+\_\+in, sf\+::\+Render\+Window \&window\+\_\+in)
 \item 
-virtual \hyperlink{class_menu_input_handler_a283ab0103c42ef398b7d632dd99d1bee}{$\sim$\+Menu\+Input\+Handler} ()
+virtual \hyperlink{class_menu_input_handler_aad61207bccc58ff8c688ffb265ca13db}{$\sim$\+Menu\+Input\+Handler} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -41,7 +41,11 @@ virtual \hyperlink{class_menu_input_handler_a283ab0103c42ef398b7d632dd99d1bee}{$
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_game}{Game} \& \hyperlink{class_menu_input_handler_a49048af3c063e2b81ef6b296e9ad762c}{game}
+\hyperlink{class_game_state}{Game\+State} \& \hyperlink{class_menu_input_handler_a6574e69d6344c10cb1dd53c6e2ffac26}{game\+\_\+state}
+\item 
+sf\+::\+Render\+Window \& \hyperlink{class_menu_input_handler_a2d53ce9f0554202b62c1640ef95e799b}{window}
+\item 
+\hyperlink{class_menu}{Menu} $\ast$ \hyperlink{class_menu_input_handler_adda8b05fe971a0ed749bb0037d3ba4bd}{menu}
 \item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_command}{Command} $>$ \hyperlink{class_menu_input_handler_abf019bb1ca2f82975870e932e3cbd558}{key\+\_\+escape}
 \item 
@@ -61,20 +65,22 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_command}{Command} $>$ \hyperlink{clas
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_menu_input_handler_ae0a666273bb8b76cea8352e600b987fc}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
+\hypertarget{class_menu_input_handler_a244c829acc6ffe44795e44cb2980615b}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
 \index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
 \subsubsection[{Menu\+Input\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+Input\+Handler\+::\+Menu\+Input\+Handler (
 \begin{DoxyParamCaption}
-\item[{{\bf Game} \&}]{game\+\_\+in}
+\item[{{\bf Game\+State} \&}]{game\+\_\+state\+\_\+in, }
+\item[{{\bf Menu} $\ast$}]{menu\+\_\+in, }
+\item[{sf\+::\+Render\+Window \&}]{window\+\_\+in}
 \end{DoxyParamCaption}
-)}\label{class_menu_input_handler_ae0a666273bb8b76cea8352e600b987fc}
-\hypertarget{class_menu_input_handler_a283ab0103c42ef398b7d632dd99d1bee}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!````~Menu\+Input\+Handler@{$\sim$\+Menu\+Input\+Handler}}
+)}\label{class_menu_input_handler_a244c829acc6ffe44795e44cb2980615b}
+\hypertarget{class_menu_input_handler_aad61207bccc58ff8c688ffb265ca13db}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!````~Menu\+Input\+Handler@{$\sim$\+Menu\+Input\+Handler}}
 \index{````~Menu\+Input\+Handler@{$\sim$\+Menu\+Input\+Handler}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
-\subsubsection[{$\sim$\+Menu\+Input\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}virtual Menu\+Input\+Handler\+::$\sim$\+Menu\+Input\+Handler (
+\subsubsection[{$\sim$\+Menu\+Input\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+Input\+Handler\+::$\sim$\+Menu\+Input\+Handler (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_menu_input_handler_a283ab0103c42ef398b7d632dd99d1bee}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_menu_input_handler_aad61207bccc58ff8c688ffb265ca13db}
 
 
 \subsection{Member Function Documentation}
@@ -91,7 +97,8 @@ Implements \hyperlink{class_input_handler_a69b726d4a409a6f4ae443689cb69b404}{Inp
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -125,9 +132,9 @@ Here is the caller graph for this function\+:\nopagebreak
 \hypertarget{class_menu_input_handler_a493334cca9bde4229be296ad44e3db9b}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!closed@{closed}}
 \index{closed@{closed}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
 \subsubsection[{closed}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Command}$>$ Menu\+Input\+Handler\+::closed\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_input_handler_a493334cca9bde4229be296ad44e3db9b}
-\hypertarget{class_menu_input_handler_a49048af3c063e2b81ef6b296e9ad762c}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!game@{game}}
-\index{game@{game}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
-\subsubsection[{game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game}\& Menu\+Input\+Handler\+::game\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_input_handler_a49048af3c063e2b81ef6b296e9ad762c}
+\hypertarget{class_menu_input_handler_a6574e69d6344c10cb1dd53c6e2ffac26}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
+\subsubsection[{game\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\+State}\& Menu\+Input\+Handler\+::game\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_input_handler_a6574e69d6344c10cb1dd53c6e2ffac26}
 \hypertarget{class_menu_input_handler_a29143574ca3b79dccb3a98260184968c}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!key\+\_\+down@{key\+\_\+down}}
 \index{key\+\_\+down@{key\+\_\+down}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
 \subsubsection[{key\+\_\+down}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Command}$>$ Menu\+Input\+Handler\+::key\+\_\+down\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_input_handler_a29143574ca3b79dccb3a98260184968c}
@@ -146,6 +153,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \hypertarget{class_menu_input_handler_a052c981814cc918c88d17d7b4f0deb0e}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!key\+\_\+w@{key\+\_\+w}}
 \index{key\+\_\+w@{key\+\_\+w}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
 \subsubsection[{key\+\_\+w}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Command}$>$ Menu\+Input\+Handler\+::key\+\_\+w\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_input_handler_a052c981814cc918c88d17d7b4f0deb0e}
+\hypertarget{class_menu_input_handler_adda8b05fe971a0ed749bb0037d3ba4bd}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!menu@{menu}}
+\index{menu@{menu}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu}$\ast$ Menu\+Input\+Handler\+::menu\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_input_handler_adda8b05fe971a0ed749bb0037d3ba4bd}
+\hypertarget{class_menu_input_handler_a2d53ce9f0554202b62c1640ef95e799b}{}\index{Menu\+Input\+Handler@{Menu\+Input\+Handler}!window@{window}}
+\index{window@{window}!Menu\+Input\+Handler@{Menu\+Input\+Handler}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Render\+Window\& Menu\+Input\+Handler\+::window\hspace{0.3cm}{\ttfamily [private]}}\label{class_menu_input_handler_a2d53ce9f0554202b62c1640ef95e799b}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

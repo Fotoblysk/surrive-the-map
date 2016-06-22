@@ -4,29 +4,28 @@
 #include "EngineInputHandler.h"
 Game::Game(sf::RenderWindow& window_in):
     window(window_in),
-    state(MenuState),
     main_menu(nullptr),
-    engine(nullptr)
+    engine(nullptr),
+    input(nullptr)
 {
-    menu_input = nullptr;
+    game_state.changeState(GameState::MenuState);
 }
 Game::~Game()
 {
+    DEBUG_MSG("Game delete"<<std::endl);
 }
-void Game::changeState(GameState new_state){
-    state = new_state;
-}
+
 sf::RenderWindow& Game::getRenderWindow(){
     return window;
 }
 void Game::menu(){
     main_menu = std::move(std::unique_ptr <Menu> (new MainMenu));
-    menu_input = std::move(std::unique_ptr <InputHandler> (new MenuInputHandler(*this)));
+    input = std::move(std::unique_ptr <InputHandler> (new MenuInputHandler(game_state, main_menu.get(), window)));
     window.clear();
-    while (state == MenuState)
+    while (game_state.getState() == GameState::MenuState)
     {
         main_menu->render(window);
-        Command** current_command(menu_input->handleInput());
+        Command** current_command(input->handleInput());
         for(auto i = 0; current_command[i] != nullptr  &&  i < SIZE; i++)
             current_command[i]->execute();
         window.display();
@@ -34,24 +33,24 @@ void Game::menu(){
     }
 }
 void Game::run(){
-    state = MenuState;
+    game_state.changeState(GameState::MenuState);
     stateMachine();
 }
 void Game::startSinglePlayer(){
     window.clear();
     DEBUG_MSG("YOU RUNNED SINGLEPLAYER GAME \n AWSOME :D"<<std::endl);
     engine = std::move(std::unique_ptr <Engine>(new Engine(window)));
-    menu_input = std::move(std::unique_ptr<InputHandler>(new EngineInputHandler(*this)));
+    input = std::move(std::unique_ptr<InputHandler>(new EngineInputHandler(*this)));
     //const int TIME_STEP_AS_MICROS = 33333;
     long long accumulator = 0;
     sf::Clock clock;
-    while(state == PlaySingleState)
+    while(game_state.getState() == GameState::PlaySingleState)
     {
         accumulator += clock.restart().asMicroseconds();
         if( accumulator > TIME_STEP_AS_MICROS )
         {
             sf::Time elapsed1 = clock.getElapsedTime();
-            Command** current_command(menu_input->handleInput());
+            Command** current_command(input->handleInput());
             for(auto i = 0; current_command[i] != nullptr  &&  i < SIZE; i++)
                 current_command[i]->execute();
             engine->update();
@@ -63,17 +62,17 @@ void Game::startSinglePlayer(){
         if(accumulator > 2*TIME_STEP_AS_MICROS)
             DEBUG_MSG("Slow refresh: "<<accumulator <<"us"<<std::endl);
     }
-    state = MenuState;
+    game_state.changeState(GameState::MenuState);
 }
 void Game::stateMachine(){
-    while(state != EndState)
+    while(game_state.getState() != GameState::EndState)
     {
-        switch(state)
+        switch(game_state.getState())
         {
-        case MenuState :
+        case GameState::MenuState :
             menu();
             break;
-        case PlaySingleState :
+        case GameState::PlaySingleState :
             startSinglePlayer();
             break;
         }

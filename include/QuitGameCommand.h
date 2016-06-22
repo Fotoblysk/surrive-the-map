@@ -6,14 +6,14 @@
 class QuitGameCommand : public Command
 {
     public:
-        QuitGameCommand(Game& game_in);
+        QuitGameCommand(GameState& game_state_in);
         void execute()override;
         virtual ~QuitGameCommand();
 
     protected:
 
     private:
-        Game& game;
+        GameState& game_state;
 };
 
 #endif // QUITGAMECOMMAND_H

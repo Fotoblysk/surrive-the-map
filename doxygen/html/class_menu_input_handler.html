@@ -108,17 +108,17 @@ Collaboration diagram for MenuInputHandler:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_menu_input_handler__coll__graph.png" border="0" usemap="#_menu_input_handler_coll__map" alt="Collaboration graph"/></div>
 <map name="_menu_input_handler_coll__map" id="_menu_input_handler_coll__map">
-<area shape="rect" id="node2" href="class_input_handler.html" title="{InputHandler\n|# current_command_array\l|+ InputHandler()\l+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="5,71,179,178"/><area shape="rect" id="node3" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="203,5,349,244"/></map>
+<area shape="rect" id="node2" href="class_input_handler.html" title="{InputHandler\n|# current_command_array\l|+ InputHandler()\l+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="5,20,179,127"/><area shape="rect" id="node3" href="class_menu.html" title="{Menu\n||+ render()\l+ getNumberOfMenuChoices()\l+ ~Menu()\l+ getSelectedTextPtr()\l+ getMenuText()\l}" alt="" coords="203,5,400,141"/><area shape="rect" id="node4" href="class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="424,13,565,134"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a60840342f557c79f31097aa713ba7a37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_command.html">Command</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#a60840342f557c79f31097aa713ba7a37">handleInput</a> () override</td></tr>
 <tr class="separator:a60840342f557c79f31097aa713ba7a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a666273bb8b76cea8352e600b987fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#ae0a666273bb8b76cea8352e600b987fc">MenuInputHandler</a> (<a class="el" href="class_game.html">Game</a> &amp;game_in)</td></tr>
-<tr class="separator:ae0a666273bb8b76cea8352e600b987fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a283ab0103c42ef398b7d632dd99d1bee"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#a283ab0103c42ef398b7d632dd99d1bee">~MenuInputHandler</a> ()</td></tr>
-<tr class="separator:a283ab0103c42ef398b7d632dd99d1bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244c829acc6ffe44795e44cb2980615b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#a244c829acc6ffe44795e44cb2980615b">MenuInputHandler</a> (<a class="el" href="class_game_state.html">GameState</a> &amp;game_state_in, <a class="el" href="class_menu.html">Menu</a> *menu_in, sf::RenderWindow &amp;window_in)</td></tr>
+<tr class="separator:a244c829acc6ffe44795e44cb2980615b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad61207bccc58ff8c688ffb265ca13db"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#aad61207bccc58ff8c688ffb265ca13db">~MenuInputHandler</a> ()</td></tr>
+<tr class="separator:aad61207bccc58ff8c688ffb265ca13db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_input_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_input_handler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_input_handler.html">InputHandler</a></td></tr>
 <tr class="memitem:a1b1ccf055510e8ae1fc6a4a1d1fadbe4 inherit pub_methods_class_input_handler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_handler.html#a1b1ccf055510e8ae1fc6a4a1d1fadbe4">InputHandler</a> (int size)</td></tr>
 <tr class="separator:a1b1ccf055510e8ae1fc6a4a1d1fadbe4 inherit pub_methods_class_input_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,8 +132,12 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a49048af3c063e2b81ef6b296e9ad762c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#a49048af3c063e2b81ef6b296e9ad762c">game</a></td></tr>
-<tr class="separator:a49048af3c063e2b81ef6b296e9ad762c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6574e69d6344c10cb1dd53c6e2ffac26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_state.html">GameState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#a6574e69d6344c10cb1dd53c6e2ffac26">game_state</a></td></tr>
+<tr class="separator:a6574e69d6344c10cb1dd53c6e2ffac26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d53ce9f0554202b62c1640ef95e799b"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#a2d53ce9f0554202b62c1640ef95e799b">window</a></td></tr>
+<tr class="separator:a2d53ce9f0554202b62c1640ef95e799b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda8b05fe971a0ed749bb0037d3ba4bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_menu.html">Menu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#adda8b05fe971a0ed749bb0037d3ba4bd">menu</a></td></tr>
+<tr class="separator:adda8b05fe971a0ed749bb0037d3ba4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf019bb1ca2f82975870e932e3cbd558"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#abf019bb1ca2f82975870e932e3cbd558">key_escape</a></td></tr>
 <tr class="separator:abf019bb1ca2f82975870e932e3cbd558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a493334cca9bde4229be296ad44e3db9b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_input_handler.html#a493334cca9bde4229be296ad44e3db9b">closed</a></td></tr>
@@ -156,23 +160,39 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:abdd9f29f8c4b193f16679eddd05bdebd inherit pro_attribs_class_input_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae0a666273bb8b76cea8352e600b987fc"></a>
+<a class="anchor" id="a244c829acc6ffe44795e44cb2980615b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">MenuInputHandler::MenuInputHandler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game.html">Game</a> &amp;&#160;</td>
-          <td class="paramname"><em>game_in</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_game_state.html">GameState</a> &amp;&#160;</td>
+          <td class="paramname"><em>game_state_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_menu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>menu_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a283ab0103c42ef398b7d632dd99d1bee"></a>
+<a class="anchor" id="aad61207bccc58ff8c688ffb265ca13db"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -180,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual MenuInputHandler::~MenuInputHandler </td>
+          <td class="memname">MenuInputHandler::~MenuInputHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -188,7 +208,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -224,7 +244,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_menu_input_handler_a60840342f557c79f31097aa713ba7a37_cgraph.png" border="0" usemap="#class_menu_input_handler_a60840342f557c79f31097aa713ba7a37_cgraph" alt=""/></div>
 <map name="class_menu_input_handler_a60840342f557c79f31097aa713ba7a37_cgraph" id="class_menu_input_handler_a60840342f557c79f31097aa713ba7a37_cgraph">
-<area shape="rect" id="node2" href="class_game.html#ada9faa2a1f4e1453420adead02fd9865" title="Game::getRenderWindow" alt="" coords="226,5,397,32"/><area shape="rect" id="node3" href="class_menu_input_handler.html#aefd1edfd9f0d0770383c4977416de3bf" title="MenuInputHandler::handle\lKeyInput" alt="" coords="225,57,397,98"/></map>
+<area shape="rect" id="node2" href="class_menu_input_handler.html#aefd1edfd9f0d0770383c4977416de3bf" title="MenuInputHandler::handle\lKeyInput" alt="" coords="225,5,397,47"/></map>
 </div>
 </p>
 
@@ -294,7 +314,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a49048af3c063e2b81ef6b296e9ad762c"></a>
+<a class="anchor" id="a6574e69d6344c10cb1dd53c6e2ffac26"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -302,7 +322,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_game.html">Game</a>&amp; MenuInputHandler::game</td>
+          <td class="memname"><a class="el" href="class_game_state.html">GameState</a>&amp; MenuInputHandler::game_state</td>
         </tr>
       </table>
   </td>
@@ -434,6 +454,46 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="adda8b05fe971a0ed749bb0037d3ba4bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_menu.html">Menu</a>* MenuInputHandler::menu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d53ce9f0554202b62c1640ef95e799b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::RenderWindow&amp; MenuInputHandler::window</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_menu_input_handler_8h_source.html">MenuInputHandler.h</a></li>
 <li><a class="el" href="_menu_input_handler_8cpp.html">MenuInputHandler.cpp</a></li>
@@ -441,7 +501,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 22 2016 08:45:20 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 22 2016 12:11:29 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

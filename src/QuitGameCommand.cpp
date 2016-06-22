@@ -1,7 +1,7 @@
 #include "QuitGameCommand.h"
 
-QuitGameCommand::QuitGameCommand(Game& game_in):
-game(game_in)
+QuitGameCommand::QuitGameCommand(GameState& game_state_in):
+game_state(game_state_in)
 {
 
 }
@@ -13,5 +13,5 @@ QuitGameCommand::~QuitGameCommand()
 }
 void QuitGameCommand::execute(){
    // game.getRenderWindow().close();
-    game.changeState(Game::EndState);
+    game_state.changeState(GameState::EndState);
 }

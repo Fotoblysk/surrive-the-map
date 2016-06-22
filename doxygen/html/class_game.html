@@ -86,7 +86,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -105,16 +104,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Collaboration diagram for Game:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game__coll__graph.png" border="0" usemap="#_game_coll__map" alt="Collaboration graph"/></div>
+<map name="_game_coll__map" id="_game_coll__map">
+<area shape="rect" id="node2" href="class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="8,5,149,127"/></map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a7f57a7a8408e554d0a72882c287e1d04"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a> { <a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04a7a51f25e2194782f14973800a89e58fd">MenuState</a>, 
-<a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04a08c295bf12e492bf9d64b14d8d83b736">PlaySingleState</a>, 
-<a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04afc92d30e44f9ec0ff71b695a3ec6d5ca">EndState</a>
- }</td></tr>
-<tr class="separator:a7f57a7a8408e554d0a72882c287e1d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0010695fcd27f6fc91b37b5cf3ed0543"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a0010695fcd27f6fc91b37b5cf3ed0543">Game</a> (sf::RenderWindow &amp;window_in)</td></tr>
@@ -123,8 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3d112ca6e0e55150d2fdbc704474530"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ae3d112ca6e0e55150d2fdbc704474530">~Game</a> ()</td></tr>
 <tr class="memdesc:ae3d112ca6e0e55150d2fdbc704474530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs StartGame() function.  <a href="#ae3d112ca6e0e55150d2fdbc704474530">More...</a><br /></td></tr>
 <tr class="separator:ae3d112ca6e0e55150d2fdbc704474530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82e2140cdedd171aecaed897d3aea5a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a82e2140cdedd171aecaed897d3aea5a0">changeState</a> (<a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a> new_state)</td></tr>
-<tr class="separator:a82e2140cdedd171aecaed897d3aea5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada9faa2a1f4e1453420adead02fd9865"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ada9faa2a1f4e1453420adead02fd9865">getRenderWindow</a> ()</td></tr>
 <tr class="separator:ada9faa2a1f4e1453420adead02fd9865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ab78f5ed0d5ea879157357cf2fb2afa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a1ab78f5ed0d5ea879157357cf2fb2afa">run</a> ()</td></tr>
@@ -134,10 +125,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae08cf171b4f973d47def68d69f561e2c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_menu.html">Menu</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ae08cf171b4f973d47def68d69f561e2c">main_menu</a></td></tr>
-<tr class="separator:ae08cf171b4f973d47def68d69f561e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee6b9ebe224001f736e1ed71a3b28223"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_engine.html">Engine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aee6b9ebe224001f736e1ed71a3b28223">engine</a></td></tr>
 <tr class="separator:aee6b9ebe224001f736e1ed71a3b28223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c5a68cb0b0f1ca4bd238824253db7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_state.html">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a12c5a68cb0b0f1ca4bd238824253db7c">game_state</a></td></tr>
+<tr class="separator:a12c5a68cb0b0f1ca4bd238824253db7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -148,38 +139,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ae08cf171b4f973d47def68d69f561e2c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_menu.html">Menu</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ae08cf171b4f973d47def68d69f561e2c">main_menu</a></td></tr>
+<tr class="separator:ae08cf171b4f973d47def68d69f561e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0fb4d8653dcf289fd6573cf5ba0f3d1"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ad0fb4d8653dcf289fd6573cf5ba0f3d1">window</a></td></tr>
 <tr class="memdesc:ad0fb4d8653dcf289fd6573cf5ba0f3d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main game window.  <a href="#ad0fb4d8653dcf289fd6573cf5ba0f3d1">More...</a><br /></td></tr>
 <tr class="separator:ad0fb4d8653dcf289fd6573cf5ba0f3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82776f65732ac43cf35b8b7c7120c873"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_input_handler.html">InputHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a82776f65732ac43cf35b8b7c7120c873">menu_input</a></td></tr>
-<tr class="separator:a82776f65732ac43cf35b8b7c7120c873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9fc2a8710ee56916f79314b91112ed0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ad9fc2a8710ee56916f79314b91112ed0">state</a></td></tr>
-<tr class="separator:ad9fc2a8710ee56916f79314b91112ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737881663b793b4e7068d60a00937bba"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_input_handler.html">InputHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#a737881663b793b4e7068d60a00937bba">input</a></td></tr>
+<tr class="separator:a737881663b793b4e7068d60a00937bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. ">Game</a> main class. Class which is used run engine. This class will menage menu and settings. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a7f57a7a8408e554d0a72882c287e1d04"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04">Game::GameState</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7f57a7a8408e554d0a72882c287e1d04a7a51f25e2194782f14973800a89e58fd"></a>MenuState&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7f57a7a8408e554d0a72882c287e1d04a08c295bf12e492bf9d64b14d8d83b736"></a>PlaySingleState&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7f57a7a8408e554d0a72882c287e1d04afc92d30e44f9ec0ff71b695a3ec6d5ca"></a>EndState&#160;</td><td class="fielddoc">
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0010695fcd27f6fc91b37b5cf3ed0543"></a>
 <div class="memitem">
 <div class="memproto">
@@ -195,6 +165,15 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialization of RenderWindow&amp; window - main window of the game. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a0010695fcd27f6fc91b37b5cf3ed0543_cgraph.png" border="0" usemap="#class_game_a0010695fcd27f6fc91b37b5cf3ed0543_cgraph" alt=""/></div>
+<map name="class_game_a0010695fcd27f6fc91b37b5cf3ed0543_cgraph" id="class_game_a0010695fcd27f6fc91b37b5cf3ed0543_cgraph">
+<area shape="rect" id="node2" href="class_game_state.html#a9f10dd6cb64501f748c31a9f7ecc3466" title="GameState::changeState" alt="" coords="153,5,323,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -224,31 +203,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a82e2140cdedd171aecaed897d3aea5a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Game::changeState </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a>&#160;</td>
-          <td class="paramname"><em>new_state</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_a82e2140cdedd171aecaed897d3aea5a0_icgraph.png" border="0" usemap="#class_game_a82e2140cdedd171aecaed897d3aea5a0_icgraph" alt=""/></div>
-<map name="class_game_a82e2140cdedd171aecaed897d3aea5a0_icgraph" id="class_game_a82e2140cdedd171aecaed897d3aea5a0_icgraph">
-<area shape="rect" id="node2" href="class_enter_choice_command.html#a684f65bfc296353ecefc6edc1c678c70" title="EnterChoiceCommand\l::execute" alt="" coords="435,5,587,47"/><area shape="rect" id="node3" href="class_quit_game_command.html#ad39d43150a927d7e8b0dd7162eb840eb" title="QuitGameCommand::execute" alt="" coords="192,38,387,65"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="ada9faa2a1f4e1453420adead02fd9865"></a>
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +221,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_ada9faa2a1f4e1453420adead02fd9865_icgraph.png" border="0" usemap="#class_game_ada9faa2a1f4e1453420adead02fd9865_icgraph" alt=""/></div>
 <map name="class_game_ada9faa2a1f4e1453420adead02fd9865_icgraph" id="class_game_ada9faa2a1f4e1453420adead02fd9865_icgraph">
-<area shape="rect" id="node2" href="class_engine_input_handler.html#ade92afaf7657007c2be3b5bd745c96e3" title="EngineInputHandler\l::handleInput" alt="" coords="243,5,377,47"/><area shape="rect" id="node3" href="class_menu_input_handler.html#a60840342f557c79f31097aa713ba7a37" title="MenuInputHandler::handle\lInput" alt="" coords="224,71,396,112"/><area shape="rect" id="node4" href="class_spawn_bullet_command.html#a558af584b91637cd6bcf989d799eca4d" title="SpawnBulletCommand\l::execute" alt="" coords="233,136,387,177"/></map>
+<area shape="rect" id="node2" href="class_engine_input_handler.html#ade92afaf7657007c2be3b5bd745c96e3" title="EngineInputHandler\l::handleInput" alt="" coords="233,5,368,47"/><area shape="rect" id="node3" href="class_spawn_bullet_command.html#a558af584b91637cd6bcf989d799eca4d" title="SpawnBulletCommand\l::execute" alt="" coords="224,71,377,112"/></map>
 </div>
 </p>
 
@@ -293,6 +247,15 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_a463932fa7ca2f1ce243279bf2422fc48_cgraph.png" border="0" usemap="#class_game_a463932fa7ca2f1ce243279bf2422fc48_cgraph" alt=""/></div>
+<map name="class_game_a463932fa7ca2f1ce243279bf2422fc48_cgraph" id="class_game_a463932fa7ca2f1ce243279bf2422fc48_cgraph">
+<area shape="rect" id="node2" href="class_game_state.html#a9b808c211f0155b3d2994ec1e2c32f33" title="GameState::getState" alt="" coords="151,5,296,32"/></map>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -323,7 +286,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_a1ab78f5ed0d5ea879157357cf2fb2afa_cgraph.png" border="0" usemap="#class_game_a1ab78f5ed0d5ea879157357cf2fb2afa_cgraph" alt=""/></div>
 <map name="class_game_a1ab78f5ed0d5ea879157357cf2fb2afa_cgraph" id="class_game_a1ab78f5ed0d5ea879157357cf2fb2afa_cgraph">
-<area shape="rect" id="node2" href="class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="136,31,279,57"/><area shape="rect" id="node3" href="class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="360,5,457,32"/><area shape="rect" id="node4" href="class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="327,56,491,83"/></map>
+<area shape="rect" id="node2" href="class_game_state.html#a9f10dd6cb64501f748c31a9f7ecc3466" title="GameState::changeState" alt="" coords="539,5,708,32"/><area shape="rect" id="node3" href="class_game.html#a8bc94200bfbf0421b83b7c2b2b45da72" title="Game::stateMachine" alt="" coords="136,56,279,83"/><area shape="rect" id="node4" href="class_game_state.html#a9b808c211f0155b3d2994ec1e2c32f33" title="GameState::getState" alt="" coords="551,81,696,108"/><area shape="rect" id="node5" href="class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="360,132,457,159"/><area shape="rect" id="node6" href="class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="327,31,491,57"/></map>
 </div>
 </p>
 
@@ -350,6 +313,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_afbc524f7661c9ce1bea6ca45fd212093_cgraph.png" border="0" usemap="#class_game_afbc524f7661c9ce1bea6ca45fd212093_cgraph" alt=""/></div>
+<map name="class_game_afbc524f7661c9ce1bea6ca45fd212093_cgraph" id="class_game_afbc524f7661c9ce1bea6ca45fd212093_cgraph">
+<area shape="rect" id="node2" href="class_game_state.html#a9b808c211f0155b3d2994ec1e2c32f33" title="GameState::getState" alt="" coords="229,5,375,32"/><area shape="rect" id="node3" href="class_game_state.html#a9f10dd6cb64501f748c31a9f7ecc3466" title="GameState::changeState" alt="" coords="217,56,387,83"/></map>
+</div>
+</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -388,7 +360,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_game_a8bc94200bfbf0421b83b7c2b2b45da72_cgraph.png" border="0" usemap="#class_game_a8bc94200bfbf0421b83b7c2b2b45da72_cgraph" alt=""/></div>
 <map name="class_game_a8bc94200bfbf0421b83b7c2b2b45da72_cgraph" id="class_game_a8bc94200bfbf0421b83b7c2b2b45da72_cgraph">
-<area shape="rect" id="node2" href="class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="229,5,327,32"/><area shape="rect" id="node3" href="class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="196,56,360,83"/></map>
+<area shape="rect" id="node2" href="class_game_state.html#a9b808c211f0155b3d2994ec1e2c32f33" title="GameState::getState" alt="" coords="420,23,565,50"/><area shape="rect" id="node3" href="class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="229,23,327,50"/><area shape="rect" id="node4" href="class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="196,74,360,100"/><area shape="rect" id="node5" href="class_game_state.html#a9f10dd6cb64501f748c31a9f7ecc3466" title="GameState::changeState" alt="" coords="408,74,577,100"/></map>
 </div>
 </p>
 
@@ -416,19 +388,19 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae08cf171b4f973d47def68d69f561e2c"></a>
+<a class="anchor" id="a12c5a68cb0b0f1ca4bd238824253db7c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_menu.html">Menu</a>&gt; Game::main_menu</td>
+          <td class="memname"><a class="el" href="class_game_state.html">GameState</a> Game::game_state</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a82776f65732ac43cf35b8b7c7120c873"></a>
+<a class="anchor" id="a737881663b793b4e7068d60a00937bba"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -436,7 +408,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_input_handler.html">InputHandler</a>&gt; Game::menu_input</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_input_handler.html">InputHandler</a>&gt; Game::input</td>
         </tr>
       </table>
   </td>
@@ -448,7 +420,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ad9fc2a8710ee56916f79314b91112ed0"></a>
+<a class="anchor" id="ae08cf171b4f973d47def68d69f561e2c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -456,7 +428,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_game.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a> Game::state</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_menu.html">Menu</a>&gt; Game::main_menu</td>
         </tr>
       </table>
   </td>
@@ -497,7 +469,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 22 2016 08:45:20 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 22 2016 12:11:29 for surrive-the-map by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
