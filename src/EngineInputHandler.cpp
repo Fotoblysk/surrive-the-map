@@ -10,7 +10,7 @@ InputHandler::InputHandler(SIZE),
 key_escape(new QuitGameCommand(game_state)),// memory leaks, object is doubled
 closed(key_escape),
 
-key_d(new MoveActorCommand(engine->current_player, GeneralTools::Right)),
+key_d(new MoveActorCommand(engine->getCurrentPlayer(), GeneralTools::Right)),
 key_right(key_d),
 
 key_s(new MoveActorCommand(engine->current_player, GeneralTools::Down)),

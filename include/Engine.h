@@ -15,11 +15,13 @@ class Engine
         void update();
         void render();
         Player player;
-        Actor* current_player;
         std::vector<Bullet*> bullet;
         std::vector<Actor*> enemy;
         std::vector<AiControler*> ai;
+        Actor*& getCurrentPlayer();
+        //void setCurrentPlayer();
     protected:
+        Actor* current_player;
         sf::RenderWindow& window;
         EnemySpawner enemy_spawner;
         std::unique_ptr<InputHandler> collisionHandler;

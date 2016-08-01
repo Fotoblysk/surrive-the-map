@@ -23,13 +23,13 @@ virtual \hyperlink{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}{$\sim$\+Engin
 void \hyperlink{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}{update} ()
 \item 
 void \hyperlink{class_engine_a7960743aefd62e846e7f3cd92c18bc73}{render} ()
+\item 
+\hyperlink{class_actor}{Actor} $\ast$\& \hyperlink{class_engine_a18a33a26bb217ac04e3a540a343a6d99}{get\+Current\+Player} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_player}{Player} \hyperlink{class_engine_abd0ff72a70b7643680cff6cd0513620f}{player}
-\item 
-\hyperlink{class_actor}{Actor} $\ast$ \hyperlink{class_engine_ab488c2946ac31376f272acc1eaf815b7}{current\+\_\+player}
 \item 
 std\+::vector$<$ \hyperlink{class_bullet}{Bullet} $\ast$ $>$ \hyperlink{class_engine_a267b13093cb4ea1de9c297a96b0314ea}{bullet}
 \item 
@@ -39,6 +39,8 @@ std\+::vector$<$ \hyperlink{class_ai_controler}{Ai\+Controler} $\ast$ $>$ \hyper
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_actor}{Actor} $\ast$ \hyperlink{class_engine_ab488c2946ac31376f272acc1eaf815b7}{current\+\_\+player}
 \item 
 sf\+::\+Render\+Window \& \hyperlink{class_engine_ae5fb055a0acce41034a9bff218dd87b1}{window}
 \item 
@@ -66,6 +68,13 @@ std\+::unique\+\_\+ptr$<$ \hyperlink{class_input_handler}{Input\+Handler} $>$ \h
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_engine_a18a33a26bb217ac04e3a540a343a6d99}{}\index{Engine@{Engine}!get\+Current\+Player@{get\+Current\+Player}}
+\index{get\+Current\+Player@{get\+Current\+Player}!Engine@{Engine}}
+\subsubsection[{get\+Current\+Player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actor}$\ast$\& Engine\+::get\+Current\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_engine_a18a33a26bb217ac04e3a540a343a6d99}
 \hypertarget{class_engine_a7960743aefd62e846e7f3cd92c18bc73}{}\index{Engine@{Engine}!render@{render}}
 \index{render@{render}!Engine@{Engine}}
 \subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Engine\+::render (
@@ -105,7 +114,7 @@ Here is the call graph for this function\+:\nopagebreak
 \subsubsection[{collision\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Input\+Handler}$>$ Engine\+::collision\+Handler\hspace{0.3cm}{\ttfamily [protected]}}\label{class_engine_a20fca6041ee94486e4ed1ec48d63dfef}
 \hypertarget{class_engine_ab488c2946ac31376f272acc1eaf815b7}{}\index{Engine@{Engine}!current\+\_\+player@{current\+\_\+player}}
 \index{current\+\_\+player@{current\+\_\+player}!Engine@{Engine}}
-\subsubsection[{current\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actor}$\ast$ Engine\+::current\+\_\+player}\label{class_engine_ab488c2946ac31376f272acc1eaf815b7}
+\subsubsection[{current\+\_\+player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actor}$\ast$ Engine\+::current\+\_\+player\hspace{0.3cm}{\ttfamily [protected]}}\label{class_engine_ab488c2946ac31376f272acc1eaf815b7}
 \hypertarget{class_engine_af5735da922e4f9fd64db49993dc8efe3}{}\index{Engine@{Engine}!enemy@{enemy}}
 \index{enemy@{enemy}!Engine@{Engine}}
 \subsubsection[{enemy}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Actor}$\ast$$>$ Engine\+::enemy}\label{class_engine_af5735da922e4f9fd64db49993dc8efe3}

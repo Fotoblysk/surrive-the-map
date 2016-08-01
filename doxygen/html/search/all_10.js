@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['surrive_2dthe_2dmap',['surrive-the-map',['../md__c_1__users__foto__documents__git_hub_surrive-the-map__r_e_a_d_m_e.html',1,'']]],
+  ['surrive_2dthe_2dmap',['surrive-the-map',['../md__c_1__users__foto__documents__git_hub_surrive-the-map__nowy_folder__r_e_a_d_m_e.html',1,'']]],
   ['selected_5ftext',['selected_text',['../class_main_menu.html#a0a0ebee9f052974eb46c411f1dbaa2fc',1,'MainMenu']]],
   ['shoot_5fdelay',['shoot_delay',['../class_player.html#ab6e35dfaece8703f3906fc3a09d61078',1,'Player']]],
   ['shot_5fstatus',['shot_status',['../class_actor.html#a675662b7b4e2c52a766ed4f460e18230',1,'Actor']]],
