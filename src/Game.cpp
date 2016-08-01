@@ -60,7 +60,7 @@ void Game::startSinglePlayer(){
             accumulator -= TIME_STEP_AS_MICROS;
         }
         if(accumulator > 2*TIME_STEP_AS_MICROS)
-            DEBUG_MSG("Slow refresh: "<<accumulator <<"us"<<std::endl);
+            DEBUG_MSG("Slow refresh: "<< accumulator << "us" <<std::endl);
     }
     game_state.changeState(GameState::MenuState);
 }

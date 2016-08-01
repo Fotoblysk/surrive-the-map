@@ -13,13 +13,13 @@ closed(key_escape),
 key_d(new MoveActorCommand(engine->getCurrentPlayer(), GeneralTools::Right)),
 key_right(key_d),
 
-key_s(new MoveActorCommand(engine->current_player, GeneralTools::Down)),
+key_s(new MoveActorCommand(engine->getCurrentPlayer(), GeneralTools::Down)),
 key_down(key_s),
 
-key_w(new MoveActorCommand(engine->current_player, GeneralTools::Up)),
+key_w(new MoveActorCommand(engine->getCurrentPlayer(), GeneralTools::Up)),
 key_up(key_w),
 
-key_a(new MoveActorCommand(engine->current_player, GeneralTools::Left)),
+key_a(new MoveActorCommand(engine->getCurrentPlayer(), GeneralTools::Left)),
 key_left(key_a),
 
 key_q(new SpawnBulletCommand(engine, sf::Vector2f(float (0.1), float (0.1)), window, &(engine->player))),

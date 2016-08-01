@@ -5,7 +5,7 @@
 class GameState
 {
     public:
-        enum GameStateStatus{MenuState, PlaySingleState, EndState};
+        enum GameStateStatus{MenuState, PlaySingleState, SettingsState, EndState};
         GameState();
         void changeState(GameState::GameStateStatus new_status);
         virtual ~GameState();

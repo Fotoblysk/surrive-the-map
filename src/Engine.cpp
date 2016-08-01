@@ -70,3 +70,6 @@ void Engine::update(){
 void Engine::render(){
     window.draw(player);
 }
+Actor*& Engine::getCurrentPlayer(){
+    return current_player;
+}

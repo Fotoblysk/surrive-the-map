@@ -19,9 +19,8 @@ class Player : public Actor, public sf::CircleShape
         bool isObjectOnScreen(sf::RenderWindow& window);
         virtual ~Player();
         virtual bool tryToShoot()override;
-    protected:
-        unsigned int shoot_delay;
     private:
+        unsigned int shoot_delay;
         void shotDelayUpdate();
 };
 
