@@ -1,0 +1,21 @@
+digraph "CollisionHandler"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CollisionHandler\n||+ CollisionHandler()\l+ ~CollisionHandler()\l+ handleInput()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{InputHandler\n|# current_command_array\l|+ InputHandler()\l+ ~InputHandler()\l+ handleInput()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_input_handler.html"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" #engine" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Engine\n|+ bullet\l+ enemy\l+ ai\l# window\l# collisionHandler\l|+ Engine()\l+ ~Engine()\l+ update()\l+ render()\l+ getCurrentPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_engine.html"];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" #current_player" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{Actor\n|# shot_status\l# max_speed\l|+ Actor()\l+ ~Actor()\l+ defaultAccelerationChangeMove()\l+ getGlobalBounds()\l+ isObjectOnScreen()\l+ getShotStatus()\l+ getShotStatus()\l+ tryToShoot()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_actor.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{GameObject\n|+ speed\l+ acceleration\l|+ GameObject()\l+ ~GameObject()\l+ move()\l+ getPosition()\l+ update()\l+ render()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_object.html"];
+  Node6 -> Node3 [color="grey25",fontsize="10",style="solid",label=" #enemy_spawner" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{EnemySpawner\n|# counter\l# spawn_delay\l|+ EnemySpawner()\l+ ~EnemySpawner()\l+ update()\l+ spawnEnemy()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_enemy_spawner.html"];
+  Node7 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +player" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{Player\n|- shoot_delay\l|+ Player()\l+ getGlobalBounds()\l+ move()\l+ render()\l+ getPosition()\l+ defaultAccelerationChangeMove()\l+ update()\l+ accelerationStop()\l+ getSpeed()\l+ isObjectOnScreen()\l+ ~Player()\l+ tryToShoot()\l- shotDelayUpdate()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_player.html"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{CircleShape\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

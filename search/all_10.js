@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['surrive_2dthe_2dmap',['surrive-the-map',['../md__c_1__users__foto__documents__git_hub_surrive-the-map__r_e_a_d_m_e.html',1,'']]],
+  ['surrive_2dthe_2dmap',['surrive-the-map',['../md__c_1__users__foto__documents__git_hub_surrive-the-map_early-version__r_e_a_d_m_e.html',1,'']]],
   ['selected_5ftext',['selected_text',['../class_main_menu.html#a0a0ebee9f052974eb46c411f1dbaa2fc',1,'MainMenu']]],
+  ['settingsstate',['SettingsState',['../class_game_state.html#a921b00cc8c4eb15a3ae9f5061f44bd85a4aa67dc9973da0c6fbebc7260e9ccba3',1,'GameState']]],
   ['shoot_5fdelay',['shoot_delay',['../class_player.html#ab6e35dfaece8703f3906fc3a09d61078',1,'Player']]],
   ['shot_5fstatus',['shot_status',['../class_actor.html#a675662b7b4e2c52a766ed4f460e18230',1,'Actor']]],
   ['shotdelayupdate',['shotDelayUpdate',['../class_player.html#a6fe54860e65e5439dcc0c07e5d4e75a9',1,'Player']]],

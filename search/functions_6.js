@@ -3,6 +3,7 @@ var searchData=
   ['game',['Game',['../class_game.html#a0010695fcd27f6fc91b37b5cf3ed0543',1,'Game']]],
   ['gameobject',['GameObject',['../class_game_object.html#a0348e3ee2e83d56eafca7a3547f432c4',1,'GameObject']]],
   ['gamestate',['GameState',['../class_game_state.html#a4fa0a2bf50315c4a35a3890a0adcee5c',1,'GameState']]],
+  ['getcurrentplayer',['getCurrentPlayer',['../class_engine.html#ad4d57f927581894eae6f042bb650682d',1,'Engine']]],
   ['getglobalbounds',['getGlobalBounds',['../class_actor.html#ab56cff32076fef8392f4562fe281ea86',1,'Actor::getGlobalBounds()'],['../class_enemy.html#abb50439b9517d5a2b4c6b6c6a4e91672',1,'Enemy::getGlobalBounds()'],['../class_player.html#ac2b21f8a74b6b1c0e9068a82e7e71e86',1,'Player::getGlobalBounds()']]],
   ['getmenutext',['getMenuText',['../class_main_menu.html#ac5be2a5b81d51c79dfeab061263e00ba',1,'MainMenu::getMenuText()'],['../class_menu.html#a42fb94aee459f7ae5d06a7be1b540f17',1,'Menu::getMenuText()']]],
   ['getnumberofmenuchoices',['getNumberOfMenuChoices',['../class_main_menu.html#aec279c06705f829ab154b9023ec838b3',1,'MainMenu::getNumberOfMenuChoices()'],['../class_menu.html#aeed33b0a47d0c49de45e0c1bb1503585',1,'Menu::getNumberOfMenuChoices()']]],
