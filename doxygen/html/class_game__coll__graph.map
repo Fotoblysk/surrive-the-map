@@ -1,3 +1,0 @@
-<map id="Game" name="Game">
-<area shape="rect" id="node2" href="$class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="8,5,149,127"/>
-</map>

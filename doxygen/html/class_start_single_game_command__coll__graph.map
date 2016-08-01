@@ -1,5 +1,0 @@
-<map id="StartSingleGameCommand" name="StartSingleGameCommand">
-<area shape="rect" id="node2" href="$class_command.html" title="{Command\n||+ ~Command()\l+ execute()\l}" alt="" coords="7,248,116,340"/>
-<area shape="rect" id="node3" href="$class_game.html" title="Game main class. Class which is used run engine. This class will menage menu and settings. " alt="" coords="140,189,287,399"/>
-<area shape="rect" id="node4" href="$class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="143,5,284,127"/>
-</map>

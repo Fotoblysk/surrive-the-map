@@ -1,3 +1,0 @@
-<map id="Menu" name="Menu">
-<area shape="rect" id="node2" href="$class_main_menu.html" title="{MainMenu\n|# NUMBER_OF_MENU_CHOICES\l# menu_text\l# font\l# selected_text\l|+ getNumberOfMenuChoices()\l+ render()\l+ MainMenu()\l+ ~MainMenu()\l+ getSelectedTextPtr()\l+ getMenuText()\l}" alt="" coords="5,189,229,384"/>
-</map>

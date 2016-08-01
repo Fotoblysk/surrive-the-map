@@ -1,5 +1,0 @@
-<map id="SpawnBulletCommand::execute" name="SpawnBulletCommand::execute">
-<area shape="rect" id="node2" href="$class_actor.html#a85db8a17b338703247162f82f94cb957" title="Actor::tryToShoot" alt="" coords="229,5,353,32"/>
-<area shape="rect" id="node3" href="$class_game_object.html#aba7c07744a79defec4484fb09d917543" title="GameObject::getPosition" alt="" coords="207,56,375,83"/>
-<area shape="rect" id="node4" href="$class_actor.html#ab56cff32076fef8392f4562fe281ea86" title="Actor::getGlobalBounds" alt="" coords="211,107,371,133"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="EnemySpawner.cpp" name="EnemySpawner.cpp">
-<area shape="rect" id="node2" href="$_enemy_spawner_8h.html" title="EnemySpawner.h" alt="" coords="147,80,271,107"/>
-<area shape="rect" id="node3" href="$_enemy_8h.html" title="Enemy.h" alt="" coords="134,155,209,181"/>
-<area shape="rect" id="node5" href="$_actor_8h.html" title="Actor.h" alt="" coords="83,229,147,256"/>
-<area shape="rect" id="node6" href="$_game_object_8h.html" title="GameObject.h" alt="" coords="51,304,158,331"/>
-<area shape="rect" id="node7" href="$_general_tools_8h.html" title="../GeneralTools.h" alt="" coords="5,379,127,405"/>
-</map>

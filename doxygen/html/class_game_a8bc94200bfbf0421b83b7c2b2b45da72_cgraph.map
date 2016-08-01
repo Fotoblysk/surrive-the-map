@@ -1,6 +1,0 @@
-<map id="Game::stateMachine" name="Game::stateMachine">
-<area shape="rect" id="node2" href="$class_game_state.html#a9b808c211f0155b3d2994ec1e2c32f33" title="GameState::getState" alt="" coords="420,23,565,50"/>
-<area shape="rect" id="node3" href="$class_game.html#a463932fa7ca2f1ce243279bf2422fc48" title="Game::menu" alt="" coords="229,23,327,50"/>
-<area shape="rect" id="node4" href="$class_game.html#afbc524f7661c9ce1bea6ca45fd212093" title="Game::startSinglePlayer" alt="" coords="196,74,360,100"/>
-<area shape="rect" id="node5" href="$class_game_state.html#a9f10dd6cb64501f748c31a9f7ecc3466" title="GameState::changeState" alt="" coords="408,74,577,100"/>
-</map>

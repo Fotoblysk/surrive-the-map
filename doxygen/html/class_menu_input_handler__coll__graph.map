@@ -1,5 +1,0 @@
-<map id="MenuInputHandler" name="MenuInputHandler">
-<area shape="rect" id="node2" href="$class_input_handler.html" title="{InputHandler\n|# current_command_array\l|+ InputHandler()\l+ ~InputHandler()\l+ handleInput()\l}" alt="" coords="5,20,179,127"/>
-<area shape="rect" id="node3" href="$class_menu.html" title="{Menu\n||+ render()\l+ getNumberOfMenuChoices()\l+ ~Menu()\l+ getSelectedTextPtr()\l+ getMenuText()\l}" alt="" coords="203,5,400,141"/>
-<area shape="rect" id="node4" href="$class_game_state.html" title="{GameState\n|&#45; game_state_status\l|+ GameState()\l+ changeState()\l+ ~GameState()\l+ getState()\l}" alt="" coords="424,13,565,134"/>
-</map>

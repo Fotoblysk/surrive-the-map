@@ -1,4 +1,0 @@
-<map id="Game::changeState" name="Game::changeState">
-<area shape="rect" id="node2" href="$class_enter_choice_command.html#a684f65bfc296353ecefc6edc1c678c70" title="EnterChoiceCommand\l::execute" alt="" coords="435,5,587,47"/>
-<area shape="rect" id="node3" href="$class_quit_game_command.html#ad39d43150a927d7e8b0dd7162eb840eb" title="QuitGameCommand::execute" alt="" coords="192,38,387,65"/>
-</map>

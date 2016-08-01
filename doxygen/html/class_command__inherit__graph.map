@@ -1,9 +1,0 @@
-<map id="Command" name="Command">
-<area shape="rect" id="node2" href="$class_enter_choice_command.html" title="{EnterChoiceCommand\n|# game_state\l# menu\l|+ EnterChoiceCommand()\l+ ~EnterChoiceCommand()\l+ execute()\l+ findSelectedOnTextArray()\l}" alt="" coords="5,160,192,296"/>
-<area shape="rect" id="node3" href="$class_menu_command.html" title="{MenuCommand\n||+ execute()\l+ ~MenuCommand()\l}" alt="" coords="216,182,357,274"/>
-<area shape="rect" id="node4" href="$class_move_actor_command.html" title="{MoveActorCommand\n|&#45; actor_ptr\l&#45; direction\l|+ MoveActorCommand()\l+ execute()\l+ ~MoveActorCommand()\l+ findSelectedOnTextArray()\l}" alt="" coords="381,160,568,296"/>
-<area shape="rect" id="node5" href="$class_move_selection_command.html" title="{MoveSelectionCommand\n|&#45; menu\l&#45; direction\l|+ MoveSelectionCommand()\l+ execute()\l+ ~MoveSelectionCommand()\l+ findSelectedOnTextArray()\l}" alt="" coords="593,160,786,296"/>
-<area shape="rect" id="node6" href="$class_quit_game_command.html" title="{QuitGameCommand\n|&#45; game_state\l|+ QuitGameCommand()\l+ execute()\l+ ~QuitGameCommand()\l}" alt="" coords="811,175,979,281"/>
-<area shape="rect" id="node7" href="$class_spawn_bullet_command.html" title="{SpawnBulletCommand\n|&#45; actor\l&#45; window\l&#45; engine\l&#45; speed\l&#45; direction\l|+ SpawnBulletCommand()\l+ execute()\l+ ~SpawnBulletCommand()\l}" alt="" coords="1003,145,1184,311"/>
-<area shape="rect" id="node8" href="$class_start_single_game_command.html" title="{StartSingleGameCommand\n|&#45; game\l|+ StartSingleGameCommand()\l+ execute()\l+ ~StartSingleGameCommand()\l}" alt="" coords="1208,175,1416,281"/>
-</map>
